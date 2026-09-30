@@ -15,4 +15,7 @@ buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/john-moran-taglio/
 reviews: []
+image: https://bcmetalworking.com/wp-content/uploads/2025/08/John-Moran-Taglio.png
+image_credit: BC Metalworking
+image_source: https://bcmetalworking.com/product/john-moran-taglio/
 ---

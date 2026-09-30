@@ -17,5 +17,8 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/3-4-straight-punty
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-34.jpg?v=1471647027
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/3-4-straight-punty
 ---
 Spiral Arts suggests the step-down head for small work or for reaching into a deep foot.

@@ -17,4 +17,8 @@ buy:
   url: https://hotglasscolor.com/products/bc-metalworking-lampworking-jacks
   note: Listed as "Lampworking Jacks"
 reviews: []
+published: false
+image: https://bcmetalworking.com/wp-content/uploads/2022/03/7.png
+image_credit: BC Metalworking
+image_source: https://bcmetalworking.com/product/flameworking-jacks/
 ---

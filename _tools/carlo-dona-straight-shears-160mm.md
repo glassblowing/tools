@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-straight-shears-160mm-st
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7497-c-dona-shears-160mm.jpg?v=1739296110
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-straight-shears-160mm-st
 ---

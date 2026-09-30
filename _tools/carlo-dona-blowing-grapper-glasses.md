@@ -14,4 +14,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-blowing-grapper-glasses
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7682-c-dona-glass-grapper-detail.jpg?v=1738352682
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-blowing-grapper-glasses
 ---

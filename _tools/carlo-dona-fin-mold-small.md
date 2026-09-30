@@ -18,4 +18,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-fin-mold-xsm-copy
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/carlo-dona-fin-mold-sm-7701.jpg?v=1753295619
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-fin-mold-xsm-copy
 ---

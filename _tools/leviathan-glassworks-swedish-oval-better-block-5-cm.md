@@ -15,4 +15,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/swedish-oval-block-lv-5-cm
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Oval-Top_571d05a7-7007-4898-becf-6b44d3282ba7.png?v=1593796784
+image_credit: Leviathan GlassWorks
+image_source: https://leviathanglassworks.com/products/better-block-5cm-oval
 ---

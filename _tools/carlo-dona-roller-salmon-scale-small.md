@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-scale-roller-small-salmon
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/8021-carlo-dona-salmon-roller-detail.jpg?v=1741056313
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-scale-roller-small-salmon
 ---

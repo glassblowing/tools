@@ -15,4 +15,7 @@ buy:
 - vendor: Watanabe Glass Tools
   url: https://www.glassworkstoolbench.com/watanabeglasstools/p/germanmediumdiamondshears
 reviews: []
+image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/ce55854f-210e-43f3-8d57-74ca656bac36/IMG_6210.jpg?format=1000w
+image_credit: Watanabe Glass Tools
+image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/germanmediumdiamondshears
 ---

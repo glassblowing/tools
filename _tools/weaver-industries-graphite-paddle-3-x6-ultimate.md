@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-paddle-3x6-ultimate-80002259-1561747651
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Griffin-glass-7119.jpg?v=1744995038
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/graphite-paddle-3x6-ultimate-80002259-1561747651
 ---

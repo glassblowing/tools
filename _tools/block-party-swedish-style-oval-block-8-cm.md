@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-oval-block-6-cm-copy
 reviews: []
+image: https://images.squarespace-cdn.com/content/v1/6606f45947c37a34dd159fd6/b69d1393-2b3e-416a-8409-246897aa6bfa/IMG_0302.jpg?format=1000w
+image_credit: Block Party
+image_source: https://www.blockpartymolds.com/shop/p/8-cm-block
 ---

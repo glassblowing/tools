@@ -13,4 +13,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-sculpting-tool-30mm
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/7416-Dona-Inside-Sculpting-30mm.jpg?v=1736895665
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-sculpting-tool-30mm
 ---

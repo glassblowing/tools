@@ -14,4 +14,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/firebug-graphite-shot-glass-reamer
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/firebug-shotglass-2.png?v=1777665375
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/firebug-graphite-shot-glass-reamer
 ---

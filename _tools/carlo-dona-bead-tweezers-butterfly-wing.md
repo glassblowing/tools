@@ -12,4 +12,5 @@ buy:
   url: https://www.carlodona.com/en/lampworking/
   note: Maker's catalog; order by email or phone
 reviews: []
+published: false
 ---

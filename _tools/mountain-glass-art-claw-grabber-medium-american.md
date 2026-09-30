@@ -11,4 +11,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/american-med-claw-grabbers
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/6213-American-Medium-Claw-Grabbers.jpg?v=1737769878
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/american-med-claw-grabbers
 ---

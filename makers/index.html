@@ -8,6 +8,7 @@ permalink: /makers/
   {% assign makers = site.makers | sort: "title" %}
   {% for m in makers %}
   {% assign n = site.tools | where: "maker", m.slug | size %}
+  {% if n == 0 %}{% continue %}{% endif %}
   <a class="card cat-row" href="{{ m.url | relative_url }}">
     <div>
       <strong>{{ m.title }}</strong> <span class="muted small">· {{ n }} tool{% if n != 1 %}s{% endif %}</span>

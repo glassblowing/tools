@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-straight-shears-60mm-sh-800024d5-1704391334
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7752-c-dona-shears-60mm.jpg?v=1739299268
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-straight-shears-60mm-sh-800024d5-1704391334
 ---

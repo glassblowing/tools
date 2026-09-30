@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/morise-roller-large-carlo-dona
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/C-Dona-7534-Morise-Roller.jpg?v=1737665070
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/morise-roller-large-carlo-dona
 ---

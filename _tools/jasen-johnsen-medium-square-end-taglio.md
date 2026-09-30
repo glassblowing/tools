@@ -17,4 +17,7 @@ buy:
   url: https://hotglasscolor.com/products/tagliol-medium-6-blade-copy
   note: Square blade, medium size option
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/MediumTaglioSquareend.jpg?v=1684707784
+image_credit: Jasen Johnsen Glass Tools
+image_source: https://jasenjohnsenglasstools.com/products/medium-square-end-taglio
 ---

@@ -13,4 +13,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/78-1-bead-and-marble-mold
 reviews: []
+published: false
 ---

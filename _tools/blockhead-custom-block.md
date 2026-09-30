@@ -16,5 +16,8 @@ buy:
   url: https://www.blockheadtools.com/blocks/custom
   note: Custom order through the maker's contact form
 reviews: []
+image: https://images.squarespace-cdn.com/content/v1/65a6e6e7349491431eb48c8d/1709226423735-Z0OGCHWQ6F73H2ECKSGE/10cm-Wavy-Proof.jpg?format=1000w
+image_credit: Blockhead Tools
+image_source: https://www.blockheadtools.com/blocks/custom
 ---
 Designs and proofs are kept confidential.

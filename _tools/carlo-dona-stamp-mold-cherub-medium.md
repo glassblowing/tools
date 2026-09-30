@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-stamp-mold-cherub-med
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7805_c-dona-cherub-stamp-md.jpg?v=1739301163
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-stamp-mold-cherub-med
 ---

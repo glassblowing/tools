@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-morise-roller-sm_85938
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7533-c-dona-morise-sm-Photoroom.jpg?v=1739301422
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-morise-roller-sm_85938
 ---

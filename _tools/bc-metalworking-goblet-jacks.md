@@ -14,4 +14,7 @@ buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/goblet/
 reviews: []
+image: https://bcmetalworking.com/wp-content/uploads/2022/05/1.png
+image_credit: BC Metalworking
+image_source: https://bcmetalworking.com/product/goblet/
 ---

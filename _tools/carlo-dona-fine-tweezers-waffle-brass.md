@@ -16,4 +16,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-fine-tweezer-waffle
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7454-carlo-dona-fine-waffle-mash.jpg?v=1737664069
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-fine-tweezer-waffle
 ---

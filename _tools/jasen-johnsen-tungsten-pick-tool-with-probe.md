@@ -12,4 +12,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/tungstun-pick-tool-w-probe-copy
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Jasen-Johnsen-pick-6814.jpg?v=1736537321
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/tungstun-pick-tool-w-probe-copy
 ---

@@ -14,4 +14,7 @@ buy:
 - vendor: Jasen Johnsen Glass Tools
   url: https://jasenjohnsenglasstools.com/products/super-narrow-flat-crimps
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/VeryNarrowFlatCrimp.jpg?v=1684701197
+image_credit: Jasen Johnsen Glass Tools
+image_source: https://jasenjohnsenglasstools.com/products/super-narrow-flat-crimps
 ---

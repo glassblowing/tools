@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/bent-reverse-tweezers-6
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/6195-Bent-Reverse-Tweezers-6-inchr.jpg?v=1696841227
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/bent-reverse-tweezers-6
 ---

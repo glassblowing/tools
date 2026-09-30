@@ -14,4 +14,7 @@ buy:
 - vendor: Leviathan GlassWorks
   url: https://leviathanglassworks.com/products/better-block-15cm-oval
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Oval-Top_ada2c2f6-3e5f-4c78-b09e-5ab17af3e13c.png?v=1593797721
+image_credit: Leviathan GlassWorks
+image_source: https://leviathanglassworks.com/products/better-block-15cm-oval
 ---

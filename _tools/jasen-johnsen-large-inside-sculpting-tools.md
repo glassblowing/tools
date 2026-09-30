@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/inside-sculpting-tools-5pc-set-copy
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/InsideSculptingToolLargedetail.jpg?v=1684715057
+image_credit: Jasen Johnsen Glass Tools
+image_source: https://jasenjohnsenglasstools.com/products/large-inside-sculpting-tools-set-of-5
 ---

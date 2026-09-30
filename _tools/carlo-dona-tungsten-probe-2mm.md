@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-tungsten-probe-2mm
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Carlo-Dona-7536-tungsten-pick-2mm.jpg?v=1737664855
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-tungsten-probe-2mm
 ---

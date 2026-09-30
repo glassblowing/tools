@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-soffietta-bent-xxl
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/7412-Dona-Bent-Puffer-20.jpg?v=1696843427
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-soffietta-bent-xxl
 ---

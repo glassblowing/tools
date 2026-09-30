@@ -13,4 +13,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-carbon-x-pad-8x10
 reviews: []
+published: false
 ---

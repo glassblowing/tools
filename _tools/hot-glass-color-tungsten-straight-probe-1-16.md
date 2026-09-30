@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/straight-probe-1-16-tungsten
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/6882-Straight-Probe-16TH.jpg?v=1737767541
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/straight-probe-1-16-tungsten
 ---

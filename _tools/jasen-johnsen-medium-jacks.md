@@ -15,4 +15,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/jacks-medium
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/MediumJacks7.5inchBlades.jpg?v=1684707063
+image_credit: Jasen Johnsen Glass Tools
+image_source: https://jasenjohnsenglasstools.com/products/medium-jacks
 ---

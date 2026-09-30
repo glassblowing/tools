@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/bc-metalworking-crimp-tweezers-rose
 reviews: []
+image: https://bcmetalworking.com/wp-content/uploads/2024/11/462642630_886066946997537_5362645458652108860_n.jpg
+image_credit: BC Metalworking
+image_source: https://bcmetalworking.com/product/rose-crimp/
 ---

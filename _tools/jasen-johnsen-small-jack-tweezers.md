@@ -18,4 +18,7 @@ buy:
   url: https://hotglasscolor.com/products/tweezers-jacks-jasen-johnsen
   note: Listed as "Jack Tweezers"
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/SmallJackTweezer.jpg?v=1684714377
+image_credit: Jasen Johnsen Glass Tools
+image_source: https://jasenjohnsenglasstools.com/products/small-jack-tweezers
 ---

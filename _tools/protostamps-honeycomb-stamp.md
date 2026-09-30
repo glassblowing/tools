@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/honeycomb-stamp-8000245c-1681949472
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7641-protostamp-honeycomb-16mm-detail.jpg?v=1750966012
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/honeycomb-stamp-8000245c-1681949472
 ---

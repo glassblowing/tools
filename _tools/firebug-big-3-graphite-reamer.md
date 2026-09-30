@@ -14,4 +14,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/firebug-big-3-graphite-reamer
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/firebug-tools-3-reamer_a47a24f9-5c6a-453a-aedd-65bb06dd0cdd.png?v=1777665571
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/firebug-big-3-graphite-reamer
 ---

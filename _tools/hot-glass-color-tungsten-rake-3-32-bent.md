@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/tungsten-rake-332-bent-wood
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/4026.png?v=1696840687
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/tungsten-rake-332-bent-wood
 ---

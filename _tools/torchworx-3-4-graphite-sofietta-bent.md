@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/3-4-sofietta-bent
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Torchworx-3-4-Graphite-Sofietta-BENT.png?v=1750370253
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/3-4-sofietta-bent
 ---

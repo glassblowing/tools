@@ -16,4 +16,7 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/extra-large-punty-pu-tbo
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-TBO.jpg?v=1473187075
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/extra-large-punty-pu-tbo
 ---

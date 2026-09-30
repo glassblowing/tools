@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-flat-tweezers-med
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7528-carlo-dona-md-flat-tweezer.jpg?v=1752001948
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-flat-tweezers-med
 ---

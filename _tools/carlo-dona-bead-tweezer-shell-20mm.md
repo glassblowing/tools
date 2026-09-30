@@ -16,4 +16,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-bead-tweezer-shell-20mm
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/7462.png?v=1696843571
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-bead-tweezer-shell-20mm
 ---

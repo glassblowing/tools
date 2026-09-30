@@ -11,6 +11,7 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 - **Only list what a vendor actually shows.** Every tool, spec, and link must come from a page you fetched this run. If you can't load a page, say so. Don't fill gaps from memory.
 - **Write summaries in your own words.** One or two plain sentences on what the tool is for. Don't paste vendor marketing copy.
 - **No prices or reviews. Photos are linked, never copied.** Prices go stale, and reviews only come from people through the GitHub issue form. For photos, run `python3 scripts/archive.py photos --write`. It points each listing's `image` at the seller's own product image URL (hotlinked, never downloaded), with `image_credit` and `image_source`. Never add a vendor photo by hand, and never for a vendor marked `photos: no` (they asked us not to).
+- **The site covers furnace (hot shop) glassblowing.** Flameworking and coldworking tools are out of scope for now. Existing ones are kept with `published: false` so they can come back later; don't add new ones.
 - **Respect scope.** Each vendor's `scope` in `_data/vendors.yml` says what to index. Skip anything out of scope, and don't add it "for later".
 - **Don't push or merge.** Work on a branch and leave pushing and PRs to the user.
 

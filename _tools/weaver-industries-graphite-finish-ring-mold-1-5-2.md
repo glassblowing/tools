@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-finish-ring-mold-1-5-2
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/5795graphiteopenringmold1point52.jpg?v=1696841041
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/graphite-finish-ring-mold-1-5-2
 ---

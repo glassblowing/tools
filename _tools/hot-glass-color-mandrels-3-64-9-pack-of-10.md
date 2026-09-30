@@ -14,4 +14,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/mandrel-364-x9-pack-of-10
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/3074-9inch-mandrels.jpg?v=1737768132
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/mandrel-364-x9-pack-of-10
 ---

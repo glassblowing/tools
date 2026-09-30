@@ -17,5 +17,8 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/standard-workhorse-ultralight-pi-sw-ul
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PI-SW_e14a8090-00df-47be-b1b4-ee2f1659cb47.jpg?v=1476993605
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/standard-workhorse-ultralight-pi-sw-ul
 ---
 With half the wall thickness of the standard version it's also about half as strong. Spiral Arts warns that it bends if dropped, especially in stainless.

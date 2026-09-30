@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-swedish-style-oval-block-14-cm
 reviews: []
+image: https://images.squarespace-cdn.com/content/v1/6606f45947c37a34dd159fd6/28ee4f8b-c63e-4a7d-934f-2dc03fadf41f/IMG_0298.jpg?format=1000w
+image_credit: Block Party
+image_source: https://www.blockpartymolds.com/shop/p/14-block
 ---
