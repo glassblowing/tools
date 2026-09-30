@@ -193,3 +193,7 @@ input[type="search"]:focus, select:focus { outline: 2px solid var(--accent); out
 .photo-credit a { color: var(--muted); }
 .photo-credit-badge { position: absolute; right: 0.4rem; bottom: 0.4rem; max-width: calc(100% - 0.8rem); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.65rem; line-height: 1.4; color: #44403c; background: rgb(255 255 255 / 85%); border-radius: 999px; padding: 0.05rem 0.5rem; }
 .photo-credit-badge::before { content: "Photo: "; }
+/* Photos are hotlinked from the seller; if one stops loading, show the category icon instead. */
+.tool-photo .fallback { display: none; }
+.tool-photo.broken .fallback { display: grid; }
+.tool-photo.broken .photo, .tool-photo.broken .photo-credit, .tool-photo.broken .photo-credit-badge { display: none; }

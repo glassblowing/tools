@@ -10,7 +10,7 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 
 - **Only list what a vendor actually shows.** Every tool, spec, and link must come from a page you fetched this run. If you can't load a page, say so. Don't fill gaps from memory.
 - **Write summaries in your own words.** One or two plain sentences on what the tool is for. Don't paste vendor marketing copy.
-- **No prices or reviews, and photos only with permission.** Prices go stale, and reviews only come from people through the GitHub issue form. Product photos belong to the vendor: only add `image` for vendors with `photos: permitted` in `_data/vendors.yml`, always with `image_credit` (the vendor's name) and `image_source` (the product page). Download the image into `assets/img/tools/<tool-slug>.<ext>` rather than hotlinking, so it doesn't break when the store changes.
+- **No prices or reviews. Photos are linked, never copied.** Prices go stale, and reviews only come from people through the GitHub issue form. For photos, run `python3 scripts/archive.py photos --write`. It points each listing's `image` at the seller's own product image URL (hotlinked, never downloaded), with `image_credit` and `image_source`. Never add a vendor photo by hand, and never for a vendor marked `photos: no` (they asked us not to).
 - **Respect scope.** Each vendor's `scope` in `_data/vendors.yml` says what to index. Skip anything out of scope, and don't add it "for later".
 - **Don't push or merge.** Work on a branch and leave pushing and PRs to the user.
 
@@ -21,7 +21,7 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 | `_data/vendors.yml` | Every shop, with its crawl pages, scope, and notes. The source of truth for vendors. |
 | `_tools/*.md` | One file per tool. The format is in `CONTRIBUTING.md`. |
 | `_makers/*.md`, `_tool_categories/*.md` | Makers and categories that tools reference by filename. |
-| `scripts/archive.py` | Helper: `validate`, `links [--vendor ID]`, `catalog VENDOR_ID` (Shopify, WooCommerce, Squarespace). |
+| `scripts/archive.py` | Helper: `validate`, `links [--vendor ID]`, `catalog VENDOR_ID` (Shopify, WooCommerce, Squarespace), `photos [--vendor ID] [--refresh] [--write]`. |
 
 ## What to run
 
@@ -83,6 +83,8 @@ One file per product page. Collapse variants (lengths, body material, grips) int
 - The Markdown body is optional. Add one only when there's a genuinely useful fact beyond the summary, like a care note or what it pairs with.
 
 When updating an existing tool, change only what the vendor's page contradicts, and keep other people's edits.
+
+After writing listings, run `python3 scripts/archive.py photos --write` to link photos for any new listing. It skips pages shared by several listings (catalog and category pages) and site logos, so a missing photo is normal.
 
 ### 5. Verify and report
 

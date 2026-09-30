@@ -8,8 +8,10 @@
 #             leave it out and the crawl pages are read directly
 #   crawl     catalog pages to scan for new in-scope tools; empty means only re-check existing links
 #   scope     what to index from this vendor (in / out). Out-of-scope items are skipped, not listed.
-#   photos    "permitted" once the vendor has agreed to let us show its product photos
-#             (with credit). Leave it out otherwise.
+#   photos    "no" if the vendor has asked us not to show its product photos. Otherwise
+#             `archive.py photos` links listings to the vendor's own image URLs (hotlinked,
+#             never copied) with a credit line. After setting "no", clear that vendor's
+#             images: remove image/image_credit/image_source where image_credit is its name.
 #   notes     anything the next update needs to know
 
 - id: spiral-arts

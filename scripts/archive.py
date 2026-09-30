@@ -4,6 +4,7 @@
     python3 scripts/archive.py validate              # check tools/makers/categories/vendors line up
     python3 scripts/archive.py links [--vendor ID]   # check every buy link
     python3 scripts/archive.py catalog VENDOR_ID     # list a vendor's in-crawl products (Shopify, WooCommerce, Squarespace)
+    python3 scripts/archive.py photos [--write]      # link each listing to the seller's own product image
 
 Used by the update-archive skill (.claude/skills/update-archive/SKILL.md). Needs PyYAML.
 """
@@ -14,6 +15,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -263,6 +265,132 @@ def cmd_catalog(args):
     return 0
 
 
+def og_image(page_html):
+    """The product image from JSON-LD, falling back to og:image."""
+    for m in re.finditer(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', page_html, re.S):
+        try:
+            data = json.loads(m.group(1))
+        except ValueError:
+            continue
+        for d in data if isinstance(data, list) else [data]:
+            if isinstance(d, dict) and d.get("@type") == "Product" and d.get("image"):
+                img = d["image"]
+                img = img[0] if isinstance(img, list) else img
+                return (img.get("url") or img.get("contentUrl")) if isinstance(img, dict) else img
+    m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', page_html) or \
+        re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', page_html)
+    return html.unescape(m.group(1)) if m else None
+
+
+_site_default = {}
+
+
+def find_image(v, url):
+    """Return the vendor's own image URL for a product page, or None."""
+    origin = "{0.scheme}://{0.netloc}".format(urlparse(url))
+    platform = v.get("platform")
+    if platform == "shopify":
+        p = get_json(url.split("?")[0].rstrip("/") + ".json")["product"]
+        return p["images"][0]["src"] if p.get("images") else None
+    if platform == "squarespace":
+        item = get_json(url.split("?")[0] + "?format=json").get("item") or {}
+        return item["assetUrl"] + "?format=1000w" if item.get("assetUrl") else None
+    if platform == "woocommerce":
+        slug = urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
+        found = get_json(f"{origin}/wp-json/wc/store/v1/products?slug={slug}")
+        return found[0]["images"][0]["src"] if found and found[0].get("images") else None
+    img = og_image(fetch(url)[2].decode("utf8", "ignore"))
+    if not img:
+        return None
+    img = urllib.parse.urljoin(url, img)
+    # A page that only has the site-wide share image (usually the logo) has no product photo.
+    if origin not in _site_default:
+        try:
+            home = og_image(fetch(origin + "/")[2].decode("utf8", "ignore"))
+            _site_default[origin] = urllib.parse.urljoin(origin + "/", home) if home else None
+        except Exception:
+            _site_default[origin] = None
+    if img == _site_default[origin] or "logo" in img.lower():
+        return None
+    return img
+
+
+def write_front_matter(path, fm):
+    text_ = path.read_text()
+    body = re.match(r"^---\n.*?\n---\n(.*)$", text_, re.S).group(1)
+    y = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, width=1000)
+    y = re.sub(r"^(added|last_checked): '(\d{4}-\d\d-\d\d)'$", r"\1: \2", y, flags=re.M)
+    path.write_text(f"---\n{y}---\n{body}")
+
+
+def cmd_photos(args):
+    """Point listings at the seller's own product image (hotlinked, never copied), with credit."""
+    tools, _, _, vendors = load()
+    by_name = {v["name"]: v for v in vendors}
+    url_uses = {}
+    for t in tools.values():
+        for b in t.get("buy") or []:
+            url_uses[b["url"]] = url_uses.get(b["url"], 0) + 1
+
+    jobs = []
+    for slug, t in tools.items():
+        if t.get("image") and not args.refresh:
+            continue
+        candidates = []
+        for b in t.get("buy") or []:
+            v = by_name.get(b["vendor"], {})
+            if v.get("photos") == "no" or (args.vendor and v.get("id") != args.vendor):
+                continue
+            if url_uses[b["url"]] > 1:  # a catalog or category page, not this product's page
+                continue
+            direct = v.get("maker") == t.get("maker")
+            candidates.append((not direct, b, v))
+        if candidates:
+            candidates.sort(key=lambda c: c[0])
+            jobs.append((slug, [(b, v) for _, b, v in candidates]))
+
+    queues = {}
+    for slug, cands in jobs:
+        v = cands[0][1]
+        q = "shopify" if v.get("platform") == "shopify" else urlparse(cands[0][0]["url"]).netloc
+        queues.setdefault(q, []).append((slug, cands))
+
+    def run(item):
+        name, qjobs = item
+        out = []
+        for slug, cands in qjobs:
+            for b, v in cands:
+                try:
+                    img = find_image(v, b["url"])
+                except Exception:  # blocked, gone, or not a product page
+                    img = None
+                if img and img.startswith("//"):
+                    img = "https:" + img
+                elif img and img.startswith("http://"):
+                    img = "https://" + img[len("http://"):]  # the site is HTTPS; don't mix content
+                time.sleep(1.5 if v.get("platform") == "shopify" else 0.5)
+                if img:
+                    out.append((slug, img, b, v))
+                    break
+            else:
+                out.append((slug, None, None, None))
+        return out
+
+    with ThreadPoolExecutor(8) as ex:
+        results = [r for rs in ex.map(run, queues.items()) for r in rs]
+    found = [r for r in results if r[1]]
+    for slug, img, b, v in sorted(found):
+        print(f"{slug:55} {v['name']}: {img}")
+        if args.write:
+            path = ROOT / "_tools" / f"{slug}.md"
+            fm = front_matter(path)
+            fm.update({"image": img, "image_credit": v["name"], "image_source": b["url"]})
+            write_front_matter(path, fm)
+    print(f"\n{len(found)}/{len(results)} listings have a vendor photo"
+          + ("" if args.write else " (dry run; pass --write to save)"))
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -271,8 +399,12 @@ def main():
     p.add_argument("--vendor", help="only this vendor id")
     p = sub.add_parser("catalog")
     p.add_argument("vendor", help="vendor id from _data/vendors.yml")
+    p = sub.add_parser("photos")
+    p.add_argument("--vendor", help="only use this vendor's pages")
+    p.add_argument("--refresh", action="store_true", help="also re-check listings that already have a photo")
+    p.add_argument("--write", action="store_true", help="save changes (default is a dry run)")
     args = ap.parse_args()
-    return {"validate": cmd_validate, "links": cmd_links, "catalog": cmd_catalog}[args.cmd](args)
+    return {"validate": cmd_validate, "links": cmd_links, "catalog": cmd_catalog, "photos": cmd_photos}[args.cmd](args)
 
 
 if __name__ == "__main__":
