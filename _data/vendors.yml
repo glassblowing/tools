@@ -180,6 +180,27 @@
     in: Jacks, pacioffi, and other hand tools.
     out: Stickers and consumables (e.g. paper tubes for screw-on pacioffi).
 
+- id: blockhead
+  name: Blockhead Tools
+  url: https://www.blockheadtools.com/
+  maker: blockhead
+  platform: squarespace
+  crawl:
+    - https://www.blockheadtools.com/blocks
+  scope:
+    in: Blocks.
+    out: Other products (molds, tools) until asked.
+  notes: >-
+    Doesn't sell direct. The whole line is sold by Olympic Color Rods (vendor "Glass
+    Color", a Magento store, so read it directly) under
+    https://glasscolor.com/tools/blocks/blockhead-blocks/, with one page per block style.
+    Only custom and left-handed blocks are ordered from Blockhead itself. Blockhead's
+    /blocks portfolio pages keep their text in page blocks, so the catalog reader shows
+    "no description"; read the pages' HTML for sizes. Glass Color also sells Blockhead
+    graphite marver blocks, which aren't on Blockhead's blocks page, so they're not
+    listed yet (ask). Blockhead molds (/archetype-molds, /custom-molds) and tools (/tools)
+    are also out of scope for now.
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/
@@ -216,6 +237,7 @@
   url: https://glasscolor.com/
   crawl:
     - https://glasscolor.com/tools/hand-tools/jim-moore-tools
+    - https://glasscolor.com/tools/blocks/blockhead-blocks
   scope:
     in: Buy links for tools already in the archive. Its Jim Moore pages are the best place to find new Jim Moore tools.
 
