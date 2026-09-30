@@ -318,6 +318,29 @@
     Hegan Glassworks' own shop (Scott Hegan). Olympic Color Rods also sells the bronze
     molds (glasscolor.com/tools/hegan-glassworks, Magento, three pages); link both.
 
+- id: eclipse-casting
+  name: Eclipse Casting (Etsy)
+  url: https://www.etsy.com/listing/4296053482/bronze-glass-blowers-optic-dip-mold
+  maker: eclipse-casting
+  crawl: []
+  scope:
+    in: Bronze blow and optic molds.
+  notes: >-
+    Etsy blocks scripts and WebFetch (403), so listings can't be read or link-checked
+    automatically. Listings use only the title Etsy shows in search results; a human
+    should check the page and fill in sizes and materials.
+
+- id: jordan-kube
+  name: JordanKube (Etsy)
+  url: https://www.etsy.com/shop/JordanKube
+  maker: jordan-kube
+  crawl: []
+  scope:
+    in: Blow molds (e.g. pineapple molds).
+  notes: >-
+    Etsy blocks scripts and WebFetch (403). Listings use only the title Etsy shows in
+    search results; check the shop by hand for other molds and details.
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/
