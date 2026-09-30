@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Sizes: Small 210 mm, Medium 250 mm, Large 300 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/compass/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-bent-caliper-lg
 reviews: []

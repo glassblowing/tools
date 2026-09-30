@@ -11,6 +11,9 @@ specs:
   Points: '20'
   Size: 45 mm diameter × 90 mm tall
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/pineapple-molds/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-20pt-optic-mold-45-x-90
 reviews: []

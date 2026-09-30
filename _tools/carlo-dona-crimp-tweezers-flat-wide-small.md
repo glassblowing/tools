@@ -11,6 +11,9 @@ specs:
   Plates: 50 × 40 mm
   Handles: 320 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/crimps/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-crimp-twzr-flat-wide
 reviews: []

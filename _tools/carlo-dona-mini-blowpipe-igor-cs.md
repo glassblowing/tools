@@ -11,6 +11,9 @@ specs:
   Dimensions: 16mm pipe, 8mm tube, 4mm countersunk opening
   Mouthpiece: Brass
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/lampworking/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-mini-blowpipe-igor-cs
 reviews: []

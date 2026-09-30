@@ -11,6 +11,9 @@ specs:
   Handles: Standard, small, or mini
   Blades: 60 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/straight-shears/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-straight-shears-60mm-sh-800024d5-1704391334
 reviews: []

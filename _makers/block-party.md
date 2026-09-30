@@ -1,4 +1,5 @@
 ---
 title: Block Party Blocks and Molds
+website: https://www.blockpartymolds.com/
 ---
-Cherrywood blocks, paddles, and wooden molds for hot glass, including Swedish-style oval blocks. Listings here come from Hot Glass Color & Supply's catalog.
+Cherrywood blocks, paddles, and wooden molds for hot glass, including Swedish-style oval blocks. It sells direct and through Hot Glass Color & Supply.

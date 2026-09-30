@@ -11,6 +11,8 @@ specs:
   Size: 12 cm
   Wood: Cherry
 buy:
+- vendor: Block Party
+  url: https://www.blockpartymolds.com/shop/p/12-block
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-swedish-style-oval-block-12-cm
 reviews: []

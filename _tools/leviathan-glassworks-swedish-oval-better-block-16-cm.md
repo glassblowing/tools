@@ -10,6 +10,8 @@ last_checked: 2026-09-30
 specs:
   Size: 16 cm
 buy:
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/better-block-16cm-oval
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/swedish-oval-block-lv-16-cm
 reviews: []
