@@ -6,7 +6,7 @@ permalink: /about/
 
 # About the archive
 
-{{ site.title }} is a catalog of the tools glassblowers and flameworkers use: jacks, shears, blowpipes, torches, and the rest. We list what exists, who makes it, and where to buy it.
+[{{ site.title }}](http://{{site.title}}) is a catalog of the tools glassblowers and flameworkers use: jacks, shears, blowpipes, torches, and the rest. We list what exists, who makes it, and where to buy it.
 
 **We don't sell anything.** "Visit seller" links go straight to the maker or shop, with no affiliate codes. Prices and stock change, so always check with the seller.
 
