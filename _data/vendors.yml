@@ -281,6 +281,24 @@
   scope:
     in: Blocks, paddles, and molds.
 
+- id: masters-of-glass
+  name: Masters of Glass
+  url: https://www.mastersofglass.com/e-shop
+  maker: masters-of-glass
+  crawl:
+    - https://www.mastersofglass.com/category/hot-shop-accesories
+  scope:
+    in: Hot-shop hand tools (blocks, pastorale forks).
+    out: >-
+      Glass and color, cold-shop machinery and abrasives (lathes, wheels, flat laps,
+      belts, polishing), lubricants, and casting material. Ladle bowls are borderline,
+      like Hot Glass Color's casting ladles, so ask before adding.
+  notes: >-
+    Wix store: /store-products-sitemap.xml lists every product and each product page
+    has JSON-LD with the name and description. The pastorale fork has two product
+    pages (pastorale-fork and pastorale-fork-1); the listing uses the one in the
+    hot-shop category.
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/
