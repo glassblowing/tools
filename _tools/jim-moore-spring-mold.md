@@ -13,5 +13,10 @@ specs:
 buy:
 - vendor: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/Molds.html
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/spring-mold-6
 reviews: []
+image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/p/springmold-1.jpg
+image_credit: Olympic Color Rods
+image_source: https://glasscolor.com/spring-mold-6
 ---
