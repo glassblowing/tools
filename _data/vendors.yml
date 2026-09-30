@@ -190,6 +190,13 @@
     find the real maker from the title or description and use that. Fall back to the
     hot-glass-color maker only when the page doesn't say. If the tool is already listed
     under its maker, add a buy link instead of a new file.
+    Attributions inferred from HGC's own catalog (not stated on the product page): the
+    Blast Shield pushes, Facet 4-in-1 mold, TPT ellipse tool, and 4" Vin Pin to Weaver
+    Industries (sibling products carry Weaver's name); the Bump Marble Molds to Mike Close.
+    Deliberately skipped: torches, casting ladles ("small equipment"; ask before adding),
+    tool racks, knock-off pads, newspaper koozie, tong covers and Kevlar sleeves, loading
+    sleeves, punty handle add-ons, replacement sticks, heads, wheels, and covers, and
+    consumables (wax, etching, bead separator, fume, mold paste, Dip n Go).
 
 - id: glass-house-supply
   name: Glass House Supply

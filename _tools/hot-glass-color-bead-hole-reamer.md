@@ -1,0 +1,17 @@
+---
+title: Bead Hole Reamer
+maker: hot-glass-color
+category: misc
+disciplines:
+- coldworking
+- flameworking
+summary: A reamer for cleaning bead holes 3/32" and larger.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Hole size: 3/32" and up
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bead-hole-reamer
+reviews: []
+---
