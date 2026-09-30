@@ -12,5 +12,17 @@ specs:
 buy:
 - vendor: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/Other-Cool-Stuff.html
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/pi-divider-small
+  note: Small
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/pi-divider-medium
+  note: Medium
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/pi-divider-large
+  note: Large
 reviews: []
+image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/-/m-pidiv-sm.jpg
+image_credit: Olympic Color Rods
+image_source: https://glasscolor.com/pi-divider-small
 ---

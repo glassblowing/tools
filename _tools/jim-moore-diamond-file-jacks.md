@@ -12,5 +12,10 @@ specs:
 buy:
 - vendor: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/Jacks.html
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/jack-diamond-file
 reviews: []
+image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/-/m-jack-dia.jpg
+image_credit: Olympic Color Rods
+image_source: https://glasscolor.com/jack-diamond-file
 ---
