@@ -13,5 +13,10 @@ specs:
 buy:
 - vendor: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/Molds.html
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/small-detachable-fin-mold
 reviews: []
+image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/s/m/small_fin_2-removebg-preview.png
+image_credit: Olympic Color Rods
+image_source: https://glasscolor.com/small-detachable-fin-mold
 ---

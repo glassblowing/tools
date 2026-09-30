@@ -303,6 +303,21 @@
     pages (pastorale-fork and pastorale-fork-1); the listing uses the one in the
     hot-shop category.
 
+- id: hobbyglass
+  name: Hobbyglass (Hegan Glassworks)
+  url: https://www.hobbyglass.com/
+  maker: hegan
+  platform: squarespace
+  crawl:
+    - https://www.hobbyglass.com/shop/molds
+    - https://www.hobbyglass.com/shop/tools
+  scope:
+    in: Cast bronze optic molds and hot-shop hand tools.
+    out: Cane and glass, consumables.
+  notes: >-
+    Hegan Glassworks' own shop (Scott Hegan). Olympic Color Rods also sells the bronze
+    molds (glasscolor.com/tools/hegan-glassworks, Magento, three pages); link both.
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/
