@@ -60,3 +60,4 @@ exclude:
   - Gemfile.lock
   - vendor
   - CONTRIBUTING.md
+  - scripts

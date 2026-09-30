@@ -5,7 +5,7 @@ category: torches
 disciplines: [flameworking]
 summary: A low-pressure, surface-mix stainless steel bench burner with four independent valves. Works with soft glass and boro.
 added: 2026-09-29
-last_checked: 2026-09-29
+last_checked: 2026-09-30
 specs:
   Type: Surface mix, low pressure
   Body: Stainless steel
@@ -14,7 +14,7 @@ specs:
   Includes: Swivel base, cleaning kit
   Warranty: Lifetime
 buy:
-  - vendor: Bethlehem Burners (direct)
+  - vendor: Bethlehem Burners
     url: https://www.bethlehemburners.com/torches/bravo/
   - vendor: Glass House Supply
     url: https://glasshousesupply.com/shop/torches-accessories/torches/bethlehem-bravo/

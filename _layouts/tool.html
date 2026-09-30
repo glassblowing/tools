@@ -31,9 +31,11 @@ layout: default
   {% if page.buy.size > 0 %}
   <ul class="buy-list">
     {% for b in page.buy %}
+    {%- assign shop = site.data.vendors | where: "name", b.vendor | first -%}
     <li>
       <div>
         <strong>{{ b.vendor }}</strong>
+        {% if shop.maker and shop.maker == page.maker %}<span class="tag">Direct from the maker</span>{% endif %}
         {% if b.note %}<span class="muted small"> — {{ b.note }}</span>{% endif %}
       </div>
       <a class="btn" href="{{ b.url }}" rel="noopener" target="_blank">Visit seller ↗</a>

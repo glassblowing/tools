@@ -5,6 +5,7 @@ category: jacks
 disciplines: [furnace]
 summary: General-purpose jacks for necking, jack lines, and opening. The blades are gusset-brazed and can be replaced as they wear.
 added: 2026-09-29
+last_checked: 2026-09-30
 specs:
   Sizes: 9" and 10.5" blades
   Blades: Replaceable

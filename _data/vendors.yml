@@ -1,0 +1,177 @@
+# Every shop the archive links to. A tool's `buy[].vendor` must match a `name` here.
+#
+#   id        stable slug
+#   name      display name, used in buy links
+#   url       storefront home page
+#   maker     _makers slug when this is the maker selling its own tools (shown as "direct from the maker")
+#   platform  shopify | woocommerce | squarespace lets scripts/archive.py read catalogs as JSON;
+#             leave it out and the crawl pages are read directly
+#   crawl     catalog pages to scan for new in-scope tools; empty means only re-check existing links
+#   scope     what to index from this vendor (in / out). Out-of-scope items are skipped, not listed.
+#   notes     anything the next update needs to know
+
+- id: spiral-arts
+  name: Spiral Arts
+  url: https://spiralarts.com
+  maker: spiral-arts
+  platform: shopify
+  crawl:
+    - https://spiralarts.com/collections/pipes-and-punties
+    - https://spiralarts.com/collections/pipes
+    - https://spiralarts.com/collections/the-color-bundle
+  scope:
+    in: Blowpipes, punties, and color tools (e.g. color bar chopper, threading machine).
+    out: >-
+      Furnaces, glory holes, annealers, pipe warmers, color boxes, powder booths, benches,
+      yokes, heat shields, refractory, and other studio equipment. Revisit later.
+  notes: >-
+    Its /collections/tools-for-the-hot-shop collection (casting ladle, charging shovel,
+    pastorale fork, loading tong, tong covers, pocket inflator) hasn't been requested yet.
+    Ask before adding it to crawl.
+
+- id: bc-metalworking
+  name: BC Metalworking
+  url: https://bcmetalworking.com/
+  maker: bc-metalworking
+  platform: woocommerce
+  crawl:
+    - https://bcmetalworking.com/catalog/
+  scope:
+    in: All of its glassblowing and flameworking hand tools (jacks, tweezers, tagli, crimps).
+    out: Gift cards and custom metalwork done by quote.
+  notes: >-
+    Product descriptions sit inside Divi page-builder markup. The useful text is in each
+    product's short description, which the catalog reader already extracts.
+
+- id: watanabe-glass-tools
+  name: Watanabe Glass Tools
+  url: https://www.glassworkstoolbench.com/watanabeglasstools
+  maker: watanabe
+  platform: squarespace
+  crawl:
+    - https://www.glassworkstoolbench.com/watanabeglasstools
+  scope:
+    in: All of its hand tools (jacks, shears, tweezers, wood tools).
+  notes: >-
+    Hosted on Glassworks Toolbench (Soda Glass House). Everything is made to order. Some
+    listings have photos but no description (Clementine jacks, Square-Back Parchoffis,
+    Haystack tweezers), so recheck those for text to use in specs. The Large Italo/German
+    Diamond Shears were shown as renderings pending a first production run; update the
+    listing once real photos appear.
+
+- id: cutting-edge-products
+  name: Cutting Edge Products
+  url: https://www.cuttingedgeprdx.com/
+  maker: cutting-edge-products
+  platform: squarespace
+  crawl:
+    - https://www.cuttingedgeprdx.com/diamond-shears
+    - https://www.cuttingedgeprdx.com/straight-shears
+    - https://www.cuttingedgeprdx.com/trim-shears
+    - https://www.cuttingedgeprdx.com/shop-pacioffis
+    - https://www.cuttingedgeprdx.com/handy-tools
+  scope:
+    in: Shears, parchoffi, tagliol paddles, and hand tools like the Pi Divider.
+    out: >-
+      Gift cards, T-shirts, tool wraps, replacement rods, and sharpening or repair
+      services. Mention replacement parts on the tool they fit instead.
+  notes: >-
+    Branded "Red Hot Metal" at distributors. Hot Glass Color & Supply stocks the whole
+    line under that name (search its products.json for vendor "Cutting Edge Products").
+    Other listed distributors are ABR Imagery (US) and Glass Toolbox Ltd (UK); neither
+    is registered yet. The /shop page is only a menu; the crawl pages above are the
+    actual store collections (found through /sitemap.xml).
+
+- id: jasen-johnsen
+  name: Jasen Johnsen Glass Tools
+  url: https://jasenjohnsenglasstools.com/
+  maker: jasen-johnsen
+  platform: shopify
+  crawl:
+    - https://jasenjohnsenglasstools.com/collections/jacks
+    - https://jasenjohnsenglasstools.com/collections/tweezers
+    - https://jasenjohnsenglasstools.com/collections/taglio
+    - https://jasenjohnsenglasstools.com/collections/flat-crimps
+    - https://jasenjohnsenglasstools.com/collections/textured-crimps
+    - https://jasenjohnsenglasstools.com/collections/inside-sculpting-tools
+    - https://jasenjohnsenglasstools.com/collections/grabbers
+    - https://jasenjohnsenglasstools.com/collections/misc-tools
+  scope:
+    in: Hand tools (jacks, tweezers, tagli, crimps, sculpting tools, shears, grabbers).
+    out: Torch parts and conversions.
+  notes: >-
+    Bonsai Shears are Japanese-made resale items (out of stock when first indexed), so
+    they're skipped. Hot Glass Color sells much of the line as "Jasen Johnsen Handmade
+    Tools" under different names; only clear matches are linked. Unmatched HGC items
+    (Tweezers Sm 7", Jack Tweezers, Tagliol Square/Round Blade, Flat Crimp Tweezer,
+    Wide Flat Masher Lg, V-Angle Crimp Tweezers, Tungsten Pick Tool with Probe) need a
+    human to match by size.
+
+- id: steinert-industries
+  name: Steinert Industries
+  url: https://steinertindustries.com/
+  maker: steinert-industries
+  crawl:
+    - https://products.steinertindustries.com/
+  scope:
+    in: Blowpipes, punties, gathering rods, and hand tools.
+    out: Machines, molds, and non-glass machining work.
+
+- id: bethlehem-burners
+  name: Bethlehem Burners
+  url: https://www.bethlehemburners.com/
+  maker: bethlehem-burners
+  crawl:
+    - https://www.bethlehemburners.com/product-category/torches/
+  scope:
+    in: Flameworking torches.
+    out: Replacement parts and accessories.
+
+- id: cmog-shops
+  name: Shops at the Corning Museum of Glass
+  url: https://shops.cmog.org/
+  crawl: []
+  scope:
+    in: Buy links for tools already in the archive (Jim Moore Glass Tools in particular).
+  notes: >-
+    Sits behind Cloudflare. scripts/archive.py (browser User-Agent) gets real pages, but
+    plain curl, WebFetch, and headless Chrome get a 403 challenge. Never remove a link
+    just for a 403 here; retry with the script or ask a human to check in a browser.
+
+- id: glass-color
+  name: Glass Color
+  url: https://glasscolor.com/
+  crawl:
+    - https://glasscolor.com/tools/hand-tools/jim-moore-tools
+  scope:
+    in: Buy links for tools already in the archive. Its Jim Moore pages are the best place to find new Jim Moore tools.
+
+- id: tools-for-glass
+  name: Tools for Glass
+  url: https://www.toolsforglass.com/
+  crawl: []
+  scope:
+    in: Buy links for Jim Moore tools already in the archive.
+
+- id: hot-glass-color
+  name: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/
+  platform: shopify
+  crawl: []
+  scope:
+    in: Buy links for tools already in the archive (Carlo Donà in particular).
+
+- id: glass-house-supply
+  name: Glass House Supply
+  url: https://glasshousesupply.com/
+  crawl: []
+  scope:
+    in: Buy links for flameworking tools already in the archive.
+
+- id: shopena-supply
+  name: Shopena Supply
+  url: https://shopenasupply.com/
+  platform: shopify
+  crawl: []
+  scope:
+    in: Buy links for flameworking tools already in the archive.

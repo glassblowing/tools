@@ -5,9 +5,9 @@ category: blowpipes
 disciplines: [furnace]
 summary: Stainless steel blowpipes with hardened tool-steel heads, the product Steinert Industries was founded on.
 added: 2026-09-29
-last_checked: 2026-09-29
+last_checked: 2026-09-30
 buy:
-  - vendor: Steinert Industries (direct)
+  - vendor: Steinert Industries
     url: https://products.steinertindustries.com/
 reviews: []
 ---

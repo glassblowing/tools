@@ -5,6 +5,7 @@ category: shears
 disciplines: [furnace]
 summary: Full-size diamond shears with large hand loops and finger stops. A solid, very popular shear for cutting gathers.
 added: 2026-09-29
+last_checked: 2026-09-30
 buy:
   - vendor: Shops at the Corning Museum of Glass
     url: https://shops.cmog.org/jim-moore-glass-tools/jim-moore-glass-tools-standard-diamond-shears
