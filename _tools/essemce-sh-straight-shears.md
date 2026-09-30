@@ -12,6 +12,9 @@ specs:
   Handles: Large (yellow) or small (red)
   Part numbers: SH-1 to SH-2S
 buy:
+- vendor: Essemce
+  url: https://essemce.se/products
+  note: 'Order by email for now; the webshop hasn''t opened yet. Price list: SH-1 only, normal or small handles.'
 - vendor: Artco
   url: https://www.artcoinc.com/essemce_sh_shears.php
 reviews: []

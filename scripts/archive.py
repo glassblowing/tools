@@ -112,32 +112,40 @@ def cmd_links(args):
             v = by_name.get(b["vendor"], {})
             if args.vendor and v.get("id") != args.vendor:
                 continue
-            jobs.append((slug, b["vendor"], b["url"]))
+            # Shopify rate-limits a client across all its stores, so every Shopify
+            # store shares one queue; other sites get a queue each.
+            queue = "shopify" if v.get("platform") == "shopify" else urlparse(b["url"]).netloc
+            jobs.append((queue, slug, b["vendor"], b["url"]))
 
-    # Sites are checked in parallel, but each site one request at a time with a short
-    # pause, so a big retailer like Hot Glass Color doesn't rate-limit us.
-    by_host = {}
-    for j in jobs:
-        by_host.setdefault(urlparse(j[2]).netloc, []).append(j)
+    # Queues run in parallel; each queue sends one request at a time with a pause.
+    queues = {}
+    for q, *job in jobs:
+        queues.setdefault(q, []).append(job)
 
-    def check_host(host_jobs):
+    def run(item):
+        name, queue_jobs = item
         out = []
-        for j in host_jobs:
+        for j in queue_jobs:
             out.append((*j, *status(j[2])))
-            time.sleep(0.5)
+            time.sleep(1.5 if name == "shopify" else 0.5)
         return out
 
     with ThreadPoolExecutor(8) as ex:
-        results = [r for rs in ex.map(check_host, by_host.values()) for r in rs]
+        results = [r for rs in ex.map(run, queues.items()) for r in rs]
     results.sort(key=lambda r: r[0])
-    bad = 0
+    bad = limited = 0
     for slug, vendor, url, code, final in results:
         moved = final != url and urlparse(final).path.rstrip("/") != urlparse(url).path.rstrip("/")
-        flag = "ok" if code == 200 and not moved else ("moved" if code == 200 else "FAIL")
-        bad += flag != "ok"
+        if code == 200:
+            flag = "moved" if moved else "ok"
+        else:
+            # 429 means the site throttled us, not that the page is gone. Recheck later.
+            flag = "limit" if code == 429 else "FAIL"
+        bad += flag in ("FAIL", "moved")
+        limited += flag == "limit"
         extra = f" -> {final}" if moved else ""
         print(f"{flag:5} {code!s:>4}  {slug:45} {vendor}: {url}{extra}")
-    print(f"\n{len(results) - bad}/{len(results)} links ok")
+    print(f"\n{len(results) - bad - limited}/{len(results)} links ok, {bad} need attention, {limited} rate-limited (recheck later)")
     return 0
 
 

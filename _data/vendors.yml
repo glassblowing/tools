@@ -127,6 +127,26 @@
     taglios pages returned 404, so items without a page link to the price list.
     Step-down tweezers were in the menu but not on the price list, so they're skipped.
 
+- id: essemce
+  name: Essemce
+  url: https://essemce.se/
+  maker: essemce
+  crawl:
+    - https://essemce.se/products
+    - https://essemce.se/onewebmedia/Essemce%20Pricelist.pdf
+  scope:
+    in: Hand tools (shears, foot tools, knocking-off bar), pipes, pontils, gathering irons, graphite rods.
+    out: >-
+      Hot and cold shop equipment (furnaces, glory holes, annealers, grinders, lathes),
+      replacement nozzles and graphite inserts, gathering balls sold without tubes,
+      safety gear, and consumables.
+  notes: >-
+    one.com site with no store yet (/webshop said "Opening this Autumn" in Sept 2026);
+    orders go by email to sales@essemce.se. The price-list PDF is the only place SKUs
+    and sizes are listed, so read it with pdftotext. When the webshop opens, switch buy
+    links to product pages. The products page also mentions optic molds and engraving
+    tools with no details, so they're not listed.
+
 - id: artco
   name: Artco
   url: https://www.artcoinc.com/

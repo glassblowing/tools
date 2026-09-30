@@ -1,6 +1,7 @@
 ---
 title: Essemce
-location: Småland, Sweden
+location: Nissafors, Småland, Sweden
 founded: 1947
+website: https://essemce.se/
 ---
-A Swedish toolmaker in Småland's "Kingdom of Crystal" glass region that has supplied glassworks, studios, and schools in more than fifty countries since 1947. Its shears come in several series (diamond, duckbill, general, and straight), each with large yellow or small red handles.
+Gösta Melin started Essemce in his basement in 1947, selling to the glassworks of Småland's "Kingdom of Crystal." It now supplies tools and production equipment to glassworks, studios, and schools in more than fifty countries, from Orrefors Kosta Boda and Iittala to individual artists. Its hand tools include the KS, GS, SH, and SMC shear series and stainless pipes, pontils, and gathering irons.

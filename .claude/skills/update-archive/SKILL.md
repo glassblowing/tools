@@ -51,6 +51,7 @@ For each result that isn't `ok`:
 
 - **404 / gone.** Search the vendor's site for the same product (Shopify stores: run `catalog`, or try `<store>/search?q=<name>`). If it moved, update the URL. If it's discontinued, remove that `buy` entry. If a tool has no buy links left, keep the file with `buy: []` and mention it in the report. Don't delete tools.
 - **moved (redirect).** Update to the final URL if it's the same product.
+- **limit (429).** The site throttled the checker; the page isn't necessarily gone. Recheck those URLs later, slowly. Never remove a link just for a 429. Shopify stores share one queue in the checker because Shopify rate-limits across all of its stores.
 - **403 / timeouts.** Check the vendor's `notes` first; some block scripts (e.g. the Corning Museum shops). Try WebFetch once. If it's still blocked, leave the link, don't set `last_checked` for that tool, and list it under "needs a human to check".
 
 Set `last_checked` to today only on tools whose links all returned `ok` this run.

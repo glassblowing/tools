@@ -12,6 +12,9 @@ specs:
   Handles: Large (yellow) or small (red)
   Part numbers: SMC-1 to SMC-2S
 buy:
+- vendor: Essemce
+  url: https://essemce.se/products
+  note: 'Order by email for now; the webshop hasn''t opened yet. Price list: SMC-1 and SMC-2, normal or small handles.'
 - vendor: Artco
   url: https://www.artcoinc.com/essemce_duckbill_shears.php
 reviews: []

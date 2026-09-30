@@ -12,6 +12,9 @@ specs:
   Handles: Large (yellow) or small (red); 5" blade small only
   Part numbers: GS-1 to GS-4S
 buy:
+- vendor: Essemce
+  url: https://essemce.se/products
+  note: 'Order by email for now; the webshop hasn''t opened yet. Price list: GS-1 to GS-3, normal or small handles.'
 - vendor: Artco
   url: https://www.artcoinc.com/essemce_diamond_shears.php
 reviews: []
