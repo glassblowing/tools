@@ -10,7 +10,7 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 
 - **Only list what a vendor actually shows.** Every tool, spec, and link must come from a page you fetched this run. If you can't load a page, say so. Don't fill gaps from memory.
 - **Write summaries in your own words.** One or two plain sentences on what the tool is for. Don't paste vendor marketing copy.
-- **No prices, no product photos, no reviews.** Prices go stale, and photos belong to the vendor. Reviews only come from people through the GitHub issue form.
+- **No prices or reviews, and photos only with permission.** Prices go stale, and reviews only come from people through the GitHub issue form. Product photos belong to the vendor: only add `image` for vendors with `photos: permitted` in `_data/vendors.yml`, always with `image_credit` (the vendor's name) and `image_source` (the product page). Download the image into `assets/img/tools/<tool-slug>.<ext>` rather than hotlinking, so it doesn't break when the store changes.
 - **Respect scope.** Each vendor's `scope` in `_data/vendors.yml` says what to index. Skip anything out of scope, and don't add it "for later".
 - **Don't push or merge.** Work on a branch and leave pushing and PRs to the user.
 

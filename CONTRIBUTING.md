@@ -15,7 +15,9 @@ disciplines: [furnace]    # any of: furnace, flameworking, coldworking
 summary: One or two sentences shown on cards and at the top of the page.
 added: 2026-09-29         # used for "Recently added" on the home page
 last_checked: 2026-09-29  # when the buy links were last verified (optional)
-image: /assets/img/tools/jim-moore-diamond-shears.jpg   # optional; only use photos you have rights to
+image: /assets/img/tools/jim-moore-diamond-shears.jpg   # optional; only photos you took or have permission to use
+image_credit: Jim Moore Glass Tools   # required with image; shown as "Photo: ..."
+image_source: https://example.com/product   # optional; the credit links here
 specs:                    # optional, free-form key/value pairs
   Material: Tool steel
 buy:
