@@ -1,0 +1,14 @@
+{%- comment -%}
+  Usage: include stars.html rating=4.5
+  Variables are prefixed because Jekyll includes share the caller's scope.
+{%- endcomment -%}
+{%- assign stars_r = include.rating | plus: 0 -%}
+<span class="stars" role="img" aria-label="{{ stars_r }} out of 5 stars">
+  {%- for stars_i in (1..5) -%}
+    {%- assign stars_half = stars_i | minus: 0.5 -%}
+    {%- if stars_r >= stars_i -%}<span class="star full">★</span>
+    {%- elsif stars_r >= stars_half -%}<span class="star half">★</span>
+    {%- else -%}<span class="star empty">★</span>
+    {%- endif -%}
+  {%- endfor -%}
+</span>

@@ -1,0 +1,18 @@
+---
+title: Categories
+permalink: /categories/
+---
+<h1>Categories</h1>
+<div class="cat-list">
+  {% assign cats = site.tool_categories | sort: "order" %}
+  {% for c in cats %}
+  {% assign n = site.tools | where: "category", c.slug | size %}
+  <a class="card cat-row" href="{{ c.url | relative_url }}">
+    <span class="cat-icon" aria-hidden="true">{{ c.icon }}</span>
+    <div>
+      <strong>{{ c.title }}</strong> <span class="muted small">· {{ n }} tool{% if n != 1 %}s{% endif %}</span>
+      <p class="muted small">{{ c.summary }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>

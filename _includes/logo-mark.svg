@@ -1,0 +1,7 @@
+<svg class="logo-mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="236 254 310 310" fill="none">
+  <!-- Blowpipe with a gather on the end. The pipe uses currentColor so it follows the text color. -->
+  <path d="M260 538 L385 413" stroke="currentColor" stroke-width="22" stroke-linecap="round"/>
+  <path d="M288 510 L328 470" stroke="currentColor" stroke-width="40" stroke-linecap="round"/>
+  <circle cx="441" cy="358" r="87" fill="#e8742c"/>
+  <path d="M395 322 Q412 292 452 292" stroke="#fbe3c8" stroke-width="16" stroke-linecap="round"/>
+</svg>

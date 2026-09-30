@@ -1,0 +1,6 @@
+{%- assign cat = site.tool_categories | where: "slug", include.tool.category | first -%}
+{%- if include.tool.image -%}
+  <img class="tool-img" src="{{ include.tool.image | relative_url }}" alt="{{ include.tool.title }}" loading="lazy">
+{%- else -%}
+  <div class="tool-img placeholder" aria-hidden="true"><span>{{ cat.icon | default: "◆" }}</span></div>
+{%- endif -%}

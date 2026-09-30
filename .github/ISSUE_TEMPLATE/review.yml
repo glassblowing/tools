@@ -1,0 +1,50 @@
+name: Review a tool
+description: Share your experience with a tool listed in the archive.
+title: "Review: "
+labels: ["review"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+      description: The tool's name as shown on the site.
+    validations:
+      required: true
+  - type: dropdown
+    id: rating
+    attributes:
+      label: Rating
+      options:
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Okay"
+        - "2 - Poor"
+        - "1 - Avoid"
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Display name
+      description: How you'd like to be credited on the site, e.g. "Sam R." or a studio name.
+    validations:
+      required: true
+  - type: input
+    id: experience
+    attributes:
+      label: Your experience (optional)
+      description: e.g. "Hot shop, 6 years" or "Boro flameworker, hobbyist"
+  - type: textarea
+    id: body
+    attributes:
+      label: Review
+      description: How long have you used it, what do you use it for, and what's good or bad about it?
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Disclosure
+      options:
+        - label: I'm not the maker or seller of this tool, and I wasn't paid for this review.
+          required: true

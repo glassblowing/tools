@@ -1,0 +1,15 @@
+{%- comment -%}
+  Sets `avg_rating` and `review_count` for include.tool, then renders a summary.
+{%- endcomment -%}
+{%- assign review_count = include.tool.reviews | size -%}
+{%- if review_count > 0 -%}
+  {%- assign total = 0 -%}
+  {%- for rv in include.tool.reviews -%}{%- assign total = total | plus: rv.rating -%}{%- endfor -%}
+  {%- assign avg_rating = total | times: 1.0 | divided_by: review_count | round: 1 -%}
+  <span class="rating">{% include stars.html rating=avg_rating %}
+    {%- if include.compact %} <span class="muted">({{ review_count }})</span>
+    {%- else %} <span class="muted">{{ avg_rating }} · {{ review_count }} review{% if review_count != 1 %}s{% endif %}</span>{% endif -%}
+  </span>
+{%- else -%}
+  <span class="rating muted">No reviews yet</span>
+{%- endif -%}

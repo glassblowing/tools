@@ -1,0 +1,45 @@
+---
+title: Home
+---
+<section class="hero">
+  <h1>Every glassblowing tool, <br>in one place.</h1>
+  <p class="lede">{{ site.tagline }}</p>
+  <form class="hero-search" action="{{ '/tools/' | relative_url }}" method="get" role="search">
+    <input type="search" name="q" placeholder="Search jacks, shears, torches, makers…" aria-label="Search tools">
+    <button class="btn" type="submit">Search</button>
+  </form>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Browse by category</h2>
+    <a href="{{ '/categories/' | relative_url }}">All categories →</a>
+  </div>
+  <div class="cat-grid">
+    {% assign cats = site.tool_categories | sort: "order" %}
+    {% for c in cats %}
+    {% assign n = site.tools | where: "category", c.slug | size %}
+    <a class="card cat-card" href="{{ c.url | relative_url }}">
+      <span class="cat-icon" aria-hidden="true">{{ c.icon }}</span>
+      <strong>{{ c.title }}</strong>
+      <span class="muted small">{{ n }} tool{% if n != 1 %}s{% endif %}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Recently added</h2>
+    <a href="{{ '/tools/' | relative_url }}">All tools →</a>
+  </div>
+  <div class="grid">
+    {% assign recent = site.tools | sort: "added" | reverse %}
+    {% for t in recent limit: 6 %}{% include tool-card.html tool=t %}{% endfor %}
+  </div>
+</section>
+
+<section class="section callout">
+  <h2>Built by glassblowers</h2>
+  <p>This archive has no store and no sponsors. Every listing, link, and review comes from people who work glass. Found a tool we're missing, a broken link, or have opinions about your jacks? <a href="{{ '/about/' | relative_url }}">Here's how to contribute.</a></p>
+</section>

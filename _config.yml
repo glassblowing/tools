@@ -1,0 +1,62 @@
+title: glassblowing.tools
+tagline: An independent index of glassblowing tools — who makes them, where to buy them, and what glassblowers think of them.
+description: >-
+  A community-maintained archive of glassblowing and flameworking tools.
+  We don't sell anything; every listing links out to the makers and shops that do.
+
+# The custom domain itself is set in the repo's Settings → Pages; a CNAME
+# file isn't needed when deploying with GitHub Actions.
+url: https://glassblowing.tools
+baseurl: ""
+repository: glassblowing/tools
+
+# Used by jekyll-seo-tag for link previews and search results.
+logo: /assets/brand/apple-touch-icon.png
+
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+  tool_categories:
+    output: true
+    permalink: /categories/:name/
+  makers:
+    output: true
+    permalink: /makers/:name/
+
+defaults:
+  - scope: { path: "", type: tools }
+    values: { layout: tool }
+  - scope: { path: "", type: tool_categories }
+    values: { layout: category }
+  - scope: { path: "", type: makers }
+    values: { layout: maker }
+  - scope: { path: "" }
+    values: { layout: default }
+  # Link-preview image. Not applied to tools, where `image` is the product photo.
+  - scope: { path: "", type: pages }
+    values: { image: /assets/brand/og-image.png }
+  - scope: { path: "", type: tool_categories }
+    values: { image: /assets/brand/og-image.png }
+  - scope: { path: "", type: makers }
+    values: { image: /assets/brand/og-image.png }
+
+# Shown as filter chips on the tools page.
+disciplines:
+  - id: furnace
+    name: Furnace / hot shop
+  - id: flameworking
+    name: Flameworking
+  - id: coldworking
+    name: Coldworking
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - CONTRIBUTING.md

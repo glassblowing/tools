@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{%- assign tools = site.tools | where: "category", page.slug | sort: "title" -%}
+<nav class="crumbs"><a href="{{ '/categories/' | relative_url }}">Categories</a></nav>
+<h1><span class="cat-icon" aria-hidden="true">{{ page.icon }}</span> {{ page.title }}</h1>
+<div class="prose lede">{{ content }}</div>
+{% if tools.size > 0 %}
+<div class="grid">{% for t in tools %}{% include tool-card.html tool=t %}{% endfor %}</div>
+{% else %}
+<p class="muted">Nothing listed here yet.</p>
+{% endif %}

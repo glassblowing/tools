@@ -1,0 +1,28 @@
+---
+title: All tools
+permalink: /tools/
+---
+<h1>All tools</h1>
+
+<div class="filters" id="filters">
+  <input type="search" id="q" placeholder="Search by name, maker, or description…" aria-label="Search tools">
+  <select id="category" aria-label="Category">
+    <option value="">All categories</option>
+    {% assign cats = site.tool_categories | sort: "order" %}
+    {% for c in cats %}<option value="{{ c.slug }}">{{ c.title }}</option>{% endfor %}
+  </select>
+  <div class="chips" role="group" aria-label="Discipline">
+    {% for d in site.disciplines %}
+    <label class="chip"><input type="checkbox" value="{{ d.id }}"> {{ d.name }}</label>
+    {% endfor %}
+  </div>
+</div>
+<p class="muted small" id="count" aria-live="polite"></p>
+
+<div class="grid" id="tool-grid">
+  {% assign tools = site.tools | sort: "title" %}
+  {% for t in tools %}{% include tool-card.html tool=t %}{% endfor %}
+</div>
+<p class="muted" id="empty" hidden>No tools match. <a href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Suggest one?</a></p>
+
+<script src="{{ '/assets/js/filter.js' | relative_url }}" defer></script>

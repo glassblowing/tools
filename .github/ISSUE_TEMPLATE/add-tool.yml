@@ -1,0 +1,36 @@
+name: Suggest a tool
+description: Tell us about a tool that should be in the archive, or fix an existing listing.
+title: "Tool: "
+labels: ["new tool"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+      placeholder: e.g. Standard Diamond Shears
+    validations:
+      required: true
+  - type: input
+    id: maker
+    attributes:
+      label: Maker
+      placeholder: e.g. Jim Moore Glass Tools
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      placeholder: e.g. Shears, Jacks, Torches
+  - type: textarea
+    id: buy
+    attributes:
+      label: Where to buy
+      description: One link per line. Include the shop name if it isn't obvious from the link.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: What it's for, sizes or variants, specs, why it's worth listing.

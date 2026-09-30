@@ -1,0 +1,21 @@
+{%- assign t = include.tool -%}
+{%- assign maker = site.makers | where: "slug", t.maker | first -%}
+{%- assign cat = site.tool_categories | where: "slug", t.category | first -%}
+<article class="card tool-card"
+  data-category="{{ t.category }}"
+  data-disciplines="{{ t.disciplines | join: ' ' }}"
+  data-search="{{ t.title | downcase | escape }} {{ maker.title | downcase | escape }} {{ cat.title | downcase | escape }} {{ t.summary | downcase | escape }}">
+  <a class="card-link" href="{{ t.url | relative_url }}">
+    {% include tool-image.html tool=t %}
+    <div class="card-body">
+      <p class="eyebrow">{{ cat.title }}</p>
+      <h3>{{ t.title }}</h3>
+      <p class="muted small">by {{ maker.title }}</p>
+      <p class="summary">{{ t.summary }}</p>
+      <div class="card-foot">
+        {% include rating-summary.html tool=t compact=true %}
+        <span class="muted small">{{ t.buy | size }} seller{% if t.buy.size != 1 %}s{% endif %}</span>
+      </div>
+    </div>
+  </a>
+</article>
