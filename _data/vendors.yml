@@ -107,6 +107,26 @@
     Wide Flat Masher Lg, V-Angle Crimp Tweezers, Tungsten Pick Tool with Probe) need a
     human to match by size.
 
+- id: artco
+  name: Artco
+  url: https://www.artcoinc.com/
+  crawl:
+    - https://www.artcoinc.com/maruko_jacks.php
+    - https://www.artcoinc.com/maruko_tweezers.php
+    - https://www.artcoinc.com/essemce_diamond_shears.php
+    - https://www.artcoinc.com/essemce_duckbill_shears.php
+    - https://www.artcoinc.com/essemce_ks_shears.php
+    - https://www.artcoinc.com/essemce_sh_shears.php
+  scope:
+    in: Maruko jacks and tweezers, and Essemce shears.
+    out: Everything else Artco sells (lampworking tools, torches, books, safety gear) until asked.
+  notes: >-
+    San Jose, CA retailer with a hand-built PHP site (no store platform), so read the
+    crawl pages directly. Each page is one product family with a part-number table; list
+    one tool per style and put the sizes in specs. Also has Maruko pacioffi
+    (maruko_pacioffi.php) and tagliol (maruko_tagliol.php) pages and a Gott steamer hand
+    pad, not yet requested.
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/
