@@ -10,6 +10,8 @@ last_checked: 2026-09-30
 specs:
   Size: 4" × 20"
 buy:
+- vendor: Block Party
+  url: https://www.blockpartymolds.com/shop/p/4-paddle
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-cherrywood-mold-3-25x3-75-stemless-wine-glass-copy
 reviews: []

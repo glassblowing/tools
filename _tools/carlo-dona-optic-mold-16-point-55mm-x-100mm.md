@@ -11,6 +11,9 @@ specs:
   Points: '16'
   Size: 55 mm diameter × 100 mm tall
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/pineapple-molds/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/mold-optic-16-point-55-x-100-carlo-dona
 reviews: []

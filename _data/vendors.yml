@@ -201,6 +201,86 @@
     listed yet (ask). Blockhead molds (/archetype-molds, /custom-molds) and tools (/tools)
     are also out of scope for now.
 
+- id: carlo-dona
+  name: Carlo Donà
+  url: https://www.carlodona.com/en/products/
+  maker: carlo-dona
+  crawl:
+    - https://www.carlodona.com/en/jacks/
+    - https://www.carlodona.com/en/diamond-shears/
+    - https://www.carlodona.com/en/straight-shears/
+    - https://www.carlodona.com/en/tweezers/
+    - https://www.carlodona.com/en/crimps/
+    - https://www.carlodona.com/en/tagliol/
+    - https://www.carlodona.com/en/pacioffi-2/
+    - https://www.carlodona.com/en/coppo-2/
+    - https://www.carlodona.com/en/compass/
+    - https://www.carlodona.com/en/puffers/
+    - https://www.carlodona.com/en/pipes-and-props/
+    - https://www.carlodona.com/en/punty/
+    - https://www.carlodona.com/en/optical-molds/
+    - https://www.carlodona.com/en/pineapple-molds/
+    - https://www.carlodona.com/en/stamps/
+    - https://www.carlodona.com/en/lampworking/
+  scope:
+    in: All hand tools, molds, stamps, pipes, and punties in the maker's catalog.
+    out: >-
+      Hand torches, replacement blowpipe heads, mouthpieces, and handles, and bench
+      equipment (rod preheating stand, design base).
+  notes: >-
+    WordPress catalog with no shop; orders go to the Murano workshop by email or phone.
+    Read pages through /wp-json/wp/v2/pages?slug=<page>. Each page lists tool types with
+    size ranges, not individual products, so buy links point to the catalog page. Every
+    Carlo Donà listing from Hot Glass Color also links here. The page labels look
+    swapped: "optical-molds" lists the sizes HGC sells as pineapple molds, and
+    "pineapple-molds" lists point counts (12, 16, 18, 20, 24 points) that HGC sells as
+    optic molds. Links follow the sizes, not the labels.
+
+- id: leviathan-glassworks
+  name: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/
+  maker: leviathan-glassworks
+  platform: shopify
+  crawl:
+    - https://leviathanglassworks.com/collections/better-blocks
+    - https://leviathanglassworks.com/collections/better-blocks-oval-next-generation-last-longer-balanced-removable-heads
+  scope:
+    in: Better Blocks, round and oval.
+    out: Replacement heads, and the rest of the store (paddles, corks, molds, stamps, pads) until asked.
+  notes: >-
+    Hot Glass Color sells the oval blocks as "Swedish Oval Block - LV"; those listings
+    link here too. Also carries cherry paddles, Killer Corks, Mighty Molds, ring tools,
+    parchoffi, Shape Shifter pads, and custom stamps, not yet requested.
+
+- id: jakobsson
+  name: Jakobsson Sweden
+  url: https://jakobssonsweden.com/
+  maker: jakobsson
+  crawl:
+    - https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/wooden-blocks/
+    - https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/wooden-molds/
+    - https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/blowing-pipes-and-punties/
+    - https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/other-tools/
+  scope:
+    in: Blocks, wooden molds, blowpipes and punties, and hand tools (paddles, crab claws, overlay tongs).
+    out: Parchoffi sticks (parts) and baseboards (accessories).
+  notes: >-
+    WordPress pages, no shop: everything is quoted by email and made to order (about
+    3–4 weeks). Read pages through /wp-json/wp/v2/pages/<id> (ids 98 blocks, 776
+    molds, 100 pipes, 102 other tools). The block page links size PDFs for JACOB, BOB,
+    and KARL, but the links weren't reachable from the page HTML when first indexed, so
+    block sizes aren't listed yet.
+
+- id: block-party
+  name: Block Party
+  url: https://www.blockpartymolds.com/
+  maker: block-party
+  platform: squarespace
+  crawl:
+    - https://www.blockpartymolds.com/shop
+  scope:
+    in: Blocks, paddles, and molds.
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/

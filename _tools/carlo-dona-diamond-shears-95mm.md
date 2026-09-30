@@ -11,6 +11,9 @@ specs:
   Handles: Standard or small
   Blades: 95 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/diamond-shears/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-diamond-shears-95mm-sm-handle_85960
 reviews: []

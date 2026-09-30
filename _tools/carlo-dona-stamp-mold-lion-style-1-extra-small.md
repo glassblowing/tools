@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Size: 20 × 15 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/stamps/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-stamp-mold-lion-1-xsml_86815
 reviews: []

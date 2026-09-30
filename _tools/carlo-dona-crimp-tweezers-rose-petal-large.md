@@ -11,6 +11,9 @@ specs:
   Plates: 18 × 50 mm
   Handles: 350 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/crimps/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-crimp-teewzers-rose-petal-lg_86809
 reviews: []

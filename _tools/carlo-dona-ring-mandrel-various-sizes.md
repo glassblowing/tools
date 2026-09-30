@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Sizes: 17, 18, 19, 20, 21 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/lampworking/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-ring-mandrel-21mm
 reviews: []

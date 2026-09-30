@@ -11,6 +11,9 @@ specs:
   Blade: 240 × 60 mm
   Handle: Wood
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/tagliol/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-tagliol-lrg-sqr-wood
 reviews: []

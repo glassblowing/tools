@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Blades: 200 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/straight-shears/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-straight-shears-200mm-st-handle_85937
 reviews: []

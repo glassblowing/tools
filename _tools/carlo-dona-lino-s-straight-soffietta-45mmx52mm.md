@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Size: 45 × 52 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/puffers/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-straight-soffietta-lino
 reviews: []

@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Size: 40 × 30 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/stamps/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-stamp-mold-lion-big
 reviews: []

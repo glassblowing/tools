@@ -12,6 +12,9 @@ specs:
   Blades: '8'
   Size: 25 mm diameter × 40 mm tall
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/lampworking/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-fin-mold-sm-copy
 reviews: []

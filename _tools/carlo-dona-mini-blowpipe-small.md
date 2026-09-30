@@ -11,6 +11,9 @@ specs:
   Dimensions: 10mm pipe, 6mm tube, 3mm opening
   Mouthpiece: Brass
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/lampworking/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-mini-blowpipe-small
 reviews: []

@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Blades: 130 mm
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/diamond-shears/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-duckbill-shears-130mm-st-handle_86788
 reviews: []

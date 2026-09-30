@@ -10,6 +10,9 @@ last_checked: 2026-09-30
 specs:
   Handle: 45 mm, round
 buy:
+- vendor: Carlo Donà
+  url: https://www.carlodona.com/en/pacioffi-2/
+  note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-parchoffi-md-round-handle
 reviews: []

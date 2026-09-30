@@ -11,6 +11,9 @@ specs:
   Size: 10 cm
   Wood: Cherry
 buy:
+- vendor: Block Party
+  url: https://www.blockpartymolds.com/shop/p/10-cm-block
+  note: Extra-thick for longevity
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-oval-block-8-cm-copy
 reviews: []

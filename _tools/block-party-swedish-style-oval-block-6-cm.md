@@ -11,6 +11,9 @@ specs:
   Size: 6 cm
   Wood: Cherry
 buy:
+- vendor: Block Party
+  url: https://www.blockpartymolds.com/shop/p/6-cm-block
+  note: Extra-thick for longevity
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-oval-block-head-6-cm
 reviews: []
