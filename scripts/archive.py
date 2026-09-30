@@ -89,6 +89,8 @@ def cmd_validate(_):
         for field in ("title", "maker", "category", "summary", "added"):
             if not t.get(field):
                 problems.append(f"_tools/{slug}.md: missing {field}")
+        if t.get("image") and not t.get("image_credit"):
+            problems.append(f"_tools/{slug}.md: image without image_credit")
         if t.get("maker") not in makers:
             problems.append(f"_tools/{slug}.md: unknown maker '{t.get('maker')}'")
         if t.get("category") not in cats:

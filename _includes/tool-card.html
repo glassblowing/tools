@@ -6,7 +6,7 @@
   data-disciplines="{{ t.disciplines | join: ' ' }}"
   data-search="{{ t.title | downcase | escape }} {{ maker.title | downcase | escape }} {{ cat.title | downcase | escape }} {{ t.summary | downcase | escape }}">
   <a class="card-link" href="{{ t.url | relative_url }}">
-    {% include tool-image.html tool=t %}
+    {% include tool-image.html tool=t card=true %}
     <div class="card-body">
       <p class="eyebrow">{{ cat.title }}</p>
       <h3>{{ t.title }}</h3>

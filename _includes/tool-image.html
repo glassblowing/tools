@@ -1,6 +1,20 @@
+{%- comment -%}
+  Usage: include tool-image.html tool=page [card=true]
+  A photo needs `image` and `image_credit`; `image_source` (optional) links the credit.
+{%- endcomment -%}
 {%- assign cat = site.tool_categories | where: "slug", include.tool.category | first -%}
 {%- if include.tool.image -%}
-  <img class="tool-img" src="{{ include.tool.image | relative_url }}" alt="{{ include.tool.title }}" loading="lazy">
+  {%- if include.tool.image contains "://" -%}{%- assign img_src = include.tool.image -%}{%- else -%}{%- assign img_src = include.tool.image | relative_url -%}{%- endif -%}
+  <figure class="tool-photo">
+    <img class="tool-img photo" src="{{ img_src }}" alt="{{ include.tool.title | escape }}" loading="lazy">
+    {%- if include.card %}
+    <span class="photo-credit-badge">{{ include.tool.image_credit }}</span>
+    {%- else %}
+    <figcaption class="photo-credit">Photo:
+      {% if include.tool.image_source %}<a href="{{ include.tool.image_source }}" rel="noopener" target="_blank">{{ include.tool.image_credit }}</a>{% else %}{{ include.tool.image_credit }}{% endif %}
+    </figcaption>
+    {%- endif %}
+  </figure>
 {%- else -%}
   <div class="tool-img placeholder" aria-hidden="true"><span>{{ cat.icon | default: "◆" }}</span></div>
 {%- endif -%}
