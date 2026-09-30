@@ -347,9 +347,25 @@
   name: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/
   maker: jim-moore
-  crawl: []
+  crawl:
+    - https://www.toolsforglass.com/Jacks.html
+    - https://www.toolsforglass.com/Shears.html
+    - https://www.toolsforglass.com/Tweezers.html
+    - https://www.toolsforglass.com/Puffers.html
+    - https://www.toolsforglass.com/Crimps-And-Prunts.html
+    - https://www.toolsforglass.com/Paddles.html
+    - https://www.toolsforglass.com/Parchoffi.html
+    - https://www.toolsforglass.com/Molds.html
+    - https://www.toolsforglass.com/Wonderblocks.html
+    - https://www.toolsforglass.com/Other-Cool-Stuff.html
   scope:
-    in: Buy links for Jim Moore tools already in the archive.
+    in: Jim Moore's full hot-shop line (jacks, shears, tweezers, puffers, crimps, stamps, paddles, parchoffi, molds, Wonderblocks, and other tools).
+    out: Replacement parts (parchoffi sticks, bushings, graphite blades, diamond files, cork) and handles sold separately.
+  notes: >-
+    Jim Moore's own shop (static HTML, one page per tool family, plus a price-list PDF
+    linked from the home page that lists every item). Tools are made to order in Port
+    Townsend, WA. Pages cover several tools each, so the photos command finds no
+    product-specific photos here.
 
 - id: hot-glass-color
   name: Hot Glass Color & Supply
