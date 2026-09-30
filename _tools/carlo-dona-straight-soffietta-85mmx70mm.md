@@ -1,0 +1,16 @@
+---
+title: Straight Soffietta, 85mmx70mm
+maker: carlo-dona
+category: misc
+disciplines:
+- furnace
+summary: A straight soffietta (puffer) for blowing into a piece while it's on the punty.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Size: 85 × 70 mm
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/c-dona-soffietta-md-str-puffer
+reviews: []
+---

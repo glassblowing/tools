@@ -13,5 +13,8 @@ specs:
 buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/flameworking-jacks/
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-lampworking-jacks
+  note: Listed as "Lampworking Jacks"
 reviews: []
 ---

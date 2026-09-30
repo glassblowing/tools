@@ -15,6 +15,18 @@ specs:
 buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/tweezers/
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-tweezers-extra-small
+  note: Extra small
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-tweezers-small
+  note: Small
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-tweezers-regular
+  note: Regular
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-tweezers-large
+  note: Large
 reviews: []
 ---
 High-carbon spring steel rusts if neglected. BC Metalworking recommends drying and wiping it after use, then applying a thin coat of linseed or mineral oil.

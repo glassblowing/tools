@@ -14,5 +14,7 @@ specs:
 buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/cup-jacks/
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-jacks-cup
 reviews: []
 ---

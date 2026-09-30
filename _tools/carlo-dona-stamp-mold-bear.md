@@ -1,0 +1,16 @@
+---
+title: Stamp Mold - Bear
+maker: carlo-dona
+category: molds
+disciplines:
+- furnace
+summary: A brass stamp mold ("fracchi") that presses a bear motif into a hot bit.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Size: 35 × 40 mm
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/c-dona-stamp-mold-bear-80002485-1690479725
+reviews: []
+---

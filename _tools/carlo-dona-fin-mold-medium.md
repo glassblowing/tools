@@ -1,0 +1,18 @@
+---
+title: Fin Mold, Medium
+maker: carlo-dona
+category: molds
+disciplines:
+- furnace
+- flameworking
+summary: A raggilume fin mold for lampworking with 8 blades.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Blades: '8'
+  Size: 25 mm diameter × 40 mm tall
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/carlo-dona-fin-mold-sm-copy
+reviews: []
+---

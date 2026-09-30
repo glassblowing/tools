@@ -13,5 +13,11 @@ specs:
 buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/jacks/
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-jacks-medium
+  note: Medium
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-jacks-large
+  note: Large
 reviews: []
 ---

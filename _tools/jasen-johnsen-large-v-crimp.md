@@ -1,7 +1,7 @@
 ---
 title: Large “V” Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: A crimp for pinching V shapes and sharp edges on flat work.

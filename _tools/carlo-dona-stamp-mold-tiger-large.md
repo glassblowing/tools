@@ -1,0 +1,16 @@
+---
+title: Stamp Mold - Tiger, Large
+maker: carlo-dona
+category: molds
+disciplines:
+- furnace
+summary: A brass stamp mold ("fracchi") that presses a tiger motif into a hot bit.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Size: 40 × 38 mm
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/c-dona-stamp-mold-tiger-80002479-1687156430
+reviews: []
+---

@@ -1,7 +1,7 @@
 ---
 title: Rose Crimp
 maker: bc-metalworking
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 - flameworking
@@ -14,5 +14,7 @@ specs:
 buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/rose-crimp/
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-crimp-tweezers-rose
 reviews: []
 ---

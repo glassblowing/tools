@@ -1,7 +1,7 @@
 ---
 title: Small Narrow Flat Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 - flameworking

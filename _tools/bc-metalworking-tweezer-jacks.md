@@ -15,5 +15,7 @@ specs:
 buy:
 - vendor: BC Metalworking
   url: https://bcmetalworking.com/product/tweezer-jacks/
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/bc-metalworking-tweezers-jacks
 reviews: []
 ---

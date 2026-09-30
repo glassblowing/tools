@@ -1,7 +1,7 @@
 ---
 title: Angled Feather Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: A crimp that presses angled lines for feathers.

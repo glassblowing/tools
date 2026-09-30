@@ -1,7 +1,7 @@
 ---
 title: Small “V” Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: A small V crimp for V shapes, faces, and figures.

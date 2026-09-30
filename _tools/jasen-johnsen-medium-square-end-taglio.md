@@ -13,5 +13,8 @@ specs:
 buy:
 - vendor: Jasen Johnsen Glass Tools
   url: https://jasenjohnsenglasstools.com/products/medium-square-end-taglio
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/tagliol-medium-6-blade-copy
+  note: Square blade, medium size option
 reviews: []
 ---

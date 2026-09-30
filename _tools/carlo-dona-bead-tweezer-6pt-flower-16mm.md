@@ -1,0 +1,16 @@
+---
+title: Bead Tweezer, 6pt Flower 16mm
+maker: carlo-dona
+category: crimps
+disciplines:
+- flameworking
+summary: Lampworking press tweezers that form a 6-point flower bead.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Size: 16 mm
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/c-dona-bd-twzr-6pt-flower-16mm
+reviews: []
+---

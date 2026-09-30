@@ -1,7 +1,7 @@
 ---
 title: Super Narrow Flat Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: An extra-narrow flat crimp for petals and leaves with a different look.

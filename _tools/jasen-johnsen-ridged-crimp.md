@@ -1,7 +1,7 @@
 ---
 title: Ridged Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: A crimp for heavy texture like feathers and leaves. It also holds parts during sculpture assembly.

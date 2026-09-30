@@ -1,7 +1,7 @@
 ---
 title: Large Wide Flat Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: A wide flat crimp for flattening larger bits in sculpture.

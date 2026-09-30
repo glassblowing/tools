@@ -1,7 +1,7 @@
 ---
 title: Large Narrow Flat Crimp
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: A flat crimp for larger flowers and sculpting.

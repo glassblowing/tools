@@ -1,7 +1,7 @@
 ---
 title: Ridged Crimp Fine
 maker: jasen-johnsen
-category: sculpting
+category: crimps
 disciplines:
 - furnace
 summary: A finer ridged crimp for light texture in feathers and leaves.

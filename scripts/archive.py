@@ -143,7 +143,8 @@ def read_shopify(v, crawl_url):
             yield {
                 "url": f"{origin}/products/{p['handle']}",
                 "title": p["title"],
-                "group": f"{group} / {p['product_type']}",
+                "group": f"{group} / {p['product_type']}".rstrip(" /"),
+                "maker": p.get("vendor", ""),
                 "options": "; ".join(f"{o['name']}: {', '.join(o['values'])}" for o in p["options"] if o["name"] != "Title"),
                 "desc": text(p.get("body_html")),
             }
@@ -223,6 +224,8 @@ def cmd_catalog(args):
         print(f"## {p['title'].strip()}  [{state}]\n   url: {p['url']}")
         if p["group"]:
             print(f"   group: {p['group']}")
+        if p.get("maker"):
+            print(f"   maker: {p['maker']}")
         if p["options"]:
             print(f"   options: {p['options']}")
         print(f"   {p['desc'][:900] or '(no description on the vendor page)'}\n")

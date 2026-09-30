@@ -14,5 +14,8 @@ specs:
 buy:
 - vendor: Jasen Johnsen Glass Tools
   url: https://jasenjohnsenglasstools.com/products/small-jack-tweezers
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/tweezers-jacks-jasen-johnsen
+  note: Listed as "Jack Tweezers"
 reviews: []
 ---

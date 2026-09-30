@@ -13,5 +13,8 @@ specs:
 buy:
 - vendor: Jasen Johnsen Glass Tools
   url: https://jasenjohnsenglasstools.com/products/small-round-end-tagio
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/tagliol-large-8-blade
+  note: Round blade, small size option
 reviews: []
 ---

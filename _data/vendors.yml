@@ -157,9 +157,39 @@
   name: Hot Glass Color & Supply
   url: https://hotglasscolor.com/
   platform: shopify
-  crawl: []
+  crawl:
+    - https://hotglasscolor.com/collections/hotshop-tools
+    - https://hotglasscolor.com/collections/lampworking-tools
+    - https://hotglasscolor.com/collections/torchworking-tools
+    - https://hotglasscolor.com/collections/hand-tools
+    - https://hotglasscolor.com/collections/wood-tools
+    - https://hotglasscolor.com/collections/paddles
+    - https://hotglasscolor.com/collections/blocks
+    - https://hotglasscolor.com/collections/graphite-tools
+    - https://hotglasscolor.com/collections/pipes-punties
+    - https://hotglasscolor.com/collections/footing-tools
+    - https://hotglasscolor.com/collections/molds-stamps
+    - https://hotglasscolor.com/collections/stamps-molds
+    - https://hotglasscolor.com/collections/graphite-molds
+    - https://hotglasscolor.com/collections/optic-molds
+    - https://hotglasscolor.com/collections/marble-molds
+    - https://hotglasscolor.com/collections/pineapple-molds
+    - https://hotglasscolor.com/collections/brass-stamps
   scope:
-    in: Buy links for tools already in the archive (Carlo Donà in particular).
+    in: >-
+      Hand tools (hot shop and flameworking), wood and graphite tools, pipes and punties,
+      molds, and stamps, from every maker it carries, including its own house brand.
+      One listing per product page; don't merge size variants.
+    out: >-
+      Torches, small equipment (hoses, regulators, sprayers), glass and color, safety gear,
+      books, kilns, consumables, and tool-repair services.
+  notes: >-
+    A retailer that carries many makers, used to discover tools. Its Shopify "vendor"
+    field is the maker (e.g. "Carlo Roberto Dona" is Carlo Donà, "Red Hot Metal" is
+    Cutting Edge Products). For house-brand items (vendor "Hot Glass Color & Supply"),
+    find the real maker from the title or description and use that. Fall back to the
+    hot-glass-color maker only when the page doesn't say. If the tool is already listed
+    under its maker, add a buy link instead of a new file.
 
 - id: glass-house-supply
   name: Glass House Supply
