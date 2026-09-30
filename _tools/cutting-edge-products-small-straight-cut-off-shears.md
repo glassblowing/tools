@@ -16,7 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/ssco
 reviews: []
-image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/58f522bc3e00bea40e073726/58f52520bf629ab1b435b871/1782773170164/?format=1000w
+image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1492461341453-P1TGKKXDRBMWGZE337J4/large.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/straight-shears/small-straight-cut-off
 ---

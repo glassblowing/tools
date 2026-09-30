@@ -17,7 +17,7 @@ buy:
   url: https://hotglasscolor.com/products/pardia
 reviews: []
 published: false
-image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/58e6bee9d2b85764df5206c1/58ed205017bffc97d04f341d/1766444602166/?format=1000w
+image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1491938961295-OQU01D14H97PB1J5E1Y7/large.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/diamond-shears/parramore-diamond-shears
 ---

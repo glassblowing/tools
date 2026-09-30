@@ -285,6 +285,20 @@ def og_image(page_html):
 _site_default = {}
 
 
+def image_ok(url):
+    """True if the URL serves a real image, not an error or a placeholder it redirects to."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "image/*"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            ctype = r.headers.get("Content-Type", "")
+            final = r.geturl().lower()
+            r.read(1024)
+            return r.status == 200 and ctype.startswith("image/") and not any(
+                k in final for k in ("no-image", "noimage", "placeholder"))
+    except Exception:
+        return False
+
+
 def find_image(v, url):
     """Return the vendor's own image URL for a product page, or None."""
     origin = "{0.scheme}://{0.netloc}".format(urlparse(url))
@@ -294,7 +308,11 @@ def find_image(v, url):
         return p["images"][0]["src"] if p.get("images") else None
     if platform == "squarespace":
         item = get_json(url.split("?")[0] + "?format=json").get("item") or {}
-        return item["assetUrl"] + "?format=1000w" if item.get("assetUrl") else None
+        # Product photos live in the item's gallery; the item-level assetUrl is often a
+        # legacy static1 URL that redirects to Squarespace's "no-image" placeholder.
+        gallery = [i.get("assetUrl") for i in item.get("items") or [] if i.get("assetUrl")]
+        src = gallery[0] if gallery else item.get("assetUrl")
+        return src + "?format=1000w" if src else None
     if platform == "woocommerce":
         slug = urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
         found = get_json(f"{origin}/wp-json/wc/store/v1/products?slug={slug}")
@@ -368,6 +386,8 @@ def cmd_photos(args):
                     img = "https:" + img
                 elif img and img.startswith("http://"):
                     img = "https://" + img[len("http://"):]  # the site is HTTPS; don't mix content
+                if img and not image_ok(img):
+                    img = None
                 time.sleep(1.5 if v.get("platform") == "shopify" else 0.5)
                 if img:
                     out.append((slug, img, b, v))

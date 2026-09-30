@@ -13,7 +13,7 @@ specs:
   Handle: Purpleheart
   Hardware: Stainless steel
 buy:
-- vendor: Glass Color
+- vendor: Olympic Color Rods
   url: https://glasscolor.com/tools/blocks/blockhead-blocks/blockhead-egg-blocks
   note: Olympic Color Rods, Blockhead's online seller
 reviews: []

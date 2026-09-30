@@ -17,7 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/red-hot-metal-standard-taglio
 reviews: []
-image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/595fe0afe110eb920652213c/595ffe421b631bce3feee020/1766444815268/?format=1000w
+image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1499463271147-MEK5DKL6AJVAG8ZB1EDZ/1.JPG?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/handy-tools/short-tagliol-paddle
 ---
