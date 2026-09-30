@@ -6,7 +6,8 @@
 {%- if include.tool.image -%}
   {%- if include.tool.image contains "://" -%}{%- assign img_src = include.tool.image -%}{%- else -%}{%- assign img_src = include.tool.image | relative_url -%}{%- endif -%}
   <figure class="tool-photo">
-    <img class="tool-img photo" src="{{ img_src }}" alt="{{ include.tool.title | escape }}" loading="lazy">
+    <img class="tool-img photo" src="{{ img_src }}" alt="{{ include.tool.title | escape }}" loading="lazy" onerror="this.parentNode.classList.add('broken')">
+    <div class="tool-img placeholder fallback" aria-hidden="true"><span>{{ cat.icon | default: "◆" }}</span></div>
     {%- if include.card %}
     <span class="photo-credit-badge">{{ include.tool.image_credit }}</span>
     {%- else %}

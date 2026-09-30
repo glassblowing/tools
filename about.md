@@ -25,6 +25,10 @@ We skip reviews that are spam, written by the maker or seller, or not about the 
 - **Missing a tool, or found a broken link?** [Suggest a tool](https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml) or open an issue.
 - **Comfortable with GitHub?** Every tool is a small text file in [`_tools/`](https://github.com/{{ site.repository }}/tree/main/_tools). Pull requests are welcome; see [CONTRIBUTING.md](https://github.com/{{ site.repository }}/blob/main/CONTRIBUTING.md).
 
-Makers and shops: we're happy to fix wrong information about your products. Please open an issue.
+## Photos
+
+Product photos are shown straight from the seller's own website, credited to them and linked back to the product. We don't copy or store them.
+
+Makers and shops: we're happy to fix wrong information about your products, or to stop showing your photos. Please [open an issue](https://github.com/{{ site.repository }}/issues/new) or tell us however's easiest.
 
 </div>

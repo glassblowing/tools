@@ -15,7 +15,7 @@ disciplines: [furnace]    # any of: furnace, flameworking, coldworking
 summary: One or two sentences shown on cards and at the top of the page.
 added: 2026-09-29         # used for "Recently added" on the home page
 last_checked: 2026-09-29  # when the buy links were last verified (optional)
-image: /assets/img/tools/jim-moore-diamond-shears.jpg   # optional; only photos you took or have permission to use
+image: https://example.com/product-photo.jpg   # optional; the seller's own image URL, or a photo you took
 image_credit: Jim Moore Glass Tools   # required with image; shown as "Photo: ..."
 image_source: https://example.com/product   # optional; the credit links here
 specs:                    # optional, free-form key/value pairs
@@ -31,6 +31,12 @@ Optional longer description in Markdown.
 ```
 
 If the maker or category doesn't exist yet, add a file in `_makers/` or `_tool_categories/`. Copy an existing one.
+
+## Photos
+
+Listing photos link to the seller's own product image (we don't copy or host vendor photos), and every photo shows a credit linking back to the seller. `python3 scripts/archive.py photos --write` fills these in automatically. If you took a photo yourself, add it under `assets/img/tools/` and credit yourself.
+
+Makers and shops: if you'd rather we didn't show your photos, open an issue and we'll take them down.
 
 ## Add a review
 
