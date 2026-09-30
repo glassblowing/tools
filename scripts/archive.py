@@ -12,6 +12,7 @@ import html
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -52,14 +53,19 @@ def fetch(url, timeout=20):
         return r.status, r.geturl(), r.read()
 
 
-def status(url):
-    try:
-        code, final, _ = fetch(url)
-        return code, final
-    except urllib.error.HTTPError as e:
-        return e.code, url
-    except Exception as e:  # DNS, timeout, TLS
-        return type(e).__name__, url
+def status(url, tries=5):
+    for attempt in range(tries):
+        try:
+            code, final, _ = fetch(url)
+            return code, final
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == tries - 1:
+                return e.code, url
+            # Rate limited: honor Retry-After when it's a number, else back off.
+            wait = e.headers.get("Retry-After", "")
+            time.sleep(float(wait) if wait.isdigit() else 5 * (attempt + 1))
+        except Exception as e:  # DNS, timeout, TLS
+            return type(e).__name__, url
 
 
 def cmd_validate(_):
@@ -107,8 +113,23 @@ def cmd_links(args):
             if args.vendor and v.get("id") != args.vendor:
                 continue
             jobs.append((slug, b["vendor"], b["url"]))
+
+    # Sites are checked in parallel, but each site one request at a time with a short
+    # pause, so a big retailer like Hot Glass Color doesn't rate-limit us.
+    by_host = {}
+    for j in jobs:
+        by_host.setdefault(urlparse(j[2]).netloc, []).append(j)
+
+    def check_host(host_jobs):
+        out = []
+        for j in host_jobs:
+            out.append((*j, *status(j[2])))
+            time.sleep(0.5)
+        return out
+
     with ThreadPoolExecutor(8) as ex:
-        results = list(ex.map(lambda j: (*j, *status(j[2])), jobs))
+        results = [r for rs in ex.map(check_host, by_host.values()) for r in rs]
+    results.sort(key=lambda r: r[0])
     bad = 0
     for slug, vendor, url, code, final in results:
         moved = final != url and urlparse(final).path.rstrip("/") != urlparse(url).path.rstrip("/")

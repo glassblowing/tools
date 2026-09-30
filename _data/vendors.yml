@@ -107,6 +107,26 @@
     Wide Flat Masher Lg, V-Angle Crimp Tweezers, Tungsten Pick Tool with Probe) need a
     human to match by size.
 
+- id: maruko-tools
+  name: Maruko Tools
+  url: https://marukotools.com/
+  maker: maruko
+  crawl:
+    - https://marukotools.com/standard-jacks.html
+    - https://marukotools.com/cup-jacks.html
+    - https://marukotools.com/goblet-jacks.html
+    - https://marukotools.com/tweezers.html
+    - https://marukotools.com/productsprice.html
+  scope:
+    in: All of Maruko's hand tools (jacks, tweezers, pacioffi, taglios, paddles).
+    out: Replacement wood sticks for the pacioffi.
+  notes: >-
+    Weebly site, so read pages directly. productsprice.html ("All Products List") has
+    every stock number and spec and is the most reliable page. When first indexed, the
+    menu's step-down-tweezers, parcioffi-handles, wooden-paddles, paddle-handles, and
+    taglios pages returned 404, so items without a page link to the price list.
+    Step-down tweezers were in the menu but not on the price list, so they're skipped.
+
 - id: artco
   name: Artco
   url: https://www.artcoinc.com/
@@ -126,6 +146,19 @@
     one tool per style and put the sizes in specs. Also has Maruko pacioffi
     (maruko_pacioffi.php) and tagliol (maruko_tagliol.php) pages and a Gott steamer hand
     pad, not yet requested.
+
+- id: ennion
+  name: Ennion Glass Tools
+  url: https://ennionglasstools.com/
+  maker: ennion
+  platform: shopify
+  crawl:
+    - https://ennionglasstools.com/collections/bronze-jacks
+    - https://ennionglasstools.com/collections/steel-bladed-cup-jacks
+    - https://ennionglasstools.com/collections/other-stuff
+  scope:
+    in: Jacks, pacioffi, and other hand tools.
+    out: Stickers and consumables (e.g. paper tubes for screw-on pacioffi).
 
 - id: steinert-industries
   name: Steinert Industries

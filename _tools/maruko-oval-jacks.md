@@ -12,7 +12,11 @@ specs:
   Handles: 120–160 mm
   Part numbers: 013-11 to 013-30
   Material: High-carbon steel
+  Strap width: 40, 45, or 65 mm
 buy:
+- vendor: Maruko Tools
+  url: https://marukotools.com/standard-jacks.html
+  note: Choose the oval blade
 - vendor: Artco
   url: https://www.artcoinc.com/maruko_jacks.php
 reviews: []
