@@ -195,8 +195,8 @@
     in: Blocks.
     out: Other products (molds, tools) until asked.
   notes: >-
-    Doesn't sell direct. The whole line is sold by Olympic Color Rods (vendor "Glass
-    Color", a Magento store, so read it directly) under
+    Doesn't sell direct. The whole line is sold by Olympic Color Rods (vendor "Olympic
+    Color Rods", a Magento store, so read it directly) under
     https://glasscolor.com/tools/blocks/blockhead-blocks/, with one page per block style.
     Only custom and left-handed blocks are ordered from Blockhead itself. Blockhead's
     /blocks portfolio pages keep their text in page blocks, so the catalog reader shows
@@ -335,7 +335,7 @@
     just for a 403 here; retry with the script or ask a human to check in a browser.
 
 - id: glass-color
-  name: Glass Color
+  name: Olympic Color Rods
   url: https://glasscolor.com/
   crawl:
     - https://glasscolor.com/tools/hand-tools/jim-moore-tools
@@ -344,8 +344,9 @@
     in: Buy links for tools already in the archive. Its Jim Moore pages are the best place to find new Jim Moore tools.
 
 - id: tools-for-glass
-  name: Tools for Glass
+  name: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/
+  maker: jim-moore
   crawl: []
   scope:
     in: Buy links for Jim Moore tools already in the archive.

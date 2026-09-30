@@ -17,7 +17,7 @@ buy:
   url: https://hotglasscolor.com/products/mini-duckbill-shear
 reviews: []
 published: false
-image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/58f66084f7e0ab3d068f28f6/58f67915bebafbf34251c24a/1782513097577/?format=1000w
+image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1492547880352-YRR8BVXBJSC032WS95UB/large.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/trim-shears/mini-duck-bill
 ---

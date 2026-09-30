@@ -16,7 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/pb
 reviews: []
-image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/58f66084f7e0ab3d068f28f6/58f663c41e5b6ce1b43f2c04/1783030512936/?format=1000w
+image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1492542428028-LXXYJC93QXNA0JJSXOE8/large.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/trim-shears/parrot-bill
 ---

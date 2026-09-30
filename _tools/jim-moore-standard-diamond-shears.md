@@ -9,7 +9,7 @@ last_checked: 2026-09-30
 buy:
   - vendor: Shops at the Corning Museum of Glass
     url: https://shops.cmog.org/jim-moore-glass-tools/jim-moore-glass-tools-standard-diamond-shears
-  - vendor: Glass Color
+  - vendor: Olympic Color Rods
     url: https://glasscolor.com/tools/hand-tools/jim-moore-tools/shears
 reviews: []
 ---

@@ -16,9 +16,9 @@ buy:
   - vendor: Shops at the Corning Museum of Glass
     url: https://shops.cmog.org/jim-moore-glass-tools/jim-moore-glass-tools-9-standard-jack
     note: 9" size
-  - vendor: Glass Color
+  - vendor: Olympic Color Rods
     url: https://glasscolor.com/tools/hand-tools/jim-moore-tools/jacks
-  - vendor: Tools for Glass
+  - vendor: Jim Moore Glass Tools
     url: https://www.toolsforglass.com/Jacks.html
 reviews: []
 ---
