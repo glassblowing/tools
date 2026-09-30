@@ -12,5 +12,11 @@ specs:
 buy:
 - vendor: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/Shears.html
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/large-diamond-shear-d2
+  note: D2 version
 reviews: []
+image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/l/a/large-diamond-shear.jpg
+image_credit: Olympic Color Rods
+image_source: https://glasscolor.com/large-diamond-shear-d2
 ---

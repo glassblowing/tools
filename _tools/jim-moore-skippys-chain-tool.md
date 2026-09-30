@@ -12,5 +12,10 @@ specs:
 buy:
 - vendor: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/Other-Cool-Stuff.html
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/m-skippy
 reviews: []
+image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/-/m-skippy-1.png
+image_credit: Olympic Color Rods
+image_source: https://glasscolor.com/m-skippy
 ---
