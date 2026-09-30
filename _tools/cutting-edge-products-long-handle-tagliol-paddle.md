@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/red-hot-metal-long-taglio
 reviews: []
+image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/f459abc4-0239-4380-a3a6-ba7f7c4afa46/long-handle-tagliol-paddle-1.jpg?format=1000w
+image_credit: Cutting Edge Products
+image_source: https://www.cuttingedgeprdx.com/handy-tools/short-tagliol-paddle-mj5fa
 ---

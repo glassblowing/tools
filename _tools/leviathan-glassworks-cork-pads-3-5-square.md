@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/cork-pad-square-3x5
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/6972.png?v=1696843151
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/cork-pad-square-3x5
 ---

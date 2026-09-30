@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-tweezers-lg-flat_85966
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7529-carlo-dona-330mm-flat.jpg?v=1752533001
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-tweezers-lg-flat_85966
 ---

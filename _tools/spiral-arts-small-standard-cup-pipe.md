@@ -16,4 +16,7 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/small-standard-cup-pi-smc
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PI-SC_34e2e34e-ddf0-46a2-9491-da302d87331a.jpg?v=1471640983
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/small-standard-cup-pi-smc
 ---

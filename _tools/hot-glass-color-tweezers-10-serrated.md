@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/tweezers-10-serrated
 reviews: []
+published: false
 ---

@@ -13,4 +13,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-cherrywood-paddle-5x20
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/BLOCK-PARTY-5X20-paddle-angle.png?v=1749071078
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/block-party-cherrywood-paddle-5x20
 ---

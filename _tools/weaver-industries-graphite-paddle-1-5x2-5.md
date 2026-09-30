@@ -13,4 +13,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-paddle-1-5x2-5-mag
 reviews: []
+published: false
 ---

@@ -19,5 +19,8 @@ buy:
   url: https://www.artcoinc.com/maruko_tweezers.php
   note: Large in beak only
 reviews: []
+image: https://marukotools.com/uploads/1/4/2/1/142113258/s273266471383986398_p4_i1_w640.jpeg
+image_credit: Maruko Tools
+image_source: https://marukotools.com/tweezers.html
 ---
 High-carbon steel that will rust. Keep it clean and dry.

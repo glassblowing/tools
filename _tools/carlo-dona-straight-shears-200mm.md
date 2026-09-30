@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-straight-shears-200mm-st-handle_85937
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7499-c-dona-shears-200mm.jpg?v=1739296604
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-straight-shears-200mm-st-handle_85937
 ---

@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/firebug-3-graphite-reamer
 reviews: []
+published: false
 ---

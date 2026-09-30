@@ -18,4 +18,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-bent-soffietta-lg-copy
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/carlo-dona-fin-mold-xsm-7700.jpg?v=1753295741
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-bent-soffietta-lg-copy
 ---

@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-crimp-twzr-flat-narrow
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7440-c-dona-flat-narrow-crimp.jpg?v=1738005356
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-crimp-twzr-flat-narrow
 ---

@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-tweezer-plisse-clamp
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7690-c-dona-nose-crimp.jpg?v=1738011891
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-tweezer-plisse-clamp
 ---

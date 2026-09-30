@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-crimp-twzr-lined-narrow
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7442_carlo_dona_lined_narrow.jpg?v=1737664449
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-crimp-twzr-lined-narrow
 ---

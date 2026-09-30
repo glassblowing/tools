@@ -15,5 +15,8 @@ buy:
   url: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/wooden-molds/
   note: Made to order; request a quote by email
 reviews: []
+image: https://jakobssonsweden.com/wp-content/uploads/2024/12/FORM-hemsida.jpg
+image_credit: Jakobsson Sweden
+image_source: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/wooden-molds/
 ---
 The wet wood forms a steam layer that polishes the glass and chills it less than graphite or ceramic. Expect roughly a hundred to a few hundred pieces per mold, depending on the design. Designs are kept confidential.

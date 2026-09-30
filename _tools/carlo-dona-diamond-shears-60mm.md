@@ -16,4 +16,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-diamond-shears-60mm-boro
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7510-c-dona-diamond-60mm.jpg?v=1739297366
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-diamond-shears-60mm-boro
 ---

@@ -17,4 +17,7 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/3-4-ultralight-straight-punty-pu-34
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-34-UL.jpg?v=1477934147
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/3-4-ultralight-straight-punty-pu-34
 ---

@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/tpt-marble-mold-3-5-6-7-8-10
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/5807tptmarblemoldpoint3-3.jpg?v=1696841048
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/tpt-marble-mold-3-5-6-7-8-10
 ---

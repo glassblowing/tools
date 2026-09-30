@@ -17,5 +17,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/pacioffis-hinge-only
 reviews: []
+image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/59495f90ccf210840b5d72e2/5949699b1b10e371ac6e1d25/1768939402831/?format=1000w
+image_credit: Cutting Edge Products
+image_source: https://www.cuttingedgeprdx.com/shop-pacioffis/pacioffi-handle
 ---
 Cutting Edge and Hot Glass Color both sell replacement cherrywood rods in pairs. Hot Glass Color lists the steel part as a "Parcioffi Hinge".

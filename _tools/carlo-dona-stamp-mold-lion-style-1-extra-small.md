@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-stamp-mold-lion-1-xsml_86815
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7573-carlo-dona-lion-xsm.jpg?v=1751305031
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-stamp-mold-lion-1-xsml_86815
 ---

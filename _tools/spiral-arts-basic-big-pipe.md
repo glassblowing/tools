@@ -18,4 +18,7 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/basic-big-pipe-pi-bbp
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PI-BBP.jpg?v=1471647390
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/basic-big-pipe-pi-bbp
 ---

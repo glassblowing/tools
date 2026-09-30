@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/red-hot-metal-mini-taglio
 reviews: []
+image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/595fe0afe110eb920652213c/595fff3e15d5dba7ab9deca0/1766444808248/?format=1000w
+image_credit: Cutting Edge Products
+image_source: https://www.cuttingedgeprdx.com/handy-tools/mini-tagliol-paddle
 ---

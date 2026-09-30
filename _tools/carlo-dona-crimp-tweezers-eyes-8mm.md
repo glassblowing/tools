@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-crimp-tweezers-10mm-eyes
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7853-carlo-dona-eye-detail.jpg?v=1742933770
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-crimp-tweezers-10mm-eyes
 ---

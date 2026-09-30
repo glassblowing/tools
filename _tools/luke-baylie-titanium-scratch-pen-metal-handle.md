@@ -11,4 +11,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/titanium-scratch-pen-metal-handle
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/scratch-pen-metal-2.png?v=1779129447
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/titanium-scratch-pen-metal-handle
 ---

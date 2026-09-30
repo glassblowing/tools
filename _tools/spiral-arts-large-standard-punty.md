@@ -16,4 +16,7 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/large-standard-punty-pu-ls
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-LS.jpg?v=1471639764
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/large-standard-punty-pu-ls
 ---

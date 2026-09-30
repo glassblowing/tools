@@ -16,5 +16,8 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/pu-ten
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-TEN.jpg?v=1473186037
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/pu-ten
 ---
 The mild steel tip oxidizes and scales, which some people prefer because the glass pops off it cleanly. It also wears to a point quickly. Pick the stainless tip if you don't want that.

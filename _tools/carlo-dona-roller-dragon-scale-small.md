@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-scale-roller-small-dragon
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/8022-carlo-dona-fish-roller-detail.jpg?v=1742932340
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-scale-roller-small-dragon
 ---

@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/v-angle-flat-crimp-tweezer-sml-80002332-1632270295
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/SmallVCrimp.jpg?v=1684701931
+image_credit: Jasen Johnsen Glass Tools
+image_source: https://jasenjohnsenglasstools.com/products/small-v-crimps
 ---

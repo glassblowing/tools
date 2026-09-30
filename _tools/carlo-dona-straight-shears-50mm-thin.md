@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-straight-shears-50mm
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/7751-carlo-dona-50mm-shears.jpg?v=1753131742
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-straight-shears-50mm
 ---

@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-parchoffi-sm-round-handle
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/carlo-dona-parciof-7521.jpg?v=1736896305
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-parchoffi-sm-round-handle
 ---

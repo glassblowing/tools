@@ -13,4 +13,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-ring-size-5-reamer-dc
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/6174.png?v=1696841097
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/graphite-ring-size-5-reamer-dc
 ---

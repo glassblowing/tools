@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-diamond-shears-95mm-sm-handle_85960
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7504-c-dona-diamond-95mm-open.jpg?v=1743794764
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-diamond-shears-95mm-sm-handle_85960
 ---

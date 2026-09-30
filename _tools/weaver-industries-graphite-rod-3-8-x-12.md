@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-rod-3-8
 reviews: []
+published: false
 ---

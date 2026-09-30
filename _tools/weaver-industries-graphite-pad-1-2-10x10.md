@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-pad-12-x-10-x-10
 reviews: []
+published: false
 ---

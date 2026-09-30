@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/red-hot-metal-rakov-murrini-pulling-shears
 reviews: []
+image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/58e6bee9d2b85764df5206c1/58ed218f9f7456581876067f/1787001720443/?format=1000w
+image_credit: Cutting Edge Products
+image_source: https://www.cuttingedgeprdx.com/diamond-shears/monster-cut-off-shear
 ---

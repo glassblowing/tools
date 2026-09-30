@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/red-hot-metal-pi-divider
 reviews: []
+image: https://static1.squarespace.com/static/580a65c2f5e231ecf35a9582/595fe0afe110eb920652213c/595fffb72cba5ee07c1d7af0/1770147204417/?format=1000w
+image_credit: Cutting Edge Products
+image_source: https://www.cuttingedgeprdx.com/handy-tools/pi-divider
 ---

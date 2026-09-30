@@ -17,4 +17,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-duckbill-shear-80mm-st
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/Carlo-Dona-Duck-7508.jpg?v=1737766399
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-duckbill-shear-80mm-st
 ---

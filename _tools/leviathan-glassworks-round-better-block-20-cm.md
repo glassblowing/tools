@@ -15,4 +15,7 @@ buy:
 - vendor: Leviathan GlassWorks
   url: https://leviathanglassworks.com/products/better-block-20cm-round
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Round_Block_7d5cdc17-cd51-41e3-9baa-be6ec4705f05.png?v=1571717257
+image_credit: Leviathan GlassWorks
+image_source: https://leviathanglassworks.com/products/better-block-20cm-round
 ---

@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/mandrel-332-x12-pack-of-10
 reviews: []
+published: false
 ---

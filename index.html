@@ -19,6 +19,7 @@ title: Home
     {% assign cats = site.tool_categories | sort: "order" %}
     {% for c in cats %}
     {% assign n = site.tools | where: "category", c.slug | size %}
+  {% if n == 0 %}{% continue %}{% endif %}
     <a class="card cat-card" href="{{ c.url | relative_url }}">
       <span class="cat-icon" aria-hidden="true">{{ c.icon }}</span>
       <strong>{{ c.title }}</strong>

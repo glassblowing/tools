@@ -14,4 +14,5 @@ buy:
   url: https://www.carlodona.com/en/straight-shears/
   note: Maker's catalog; order by email or phone
 reviews: []
+published: false
 ---

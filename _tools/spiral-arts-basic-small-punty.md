@@ -16,4 +16,7 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/basic-small-punty
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-SP2.jpg?v=1471647513
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/basic-small-punty
 ---

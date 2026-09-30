@@ -14,4 +14,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-tweezer-wing-masher-lrg
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7691-c-dona-wing-mash-lg.jpg?v=1738005896
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-tweezer-wing-masher-lrg
 ---

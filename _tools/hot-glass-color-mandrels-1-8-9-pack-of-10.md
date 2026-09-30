@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/mandrel-18-x-9-pack-of-10
 reviews: []
+published: false
 ---

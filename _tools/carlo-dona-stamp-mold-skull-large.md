@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-stamp-mold-skull-xlg_90115
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7778-c-dona-skull-stamp-xlg-detail.jpg?v=1738371016
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/carlo-dona-stamp-mold-skull-xlg_90115
 ---

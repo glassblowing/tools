@@ -14,4 +14,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-hollow-bead-mandrel2-5mm
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/7426-Dona-Hollow-Mandrel.jpg?v=1696843406
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-hollow-bead-mandrel2-5mm
 ---

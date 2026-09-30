@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-stamp-mold-moon-med
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7471-carlo-dona-moon-mold-md.jpg?v=1751305614
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-stamp-mold-moon-med
 ---

@@ -13,4 +13,7 @@ buy:
 - vendor: Ennion Glass Tools
   url: https://ennionglasstools.com/products/steel-goblet-jacks
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0664/6228/6019/files/IMG-6205.heic?v=1742224522
+image_credit: Ennion Glass Tools
+image_source: https://ennionglasstools.com/products/steel-goblet-jacks
 ---

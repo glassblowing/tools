@@ -13,4 +13,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/block-party-cherrywood-mold-3-25x3-75-stemless-wine-glass
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Block-Party-Cherrywood-Mold-3.25x3.75-1.png?v=1749074709
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/block-party-cherrywood-mold-3-25x3-75-stemless-wine-glass
 ---

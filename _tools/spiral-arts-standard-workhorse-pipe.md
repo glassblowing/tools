@@ -18,4 +18,7 @@ buy:
 - vendor: Spiral Arts
   url: https://spiralarts.com/products/standard-workhorse
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0949/7986/products/PI-SW.jpg?v=1471641039
+image_credit: Spiral Arts
+image_source: https://spiralarts.com/products/standard-workhorse
 ---

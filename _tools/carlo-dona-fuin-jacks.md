@@ -16,4 +16,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-jacks-fuin
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7686-carlo-dona-jacks-fuin-side.jpg?v=1741054553
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-jacks-fuin
 ---

@@ -14,4 +14,7 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-crimp-twzr-coppo
 reviews: []
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7784-carlo-dona-coppo-detail.jpg?v=1752001428
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-crimp-twzr-coppo
 ---

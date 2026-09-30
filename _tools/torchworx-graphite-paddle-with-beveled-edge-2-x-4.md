@@ -11,4 +11,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graphite-paddle-w-beveled-edge-2-x-4
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/PXL_20250606_193425778.jpg?v=1750373998
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/graphite-paddle-w-beveled-edge-2-x-4
 ---

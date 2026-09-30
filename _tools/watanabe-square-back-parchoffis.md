@@ -14,4 +14,7 @@ buy:
 - vendor: Watanabe Glass Tools
   url: https://www.glassworkstoolbench.com/watanabeglasstools/p/square-back-parchoffis
 reviews: []
+image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/9971e0fd-627e-4171-939f-a3cd5650a06e/IMG_6312.jpg?format=1000w
+image_credit: Watanabe Glass Tools
+image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/square-back-parchoffis
 ---

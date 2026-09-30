@@ -14,4 +14,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/graph-rod-12-x-12-wpoint
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/5616-Graph-Rod-1-2x12-w-point.jpg?v=1737768323
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/graph-rod-12-x-12-wpoint
 ---

@@ -16,4 +16,8 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-fine-tweezer-drop-lrg
 reviews: []
+published: false
+image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7791-c-dona-fine-drop-lg.jpg?v=1738009536
+image_credit: Hot Glass Color & Supply
+image_source: https://hotglasscolor.com/products/c-dona-fine-tweezer-drop-lrg
 ---
