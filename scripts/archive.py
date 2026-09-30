@@ -229,7 +229,32 @@ def read_squarespace(v, crawl_url):
         url = f"{origin}{nxt}&format=json" if nxt else None
 
 
-READERS = {"shopify": read_shopify, "woocommerce": read_woocommerce, "squarespace": read_squarespace}
+def read_bigcommerce(v, crawl_url):
+    # BigCommerce has no public product JSON, but lists every product in its XML sitemap.
+    # crawl_url is the store root; each product page is read for its breadcrumb and description.
+    origin = "{0.scheme}://{0.netloc}".format(urlparse(crawl_url))
+    sitemap = fetch(f"{origin}/xmlsitemap.php?type=products&page=1")[2].decode("utf8", "ignore")
+    for url in re.findall(r"<loc>([^<]+)</loc>", sitemap):
+        url = html.unescape(url)
+        page = fetch(url)[2].decode("utf8", "ignore")
+        time.sleep(0.5)
+        t = re.sub(r"<script.*?</script>|<style.*?</style>", "", page, flags=re.S)
+        t = re.sub(r"(\s*\|\s*)+", " | ", re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " | ", t))))
+        m = re.search(r"<title>([^<]*)</title>", page)
+        title = html.unescape(m.group(1)).split(" - Steinert")[0].rsplit(" - ", 1)[0].strip() if m else url
+        crumbs = re.findall(r"\| Home \| (.*?) \| " + re.escape(title.split(" |")[0][:30]), t)
+        desc = re.search(r"Product Description \|(.*?)\| (SKU:|Find Similar)", t)
+        yield {
+            "url": url,
+            "title": title,
+            "group": (crumbs[-1].replace(" | ", " / ") if crumbs else ""),
+            "options": "",
+            "desc": desc.group(1).strip(" |") if desc else "",
+        }
+
+
+READERS = {"shopify": read_shopify, "woocommerce": read_woocommerce, "squarespace": read_squarespace,
+           "bigcommerce": read_bigcommerce}
 
 
 def cmd_catalog(args):

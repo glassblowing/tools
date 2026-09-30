@@ -307,18 +307,19 @@
   name: Steinert Industries
   url: https://steinertindustries.com/
   maker: steinert-industries
+  platform: bigcommerce
   crawl:
     - https://products.steinertindustries.com/
-    - https://products.steinertindustries.com/miscellaneous/
   scope:
-    in: Blowpipes, punties, gathering rods, and hand tools.
-    out: Machines, molds, and non-glass machining work.
+    in: Blowpipes, punty rods, gathering rods, optic and blow molds, impression plates, and hand tools.
+    out: Machines, lawn art, and non-glass machining work.
   notes: >-
-    BigCommerce store with no public JSON; read pages directly (the product text follows
-    "Product Description"). From /miscellaneous/: hose extensions and the pipe brush are
+    BigCommerce store: `catalog` reads every product from /xmlsitemap.php and each page's
+    breadcrumb and "Product Description". From /miscellaneous/: hose extensions and the pipe brush are
     accessories, the mini lampworking items are flameworking, and the yoke, vacuum
-    plates, and glass crusher are equipment, so none of those are listed. Its blowpipe,
-    punty rod, gathering rod, and tools categories haven't been fully indexed yet.
+    plates, and glass crusher are equipment, so none of those are listed. Also skipped:
+    blowpipe and punty parts (mouthpieces, grips, collars, cones, bearings), impression
+    plate "second side" add-ons, grinders, and the lampworking bead molds.
 
 - id: bethlehem-burners
   name: Bethlehem Burners
