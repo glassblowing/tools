@@ -1,0 +1,17 @@
+---
+title: Graphite Pad 1/4" - 6x6"
+maker: weaver-industries
+category: graphite
+disciplines:
+- flameworking
+summary: A 6" × 6" solid graphite marvering pad, heavy enough to stay put while you work.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Size: 6" × 6"
+  Thickness: 1/4"
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/graphite-pad-14-6x6
+reviews: []
+---

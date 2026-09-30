@@ -1,0 +1,16 @@
+---
+title: Graphite Paddle, 3"x6" Ultimate
+maker: weaver-industries
+category: graphite
+disciplines:
+- flameworking
+summary: A 3" × 6" graphite paddle with a hardwood handle, beveled edge, and V-notch.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Size: 3" × 6"
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/graphite-paddle-3x6-ultimate-80002259-1561747651
+reviews: []
+---

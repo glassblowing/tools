@@ -1,0 +1,16 @@
+---
+title: Swedish Oval Better Block, 20 cm
+maker: leviathan-glassworks
+category: wood-tools
+disciplines:
+- furnace
+summary: A 20 cm Swedish-style oval block, CNC-cut, with a flat back for extra shaping.
+added: 2026-09-30
+last_checked: 2026-09-30
+specs:
+  Size: 20 cm
+buy:
+- vendor: Hot Glass Color & Supply
+  url: https://hotglasscolor.com/products/swedish-oval-block-lv-20-cm
+reviews: []
+---
