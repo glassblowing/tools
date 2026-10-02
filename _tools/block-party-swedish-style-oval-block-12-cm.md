@@ -19,4 +19,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/6606f45947c37a34dd159fd6/0dfc9ddd-3f87-4f61-b614-7df5cff20bc8/IMG_0299.jpg?format=1000w
 image_credit: Block Party
 image_source: https://www.blockpartymolds.com/shop/p/12-block
+type: blocks
 ---

@@ -19,5 +19,6 @@ buy:
   url: https://www.etsy.com/listing/4502294998/glassblowing-moldboy
   note: Etsy listing; couldn't be checked automatically
 reviews: []
+type: moldboys
 ---
 There are videos of the [moldboy in operation](https://youtu.be/yvS4uvgQ1r4) and of the [water feed setup and parts list](https://www.youtube.com/watch?v=VnvFPKed_Lk).

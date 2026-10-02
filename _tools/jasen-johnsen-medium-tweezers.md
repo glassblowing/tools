@@ -22,4 +22,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/MediumTweezer11inchJPG.jpg?v=1684714154
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/medium-tweezers
+type: tweezers
 ---

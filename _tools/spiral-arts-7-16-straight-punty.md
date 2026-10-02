@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-716.jpg?v=1471647251
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/7-16-straight-punty
+type: punties
 ---

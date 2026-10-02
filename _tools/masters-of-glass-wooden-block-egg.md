@@ -16,4 +16,5 @@ reviews: []
 image: https://static.wixstatic.com/media/bca1bb_738355c12752482ab5b78e1bcb8b791d~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
 image_credit: Masters of Glass
 image_source: https://www.mastersofglass.com/product-page/wooden-block-egg
+type: blocks
 ---

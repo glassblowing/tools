@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-SP1.jpg?v=1471639742
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/large-cup-punty-pu-sp1
+type: punties
 ---

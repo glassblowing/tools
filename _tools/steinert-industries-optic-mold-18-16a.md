@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/102/images/243/18_16A_side__67668.1349731215.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/18-16a-optic-mold-for-glassblowing-available-october-2026/
+type: optic-molds
 ---

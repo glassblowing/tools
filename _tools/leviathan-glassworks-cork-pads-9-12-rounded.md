@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Cork-Ovalt.png?v=1570762269
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/cork-oval-9x12
+type: cork-tools
 ---

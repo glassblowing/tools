@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/159/images/366/5_Solid_Punty_dwg__51249.1349738988.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/0-5-solid-punty-rod/
+type: punties
 ---

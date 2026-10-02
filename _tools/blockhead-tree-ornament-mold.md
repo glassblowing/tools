@@ -18,4 +18,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/h/bh-m-tree_1.png
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/tree-ornament-mold
+type: blow-molds
 ---

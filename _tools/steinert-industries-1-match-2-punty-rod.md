@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/157/images/364/Match_2_Punty__52978.1349738866.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/1-match-2-punty-rod/
+type: punties
 ---

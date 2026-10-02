@@ -18,4 +18,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/63dd35a57506e326fba4ae50/6621d853-3473-477f-9c83-8e4ad2824bba/100_4743.jpg?format=1000w
 image_credit: Hobbyglass (Hegan Glassworks)
 image_source: https://www.hobbyglass.com/shop/p/diamond-mold-6-inch-series
+type: optic-molds
 ---

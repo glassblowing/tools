@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/142/images/340/4_6_20B_side__98097.1349735805.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/4-6-20b-optic-mold-for-glassblowing-backordered-oct-2026/
+type: optic-molds
 ---

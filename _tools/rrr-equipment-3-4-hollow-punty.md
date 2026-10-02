@@ -13,5 +13,6 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/r-r-r-3-4-hollow-punty
 reviews: []
+type: punties
 ---
 Hot Glass Color can fit a rubber hose grip or knurled handle for an extra charge.

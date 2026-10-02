@@ -23,5 +23,6 @@ reviews: []
 image: https://static.wixstatic.com/media/3354df_1e93551ee3cf4a78a1b6bcf20578fb67~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
 image_credit: Glasstrapes
 image_source: https://www.glasstrapes.com/product-page/swedish-overlay-tools
+type: overlay-tools
 ---
 The set combines JK Overlay Tools' stainless handles with wooden inserts. In Sweden, Fantlab sells the pieces separately: the [stainless jack handles](/tools/jk-overlay-tools-stainless-jack-handles/), its own [overlay spades](/tools/fantlab-overlay-spade/), and [finishing tools](/tools/fantlab-finishing-tool/).

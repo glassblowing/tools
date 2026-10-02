@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7518-carlo-dona-pineapple-md_lg.jpg?v=1754420619
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/mold-pineapple-mlg-70-x-130-carlo-dona
+type: pineapple-molds
 ---

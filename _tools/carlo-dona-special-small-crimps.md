@@ -14,4 +14,5 @@ buy:
   url: https://www.carlodona.com/en/crimps/
   note: Maker's catalog; order by email or phone
 reviews: []
+type: crimps
 ---

@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/cpa-19-oz-aluminized-carbon-kevlar-7-x-11-window-hood.jpg?v=1696840900
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/aluminumized-hood-564-akv
+type: protective-clothing
 ---

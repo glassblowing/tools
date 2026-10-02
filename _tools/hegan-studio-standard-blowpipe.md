@@ -25,5 +25,6 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/l/blowpipes-1_1.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/hegan-studio-standard-chromoly-pipe-3-4
+type: blowpipes
 ---
 The stainless pipe has a pre-drilled hole for Hegan's collar, which lets you hang the pipe out of the way.

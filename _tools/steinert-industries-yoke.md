@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/62/images/154/Yoke__29245.1349725284.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/yoke/
+type: yokes
 ---

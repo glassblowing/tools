@@ -18,5 +18,6 @@ reviews: []
 image: https://impro.usercontent.one/appid/oneComWsb/domain/fantlab.com/media/fantlab.com/onewebmedia/Verktyg%2010%20stor.jpg
 image_credit: Fantlab
 image_source: https://fantlab.com/foot%20tools.html
+type: footing-tools
 ---
 Fantlab also sells jack fork ends for the set and stainless jack handles that take foot tools and paciofi sticks.

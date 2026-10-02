@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/c-dona-calipers-curved-sized.png?v=1721852585
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-bent-caliper-lg
+type: calipers
 ---

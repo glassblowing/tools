@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/LargeNarrowFlatCrimp.jpg?v=1684701474
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/large-narrow-flat-crimps
+type: crimps
 ---

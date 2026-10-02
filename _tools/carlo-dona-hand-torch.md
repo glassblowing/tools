@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7692-carlo-dona-torch.jpg?v=1750441980
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-36-flame-hand-torch
+type: hand-torches
 ---

@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-LS_525cc2e4-ff24-4cb0-a2b1-a36b868d38a8.jpg?v=1476744257
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/small-standard-punty-pu-ss
+type: punties
 ---

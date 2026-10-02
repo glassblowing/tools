@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/lev-paddles.jpg?v=1738348789
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/paddle-dry-lv-6-x-20
+type: paddles
 ---

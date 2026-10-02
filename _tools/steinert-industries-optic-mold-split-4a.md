@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/74/images/174/Split4a__79959.1349728835.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/split-4a-split-optic-mold-for-glassblowing/
+type: optic-molds
 ---

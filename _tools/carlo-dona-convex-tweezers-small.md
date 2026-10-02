@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7530-carlo-dona-260mm-flat.jpg?v=1752599346
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-tweezers-sm-convex_85974
+type: tweezers
 ---

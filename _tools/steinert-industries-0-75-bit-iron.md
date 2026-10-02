@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/154/images/360/Bit_Irons_sm__47970.1349737421.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/0-75-bit-iron/
+type: gathering-irons
 ---

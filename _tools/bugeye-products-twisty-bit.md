@@ -29,5 +29,6 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/p/bp-t-bit.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/twisty-bit
+type: twisty-bits
 ---
 Load a few bits with cookies and keep them hot in a kiln or garage; snap one on, attach the cane, twist or pull, then quench the bit and swap in the next.

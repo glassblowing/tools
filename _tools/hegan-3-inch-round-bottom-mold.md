@@ -36,4 +36,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/63dd35a57506e326fba4ae50/4d8a158d-0e00-4a8b-8961-cbc27d4a5d72/IMG_0029.JPG?format=1000w
 image_credit: Hobbyglass (Hegan Glassworks)
 image_source: https://www.hobbyglass.com/shop/p/round-bottom-mold-3-inch-series
+type: optic-molds
 ---

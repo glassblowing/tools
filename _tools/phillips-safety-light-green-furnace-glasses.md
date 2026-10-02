@@ -64,5 +64,6 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Phillips400-LG.jpg?v=1736203274
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/phillips-400-lg
+type: eye-protection
 ---
 Prescription versions are available by special order. Phillips' sodium flare and didymium lenses are for flameworking and aren't listed here.

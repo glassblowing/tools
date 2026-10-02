@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7526-carlo-dona-220mm-flat.jpg?v=1752533443
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-tweezers-xs-flat_85957
+type: tweezers
 ---

@@ -23,4 +23,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/-/m-fin-mold-w6.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/fin-mold-wine-6-facet
+type: fin-molds
 ---

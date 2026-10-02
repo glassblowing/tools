@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7591-c-dona-flat-wide-tweezer-lg.jpg?v=1738005082
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-crimp-twzr-flat-wide-lg
+type: crimps
 ---

@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Carlo-Dona-bent-soffietta-7395.jpg?v=1736538611
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-soffietta-sm-bent-puffer
+type: soffietta
 ---

@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/c-dona-strawberry-stamps-xlg.jpg?v=1751304191
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-stamp-mold-strawberry-xlg
+type: blow-molds
 ---

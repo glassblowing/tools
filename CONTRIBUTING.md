@@ -32,6 +32,8 @@ Optional longer description in Markdown.
 
 If the maker or category doesn't exist yet, add a file in `_makers/` or `_tool_categories/`. Copy an existing one.
 
+Add `type: <glossary slug>` (e.g. `type: diamond-shears`) to say what kind of tool it is; the glossary at `/glossary/` explains each type. To propose a new glossary entry, copy one in `_glossary/`: write it in your own words and cite every fact inline with `{% include cite.html n=1 %}`, numbered to its `sources:` list.
+
 ## Photos
 
 Listing photos link to the seller's own product image (we don't copy or host vendor photos), and every photo shows a credit linking back to the seller. `make photos` fills these in automatically. If you took a photo yourself, add it under `assets/img/tools/` and credit yourself.

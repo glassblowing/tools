@@ -7,7 +7,7 @@ aka:
 - tagianti tonde (Murano)
 - kulaté nůžky (Czech)
 summary: Shears with angled blades that close around the glass from all sides, for cutting it off in a round shape.
-match: diamond|kulaté
+match: diamond|kulaté|beer can
 sources:
 - title: Museo del Vetro, Murano — Glossary ("Tagiante", "Borsella")
   url: https://museovetro.visitmuve.it/en/il-museo/in-depth/glossary/

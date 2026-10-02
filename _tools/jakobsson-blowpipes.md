@@ -20,5 +20,6 @@ reviews: []
 image: https://jakobssonsweden.com/wp-content/uploads/2023/06/Blowingpipe-web-1024x682.webp
 image_credit: Jakobsson Sweden
 image_source: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/blowing-pipes-and-punties/
+type: blowpipes
 ---
 Carbon steel heads grip well and take knocking off, but the pipe has to be kept warm and dry to avoid rust. Stainless is better for long pieces with many reheats.

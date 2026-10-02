@@ -22,4 +22,5 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/1375025336.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Newspaper-Koozie-p161157552
+type: shaping-pads
 ---

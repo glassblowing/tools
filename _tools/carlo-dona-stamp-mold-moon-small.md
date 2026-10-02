@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7470-carlo-dona-moon-sm.jpg?v=1751305620
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-stamp-mold-moon-sml
+type: blow-molds
 ---

@@ -22,4 +22,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/SmallSetInsideSculptingtool.jpg?v=1684714891
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/small-inside-sculpting-tools-set-of-5
+type: sculpting-tools
 ---

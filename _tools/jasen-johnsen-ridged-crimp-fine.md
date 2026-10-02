@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/RidgedCrimpFine.jpg?v=1684703689
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/ridged-crimp-fine
+type: crimps
 ---

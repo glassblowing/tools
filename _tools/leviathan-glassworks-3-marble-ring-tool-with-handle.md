@@ -23,4 +23,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/8053-leviathan-3inch-marble.jpg?v=1753298161
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/leviathan-glassworks-3-marble-tool-w-handle
+type: marble-ring-tools
 ---

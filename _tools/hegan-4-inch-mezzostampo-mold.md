@@ -22,4 +22,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/63dd35a57506e326fba4ae50/eb5d411c-0088-4bc9-9b8d-1f98b4a1b9c1/IMG_0018.JPG?format=1000w
 image_credit: Hobbyglass (Hegan Glassworks)
 image_source: https://www.hobbyglass.com/shop/p/4-inch-series-round-bottom-molds-hf7cg
+type: optic-molds
 ---

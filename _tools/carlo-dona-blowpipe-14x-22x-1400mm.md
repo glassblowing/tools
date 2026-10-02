@@ -16,4 +16,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-blowpipe-14x-22x-1400mm_85952
 reviews: []
+type: blowpipes
 ---

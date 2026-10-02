@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Oval-Top_afcd0b3c-6236-403b-826b-50ffe4ba5433.png?v=1593797769
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/better-block-16cm-oval
+type: blocks
 ---

@@ -14,4 +14,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/6649-Red-Max-HT.jpg?v=1737767770
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/red-max-handtorch
+type: hand-torches
 ---

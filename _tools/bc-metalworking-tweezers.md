@@ -31,5 +31,6 @@ reviews: []
 image: https://bcmetalworking.com/wp-content/uploads/2022/03/Tweezers.png
 image_credit: BC Metalworking
 image_source: https://bcmetalworking.com/product/tweezers/
+type: tweezers
 ---
 High-carbon spring steel rusts if neglected. BC Metalworking recommends drying and wiping it after use, then applying a thin coat of linseed or mineral oil.

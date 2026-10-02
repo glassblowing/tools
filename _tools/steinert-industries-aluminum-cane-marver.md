@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/71/images/169/MarverAlum1__16410.1349725969.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/aluminum-cane-marver/
+type: marvers
 ---

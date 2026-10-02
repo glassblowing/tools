@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/120/images/284/9_8_5A_side__61746.1349734251.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/9-8-5a-optic-mold-for-glassblowing/
+type: optic-molds
 ---

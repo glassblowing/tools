@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/169/images/383/BS_75_Head__63594.1349968634.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/0-75-standard-series-blowpipe/
+type: blowpipes
 ---

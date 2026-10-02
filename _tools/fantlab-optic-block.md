@@ -18,4 +18,5 @@ reviews: []
 image: https://impro.usercontent.one/appid/oneComWsb/domain/fantlab.com/media/fantlab.com/onewebmedia/Tr%C3%A4skopa%2003.jpg
 image_credit: Fantlab
 image_source: https://fantlab.com/optic%20blocks.html
+type: blocks
 ---

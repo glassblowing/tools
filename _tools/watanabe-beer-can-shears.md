@@ -17,4 +17,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/dea7a103-ab5a-4d67-9644-063fa7e59e4f/IMG_6313.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/beer-can-diamond-shears
+type: diamond-shears
 ---

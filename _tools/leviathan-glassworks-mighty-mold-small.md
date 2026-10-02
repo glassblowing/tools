@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/mold.png?v=1570694426
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/mighty-mold-small-up-to-5-tall
+type: blow-molds
 ---

@@ -11,4 +11,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/leviathan-glassworks-loading-paddle-with-kevlar-sleeve_84950
 reviews: []
+type: paddles
 ---

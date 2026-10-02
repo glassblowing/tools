@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/LADEL_X2.jpg?v=1471644683
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/casting-ladel
+type: ladles
 ---

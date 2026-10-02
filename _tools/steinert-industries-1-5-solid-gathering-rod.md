@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/146/images/349/Gathering_Rod_15_Solid__82218.1349736911.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/1-5-dia-solid-gathering-rod-5-solid/
+type: gathering-irons
 ---

@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/161/images/369/75_Hollow_Punty__71426.1349739229.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/0-75-hollow-punty-rod/
+type: punties
 ---

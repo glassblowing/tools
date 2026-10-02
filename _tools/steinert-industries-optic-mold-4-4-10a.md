@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/139/images/332/4_4_10A_side__25213.1349735586.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/4-4-10a-optic-mold-for-glassblowing-backordered-available-octber-2026/
+type: optic-molds
 ---

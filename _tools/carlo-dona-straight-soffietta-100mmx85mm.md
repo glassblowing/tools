@@ -16,4 +16,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-soffietta-xl-str-puffer
 reviews: []
+type: soffietta
 ---

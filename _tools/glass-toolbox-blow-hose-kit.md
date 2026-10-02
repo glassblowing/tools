@@ -17,4 +17,5 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/1448898771.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Blow-Hose-Kit-p202585102
+type: blow-hoses
 ---

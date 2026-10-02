@@ -14,4 +14,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/jasen-j-flatcrimp-5461.jpg?v=1736538444
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/wide-flat-masher-large
+type: crimps
 ---

@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Group.png?v=1570773362
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/marble-tool-set
+type: marble-ring-tools
 ---

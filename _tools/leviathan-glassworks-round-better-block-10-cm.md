@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Round_Block_d6f875a6-fcef-4da3-91ea-d59f7e87608f.png?v=1571716650
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/better-block-10-centimeter-round
+type: blocks
 ---

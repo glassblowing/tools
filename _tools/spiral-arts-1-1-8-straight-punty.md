@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-100_205211bf-b7a9-47a5-a333-d0da373f9dcb.jpg?v=1471646843
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/pu-125
+type: punties
 ---

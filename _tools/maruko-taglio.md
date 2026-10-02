@@ -14,4 +14,5 @@ buy:
   url: https://marukotools.com/productsprice.html
   note: Made to order; listed on the maker's price list
 reviews: []
+type: tagliol
 ---

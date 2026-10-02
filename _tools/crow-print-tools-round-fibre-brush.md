@@ -18,5 +18,6 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/3219193754.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Round-Brush-p491566123
+type: brushes
 ---
 Snip the binding back as the brush burns down.

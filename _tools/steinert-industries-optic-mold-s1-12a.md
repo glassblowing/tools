@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/77/images/177/S1_12A_side__48500.1349729067.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/s1-12a-optic-mold-for-glassblowing/
+type: optic-molds
 ---

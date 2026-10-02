@@ -29,5 +29,6 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/p/u/punty-1.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/hegan-studio-standard-stainless-punty-1-2
+type: punties
 ---
 A vent near the cold end lets any water that gets in escape instead of being trapped.

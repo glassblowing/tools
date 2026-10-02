@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/171/images/387/BS_125_Head__60162.1349968776.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/1-25-standard-series-blowpipe/
+type: blowpipes
 ---

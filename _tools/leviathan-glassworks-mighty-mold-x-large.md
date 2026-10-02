@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/mold_09708bb9-5afc-4f5a-aec9-c88548d99c1f.png?v=1617909443
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/copy-of-mighty-mold-large-madrona
+type: blow-molds
 ---

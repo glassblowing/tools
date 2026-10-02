@@ -13,4 +13,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/6-casting-ladle-80002350-1638926775
 reviews: []
+type: ladles
 ---

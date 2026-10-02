@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Paddles-1_16ef6c6f-5bcc-4103-8513-ae18e738bb4c.png?v=1570768397
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/paddle-cherry-paddle-5-x-24
+type: paddles
 ---

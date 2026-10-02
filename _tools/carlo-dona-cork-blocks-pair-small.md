@@ -14,4 +14,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/7397.jpg?v=1696843510
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-set-cork-blocks-sm
+type: cork-tools
 ---

@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/SculptingKnife.jpg?v=1685330111
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/sculpting-knife
+type: sculpting-tools
 ---

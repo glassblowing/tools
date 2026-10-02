@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/66/images/159/MarbleBlock__16747.1349725571.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/3-5-marble-and-paperweight-block-unavailable/
+type: blocks
 ---

@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/178/images/400/LH_1_Shaft_125_Head__14099.1349969377.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/1-25-large-head-series-blowpipe-with-1-shaft/
+type: blowpipes
 ---

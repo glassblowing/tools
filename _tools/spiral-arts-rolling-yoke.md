@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/RYSIMPLE4.jpg?v=1610044378
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/rolling-yoke
+type: yokes
 ---

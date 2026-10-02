@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7438dragonwingcarlodona_d546956b-0039-44ec-8d33-bd634cb89d13.jpg?v=1737661956
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-crimp-twzr-drgn-wing-lrg
+type: crimps
 ---

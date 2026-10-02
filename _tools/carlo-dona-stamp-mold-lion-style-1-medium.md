@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7571-carlo-dona-lion-md.jpg?v=1751305273
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-stamp-mold-lion-1-med-8000241b-1662422706
+type: blow-molds
 ---

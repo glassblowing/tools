@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7588-c-dona-rose-petal-lg-detail.jpg?v=1738370819
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-crimp-teewzers-rose-petal-lg_86809
+type: crimps
 ---

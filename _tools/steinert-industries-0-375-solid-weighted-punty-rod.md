@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/158/images/365/375_Solid_Weighted_Punty_dw__00235.1349738927.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/0-375-solid-weighted-punty-rod/
+type: punties
 ---

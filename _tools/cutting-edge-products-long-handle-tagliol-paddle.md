@@ -20,4 +20,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1503076488776-LEE4BIVD9EHBFSI66ZN2/SHORT+TAG.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/handy-tools/short-tagliol-paddle-mj5fa
+type: tagliol
 ---

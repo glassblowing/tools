@@ -23,4 +23,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/LargeTaglioRoundend.jpg?v=1684707896
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/large-round-end-taglio
+type: tagliol
 ---

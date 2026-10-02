@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7638-protostamp-flower-30mm-detail.jpg?v=1750884072
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/flower-of-life-stamp-80002459-1681949470
+type: stamps
 ---

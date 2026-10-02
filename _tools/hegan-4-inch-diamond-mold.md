@@ -19,4 +19,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/63dd35a57506e326fba4ae50/1697666702932-WRZDCF96R09QZUL9D2AB/IMG_0010.JPG?format=1000w
 image_credit: Hobbyglass (Hegan Glassworks)
 image_source: https://www.hobbyglass.com/shop/p/4-inch-series-16-point-diamond
+type: optic-molds
 ---

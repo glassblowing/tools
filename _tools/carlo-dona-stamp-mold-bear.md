@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7585-c-dona-bear-stamp.jpg?v=1738371140
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-stamp-mold-bear-80002485-1690479725
+type: blow-molds
 ---

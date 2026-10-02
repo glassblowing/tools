@@ -34,5 +34,6 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/190/images/416/BHE__00974.1592580158.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/5-blowpipe-hose-extension-for-non-steinert-blowpipe-with-5-shaft-no-returns-no-exchange/
+type: blow-hoses
 ---
 Specify the pipe's mouthpiece diameter when ordering. Steinert doesn't accept returns or exchanges on these.

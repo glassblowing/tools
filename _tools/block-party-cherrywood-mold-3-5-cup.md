@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Block-Party-Cherrywood-Mold-3x5-OPEN.png?v=1749074709
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/block-party-cherrywood-mold-3x5-cup
+type: blow-molds
 ---

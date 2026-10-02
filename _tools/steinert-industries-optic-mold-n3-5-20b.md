@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/84/images/195/N35_20B_side__31342.1349729674.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/n3-5-20b-optic-mold-for-glassblowing-available-october-2026/
+type: optic-molds
 ---

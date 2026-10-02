@@ -18,5 +18,6 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/3219152145.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Flat-Brush-p491558397
+type: brushes
 ---
 Snip the binding back as the brush burns down.

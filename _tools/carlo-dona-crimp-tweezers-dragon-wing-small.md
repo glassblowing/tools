@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-crimp-tweezer-dragon-wing-sml
 reviews: []
+type: crimps
 ---
