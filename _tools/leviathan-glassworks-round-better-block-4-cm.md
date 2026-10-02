@@ -13,6 +13,9 @@ specs:
   Handle: Removable
 buy:
 - vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/better-block-04cm-round-replacement-head-only
+  note: Head only, no handle
+- vendor: Leviathan GlassWorks
   url: https://leviathanglassworks.com/products/better-block-4cm-round
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/RoundBlock.png?v=1593794532

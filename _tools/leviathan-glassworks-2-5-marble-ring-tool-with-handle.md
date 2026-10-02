@@ -11,6 +11,12 @@ specs:
   Diameter: 2.5"
   Wood: Madrona
 buy:
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/marble-too-l2-5-diameter-and-handle
+  note: With handle
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/marble-tool-2-5-diameter-replacement-head
+  note: Replacement ring only
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/leviathan-glassworks-2-5-marble-tool-w-handle
 reviews: []

@@ -1,5 +1,5 @@
 ---
-title: Dry Paddle, 6" × 24"
+title: Cherry Paddle, 6" × 24"
 maker: leviathan-glassworks
 category: wood-tools
 disciplines:
@@ -9,7 +9,10 @@ added: 2026-09-30
 last_checked: 2026-09-30
 specs:
   Size: 6" × 24"
+  Wood: Cherry, fine grade
 buy:
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/cherry-paddle-6-x-24
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/paddle-dry-lv-6-x-24
 reviews: []

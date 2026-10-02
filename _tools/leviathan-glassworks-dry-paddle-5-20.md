@@ -1,5 +1,5 @@
 ---
-title: Dry Paddle, 5" × 20"
+title: Cherry Paddle, 5" × 20"
 maker: leviathan-glassworks
 category: wood-tools
 disciplines:
@@ -9,7 +9,10 @@ added: 2026-09-30
 last_checked: 2026-09-30
 specs:
   Size: 5" × 20"
+  Wood: Cherry, fine grade
 buy:
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/paddle-cherry-paddle-5-x-20
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/paddle-dry-lv-5-x-20
 reviews: []

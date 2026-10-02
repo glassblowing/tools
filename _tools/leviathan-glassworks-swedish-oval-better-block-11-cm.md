@@ -12,6 +12,9 @@ specs:
   Handle: Removable
 buy:
 - vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/better-block-11cm-oval
+  note: Head only, no handle
+- vendor: Leviathan GlassWorks
   url: https://leviathanglassworks.com/products/better-block-11cm-oval-complete
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Oval-Top_8a0fee34-a6a1-49bb-ab27-57832458dfe7.png?v=1611032420

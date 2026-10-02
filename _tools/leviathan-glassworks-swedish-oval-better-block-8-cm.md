@@ -11,6 +11,9 @@ specs:
   Size: 8 cm
 buy:
 - vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/copy-of-better-block-08cm-oval-replacement-head-only
+  note: Head only, no handle
+- vendor: Leviathan GlassWorks
   url: https://leviathanglassworks.com/products/better-block-8cm-oval
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/swedish-oval-block-lv-8-cm
