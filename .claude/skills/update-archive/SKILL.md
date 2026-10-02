@@ -22,7 +22,7 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 | `_data/vendors.yml` | Every shop, with its crawl pages, scope, and notes. The source of truth for vendors. |
 | `_tools/*.md` | One file per tool. The format is in `CONTRIBUTING.md`. |
 | `_makers/*.md`, `_tool_categories/*.md` | Makers and categories that tools reference by filename. |
-| `scripts/archive.py` | Helper: `validate`, `links [--vendor ID]`, `catalog VENDOR_ID` (Shopify, WooCommerce, Squarespace), `photos [--vendor ID] [--refresh] [--write]`. |
+| `scripts/archive.py` | Helper: `validate`, `links [--vendor ID] [--max-age DAYS] [--write]`, `catalog VENDOR_ID` (Shopify, WooCommerce, Squarespace), `photos [--vendor ID] [--refresh] [--write]`. |
 
 ## What to run
 
@@ -45,7 +45,7 @@ Fix any validation errors first.
 ### 2. Re-check existing buy links
 
 ```sh
-python3 scripts/archive.py links            # add --vendor ID to limit
+python3 scripts/archive.py links --write    # add --vendor ID to limit
 ```
 
 For each result that isn't `ok`:
@@ -55,7 +55,9 @@ For each result that isn't `ok`:
 - **limit (429).** The site throttled the checker; the page isn't necessarily gone. Recheck those URLs later, slowly. Never remove a link just for a 429. Shopify stores share one queue in the checker because Shopify rate-limits across all of its stores.
 - **403 / timeouts.** Check the vendor's `notes` first; some block scripts (e.g. the Corning Museum shops). Try WebFetch once. If it's still blocked, leave the link, don't set `last_checked` for that tool, and list it under "needs a human to check".
 
-Set `last_checked` to today only on tools whose links all returned `ok` this run.
+`links` skips tools checked in the last 7 days (`--max-age 0` checks everything) and prints only the links that aren't `ok`. Shopify links are answered from each store's `/products.json` listing (250 products a request), so only unlisted products cost a page load. With `--write` it sets `last_checked` to today on tools whose links all returned `ok`; don't set it by hand.
+
+Run one `archive.py` network command at a time. Requests to the same site are spaced through a shared lock, so parallel runs don't speed anything up.
 
 ### 3. Find new tools
 
@@ -85,7 +87,7 @@ One file per product page. Collapse variants (lengths, body material, grips) int
 
 When updating an existing tool, change only what the vendor's page contradicts, and keep other people's edits.
 
-After writing listings, run `python3 scripts/archive.py photos --write` to link photos for any new listing. It skips pages shared by several listings (catalog and category pages) and site logos, so a missing photo is normal.
+After writing listings, run `python3 scripts/archive.py photos --write` to link photos for any new listing. It skips pages shared by several listings (catalog and category pages) and site logos, so a missing photo is normal. Pages that loaded with no usable photo are recorded in `scripts/photo-misses.json` and skipped for 30 days; `--refresh` ignores that record (and re-checks listings that already have a photo).
 
 ### 5. Verify and report
 
