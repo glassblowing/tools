@@ -1,8 +1,10 @@
 ---
 title: Bugeye Products
-location: Seattle, Washington, USA
+location: Cedar Rapids, Iowa, USA
+website: https://bugeyeproducts.com/
+instagram: bugeyeproductsinc
 coords:
-- 47.6
-- -122.33
+- 41.98
+- -91.67
 ---
-Makes hot-shop accessories including a pneumatic murrini cutter and a compartmented ceramic kiln tray for color, sold through Olympic Color Rods and Glass Toolbox.
+Douglas Flugum's company, started when cutting murrine for his own blown glass sent him looking for a better way. It makes a pneumatic murrine cutter, a divided ceramic kiln tray for color, and the Twisty Bit for twisting and pulling cane, sold through glass supply shops with warranty support direct from Bugeye.
