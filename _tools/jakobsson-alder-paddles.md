@@ -14,4 +14,7 @@ buy:
   url: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/other-tools/
   note: Made to order; request a quote by email
 reviews: []
+image: https://jakobssonsweden.com/wp-content/uploads/2023/09/Paddle-white-bakground-2.jpg
+image_credit: Jakobsson Sweden
+image_source: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/other-tools/
 ---
