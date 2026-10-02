@@ -398,6 +398,55 @@
     70 mm straight shears, and the JJ small and medium taglio (round or square end
     not stated).
 
+- id: putsch
+  name: Putsch
+  url: https://putschusa.com/tools
+  maker: putsch
+  crawl: []
+  scope:
+    in: Hot-shop glassblowing tools (the user asked for Putsch).
+    out: Putsch's sugar, panel-saw, filtration and industrial glass equipment.
+  notes: >-
+    Putsch & Company, Fletcher NC. The glassblowing tools page names tool types
+    but no individual products, and the only catalog download is industrial shear
+    blades; tools are ordered by contacting Putsch. Only the Meniconi shears are named,
+    so that's the one listing; add more if Putsch publishes a catalog.
+
+- id: novotny
+  name: Novotný Glass
+  url: https://novotnyglass.com/en/tools
+  maker: novotny
+  crawl: []
+  scope:
+    in: Novotný Glass Tools (pipes, tweezers, optic molds, metal stamps).
+    out: The glass studio's own glassware (eshop.novotnyglass.com, a Shoptet store).
+  notes: >-
+    Tools are ordered by email (tools@novotnyglass.com); the catalog is "currently in
+    preparation". The tools page names four product types without models or sizes, so
+    each is one listing. Re-check for the catalog.
+
+- id: mitiska
+  name: SAN Mitiska
+  url: http://www.sklarskenuzky.cz/
+  maker: mitiska
+  crawl: []
+  scope:
+    in: Glassblowing shears.
+  notes: >-
+    Radim Mitiska's shear workshop in Nový Bor. Czech-language one-page site with a
+    model list and a PDF price list; orders by email (sklarskenuzky@gmail.com) or phone.
+
+- id: mobile-glassblowing-studios
+  name: Mobile Glassblowing Studios
+  url: https://www.mobileglassblowingstudios.com/shoptools.html
+  maker: mobile-glassblowing-studios
+  crawl: []
+  scope:
+    in: Hand tools and bench equipment (ladle, yoke).
+    out: The Dragon furnaces, kiln controllers, and other large equipment.
+  notes: >-
+    Weebly site. Orders through the How To Order page; prices exclude crating and shipping.
+
 - id: hobbyglass
   name: Hobbyglass (Hegan Glassworks)
   url: https://www.hobbyglass.com/
