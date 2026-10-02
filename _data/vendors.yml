@@ -360,6 +360,19 @@
     pages (pastorale-fork and pastorale-fork-1); the listing uses the one in the
     hot-shop category.
 
+- id: glasstrapes
+  name: Glasstrapes
+  url: https://www.glasstrapes.com/
+  location: Seattle, Washington, USA
+  coords: [47.6, -122.33]
+  crawl: []
+  scope:
+    in: The Swedish Overlay Tools set (JK Overlay Tools), as the US distributor.
+    out: Greg Lastrapes' own glass art.
+  notes: >-
+    Greg Lastrapes' Wix studio shop; the user marked it as a distributor of JK Overlay
+    Tools. The product page has JSON-LD and an og:image. Ships in up to 6 weeks.
+
 - id: hobbyglass
   name: Hobbyglass (Hegan Glassworks)
   url: https://www.hobbyglass.com/
