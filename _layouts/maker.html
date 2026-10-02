@@ -4,11 +4,13 @@ layout: default
 {%- assign tools = site.tools | where: "maker", page.slug | sort: "title" -%}
 <p class="crumbs"><a href="{{ '/makers/' | relative_url }}">Makers</a></p>
 <h1>{{ page.title }} <span class="count">{{ tools.size }}</span></h1>
-<p class="muted">
-  {%- if page.location %}{{ page.location }}{% endif -%}
-  {%- if page.founded %} · since {{ page.founded }}{% endif -%}
-  {%- if page.website %} · <a href="{{ page.website }}" rel="noopener" target="_blank">Website ↗</a>{% endif -%}
-</p>
+{%- capture meta -%}
+  {%- if page.location %}{{ page.location }}|{% endif -%}
+  {%- if page.founded %}since {{ page.founded }}|{% endif -%}
+  {%- if page.website %}<a href="{{ page.website }}" rel="noopener" target="_blank">Website ↗</a>|{% endif -%}
+  {%- if page.instagram %}<a href="https://www.instagram.com/{{ page.instagram }}/" rel="noopener" target="_blank">Instagram ↗</a>|{% endif -%}
+{%- endcapture -%}
+<p class="muted">{{ meta | split: "|" | join: " · " }}</p>
 <div class="prose">{{ content }}</div>
 {% if tools.size > 0 %}
 {% include tool-table.html tools=tools hide="maker" %}
