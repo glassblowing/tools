@@ -34,7 +34,7 @@ If the maker or category doesn't exist yet, add a file in `_makers/` or `_tool_c
 
 ## Photos
 
-Listing photos link to the seller's own product image (we don't copy or host vendor photos), and every photo shows a credit linking back to the seller. `python3 scripts/archive.py photos --write` fills these in automatically. If you took a photo yourself, add it under `assets/img/tools/` and credit yourself.
+Listing photos link to the seller's own product image (we don't copy or host vendor photos), and every photo shows a credit linking back to the seller. `make photos` fills these in automatically. If you took a photo yourself, add it under `assets/img/tools/` and credit yourself.
 
 Makers and shops: if you'd rather we didn't show your photos, open an issue and we'll take them down.
 
@@ -56,10 +56,14 @@ The page works out the average rating itself.
 
 ## Run locally
 
+With podman or docker installed:
+
 ```sh
-bundle install
-bundle exec jekyll serve
-# open http://localhost:4000/tools/
+make serve      # build with the same image GitHub Pages uses, then open http://localhost:4000
+make check      # validate the data and build; run this before opening a pull request
+make            # list every task (links, photos, catalog, geocode, ...)
 ```
+
+Or with Ruby: `bundle install && bundle exec jekyll serve`.
 
 Pushing to `main` deploys to GitHub Pages via `.github/workflows/jekyll-gh-pages.yml`.
