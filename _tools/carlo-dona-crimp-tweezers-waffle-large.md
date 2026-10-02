@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7844-c-dona-convex-waffle-detail.jpg?v=1738348388
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-convex-tweezers-waffle
+type: crimps
 ---

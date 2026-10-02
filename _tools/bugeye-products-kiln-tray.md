@@ -19,4 +19,5 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/1207880325.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Bugeye-Kiln-Tray-p161159203
+type: kiln-trays
 ---

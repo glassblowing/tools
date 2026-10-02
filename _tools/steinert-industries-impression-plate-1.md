@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn1.bigcommerce.com/server5200/zjkj1e/products/212/images/452/PLATE_1.._2__30740.1684944368.220.220.jpg?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/impression-plate-1/
+type: stamps
 ---

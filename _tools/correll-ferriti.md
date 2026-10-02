@@ -14,4 +14,5 @@ buy:
   url: https://www.correllglassstudio.com/ferros-and-ferriti
   note: Order by phone or email
 reviews: []
+type: cane-plates
 ---

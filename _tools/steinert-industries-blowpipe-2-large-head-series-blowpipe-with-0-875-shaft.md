@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/181/images/406/LH_875_Shaft_2_Head__84261.1349969570.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/2-large-head-series-blowpipe-with-0-875-shaft/
+type: blowpipes
 ---

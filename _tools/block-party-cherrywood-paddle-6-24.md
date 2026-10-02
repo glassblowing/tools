@@ -16,4 +16,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/6606f45947c37a34dd159fd6/25e676ec-8bc7-4f96-adf0-9275d1892b39/IMG_4227.jpg?format=1000w
 image_credit: Block Party
 image_source: https://www.blockpartymolds.com/shop/p/6-paddle
+type: paddles
 ---

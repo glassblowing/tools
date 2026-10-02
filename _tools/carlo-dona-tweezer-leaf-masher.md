@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/cdonaleafmasher7445.png?v=1737662708
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-tweezer-leaf-masher
+type: crimps
 ---

@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Steamer_Double_Front.png?v=1570765099
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/shape-shifter-carbon-weave-pad
+type: shaping-pads
 ---

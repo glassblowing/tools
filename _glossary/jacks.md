@@ -18,6 +18,8 @@ sources:
   note: the site blocks automated reading; its definition was read from a search result quoting it
 - title: Wikipedia — Glassblowing, "Tools"
   url: https://en.wikipedia.org/wiki/Glassblowing
+- title: Corning Museum of Glass — The Techniques of Renaissance Venetian Glassworking, "A Look Inside a Renaissance Venetian Glasshouse"
+  url: https://renvenetian.cmog.org/chapter/look-inside-renaissance-venetian-glasshouse
 ---
 ## What it is
 
@@ -37,6 +39,8 @@ Jacks are used for many jobs while shaping the hot glass, including forming the 
 Murano's glass museum describes the *borsella* as flexible iron tongs used to shape molten glass, made in different forms for different jobs, and calls them, together with the blowpipe, "the glass master's main and most versatile tool".{% include cite.html n=1 %}
 
 According to the Conciatore lexicon, the origin of the word is unknown, but goldsmiths used *borsela* for a spring clamp long before, and the glassmakers probably borrowed it.{% include cite.html n=2 %} Traditionally the jacks were made in two parts soldered together: the blades, forged by hand from iron, and the spring and handle, a flat bar bent by hammering it cold around an anvil, which gave it its spring. Today the blades come from pre-sized steel bar and the backs are often cut by water jet.{% include cite.html n=2 %}
+
+Jacks are old: a 1570 painting of the Medici glass workshop in Florence shows a worker forming a narrow constriction in a blown foot with "the two-bladed tool called the jacks".{% include cite.html n=5 %}
 
 ## Variations
 

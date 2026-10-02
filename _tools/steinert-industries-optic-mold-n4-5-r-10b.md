@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/87/images/200/N45_R_10B_side__39715.1349729964.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/n4-5-r-10b-optic-mold-for-glassblowing/
+type: optic-molds
 ---

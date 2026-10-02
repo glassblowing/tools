@@ -14,4 +14,5 @@ buy:
   url: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/other-tools/
   note: Made to order; request a quote by email
 reviews: []
+type: overlay-tools
 ---

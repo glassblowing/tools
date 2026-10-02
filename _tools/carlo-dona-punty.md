@@ -15,4 +15,5 @@ buy:
   url: https://www.carlodona.com/en/punty/
   note: Maker's catalog; order by email or phone
 reviews: []
+type: punties
 ---

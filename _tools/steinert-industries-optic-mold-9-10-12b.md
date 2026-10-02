@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn1.bigcommerce.com/server5200/zjkj1e/products/109/images/439/OM_9-10-12B_inside__74091.1683506498.220.220.jpg?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/9-10-12b-optic-mold-for-glassblowing-available-october-2026/
+type: optic-molds
 ---

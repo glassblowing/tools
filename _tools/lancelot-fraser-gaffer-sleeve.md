@@ -18,4 +18,5 @@ buy:
   url: https://docs.google.com/forms/d/e/1FAIpQLSem20chyh5SmB5aK5VoR4b_SEQDvmjnaGQ7joEXbiJTXpAk6A/viewform
   note: Order form; made to order
 reviews: []
+type: protective-clothing
 ---

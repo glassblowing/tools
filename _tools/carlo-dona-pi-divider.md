@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/c-dona-pi-dividers_b5d246c8-48ee-44b0-b517-1f1739419828.png?v=1721737646
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-pi-divider
+type: pi-dividers
 ---

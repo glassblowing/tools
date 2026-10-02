@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/4824-sm.png?v=1696840459
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/mitts-carbon-kevlar-felt-18
+type: protective-clothing
 ---

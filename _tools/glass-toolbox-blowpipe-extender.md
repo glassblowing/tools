@@ -20,4 +20,5 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/2115105841.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Blow-Pipe-Extension-Individual-p260810910
+type: blow-hoses
 ---

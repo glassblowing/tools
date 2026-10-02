@@ -27,4 +27,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/h/bh-m-tum3_1.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/tumbler-glass-mold-3-h
+type: blow-molds
 ---

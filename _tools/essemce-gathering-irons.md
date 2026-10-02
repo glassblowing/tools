@@ -14,4 +14,5 @@ buy:
   url: https://essemce.se/products
   note: Order by email for now; the webshop hasn't opened yet
 reviews: []
+type: gathering-irons
 ---

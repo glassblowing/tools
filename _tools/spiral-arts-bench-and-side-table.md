@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/IMG_1180-Edit2-Edit.jpg?v=1471647858
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/bench-and-side-table
+type: benches
 ---

@@ -14,5 +14,6 @@ buy:
   url: https://fantlab.com/molds.html
   note: Order by email or phone
 reviews: []
+type: blow-molds
 ---
 Fantlab quotes price and delivery time for each mold.

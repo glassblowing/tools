@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Round_Block_27308077-97a9-4a4d-9dc7-96d394bc8789.png?v=1571717108
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/better-block-16cm-round
+type: blocks
 ---

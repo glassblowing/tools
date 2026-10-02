@@ -19,5 +19,6 @@ reviews: []
 image: https://impro.usercontent.one/appid/oneComWsb/domain/fantlab.com/media/fantlab.com/onewebmedia/Verktyg%2007.jpg
 image_credit: Fantlab
 image_source: https://fantlab.com/overlay%20tools.html
+type: overlay-tools
 ---
 Fits the large-radius stainless jack handles: #B for spades #1 and #2, #D for #3. In the US, Glasstrapes sells handles and inserts together as the [Swedish Overlay Tool Set](/tools/jk-overlay-tools-swedish-overlay-tool-set/).

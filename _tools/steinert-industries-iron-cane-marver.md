@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/73/images/172/MarverIron1__25652.1349726119.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/iron-cane-marver/
+type: marvers
 ---

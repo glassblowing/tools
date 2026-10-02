@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/3x5-mold-main.png?v=1758582712
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/block-party-cherrywood-mold-3x5-tumbler
+type: blow-molds
 ---

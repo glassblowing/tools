@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/rrr-half-inch-punty-cropped.png?v=1721737834
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/r-r-r-1-2-solid-punty
+type: punties
 ---

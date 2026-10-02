@@ -22,5 +22,6 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/1375040629.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Small-Paddle-p187559189
+type: paddles
 ---
 The small paddle was first made for glass artist Marc Barreda, to replace his favourite goblet paddle.

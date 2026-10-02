@@ -22,4 +22,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/p/i/pint-with-fitted-base_1.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/pint-glass-mold
+type: blow-molds
 ---

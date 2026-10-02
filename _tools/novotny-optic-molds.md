@@ -12,5 +12,6 @@ buy:
   url: https://novotnyglass.com/en/tools
   note: Order by email; catalog in preparation
 reviews: []
+type: optic-molds
 ---
 Novotný also makes custom tools to order through the special-requests form on its tools page.

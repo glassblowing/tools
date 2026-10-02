@@ -14,4 +14,5 @@ buy:
   url: https://www.correllglassstudio.com/casting-ladles
   note: Order by phone or email
 reviews: []
+type: ladles
 ---

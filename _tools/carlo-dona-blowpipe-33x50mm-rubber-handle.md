@@ -16,4 +16,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-blowpipe-33x50mm-rubber-handle_85984
 reviews: []
+type: blowpipes
 ---

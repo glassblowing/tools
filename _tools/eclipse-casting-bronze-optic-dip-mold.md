@@ -16,4 +16,5 @@ reviews: []
 image: https://i.etsystatic.com/36912758/r/il/7f6967/7458804403/il_794xN.7458804403_gc7u.jpg
 image_credit: Etsy
 image_source: https://www.etsy.com/listing/4296053482/bronze-glass-blowers-optic-dip-mold
+type: optic-molds
 ---

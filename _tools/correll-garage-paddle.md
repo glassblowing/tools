@@ -14,4 +14,5 @@ buy:
   url: https://www.correllglassstudio.com/garage-tools
   note: Order by phone or email
 reviews: []
+type: garage-tools
 ---

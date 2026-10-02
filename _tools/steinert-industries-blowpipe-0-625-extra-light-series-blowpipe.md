@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/163/images/372/XLT_625_Head__00510.1349968223.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/0-625-extra-light-series-blowpipe/
+type: blowpipes
 ---

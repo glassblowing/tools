@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Knockoff.png?v=1570751211
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/gnarly-knockoff-pads
+type: knockoff-pads
 ---

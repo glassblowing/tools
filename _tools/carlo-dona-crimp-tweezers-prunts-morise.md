@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/cdonapruntmorise7689.jpg?v=1737659813
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-crimp-twzr-prunts-morise-800024c5-1704391323
+type: crimps
 ---

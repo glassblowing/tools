@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7437-c-dona-claw-grabbers-large.jpg?v=1738370633
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-claw-grabbers-large
+type: grabbers
 ---

@@ -18,4 +18,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/r/o/rocks-punty.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/rocks-glass-mold-3-5-rocks-glass
+type: blow-molds
 ---

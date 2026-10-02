@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0605/0388/4003/files/IMG_2985.jpg?v=1755301704
 image_credit: Protostamps
 image_source: https://www.protostamps.com/products/custom-graphite-stamps
+type: stamps
 ---

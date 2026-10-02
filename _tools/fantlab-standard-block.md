@@ -20,5 +20,6 @@ reviews: []
 image: https://impro.usercontent.one/appid/oneComWsb/domain/fantlab.com/media/fantlab.com/onewebmedia/standardskopor.JPG
 image_credit: Fantlab
 image_source: https://fantlab.com/standard%20blocks.html
+type: blocks
 ---
 Odd numbers, larger sizes, and other shapes, including fully custom blocks, are made on request.

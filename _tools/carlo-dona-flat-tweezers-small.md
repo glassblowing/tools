@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7527-carlo-dona-flat-sm.jpg?v=1752600013
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-tweezers-sm-flat
+type: tweezers
 ---

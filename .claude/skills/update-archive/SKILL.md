@@ -80,6 +80,7 @@ One file per product page. Collapse variants (lengths, body material, grips) int
 - **title:** the product name, cleaned up. Put catalog numbers such as `PI-SW` in `specs.Model`, not the title.
 - **maker / category:** existing slugs. If no category fits, create one in `_tool_categories/` (title, order, icon, summary, one-paragraph body) and mention it in the report. Create a `_makers/` file for a new maker, using only facts you can source.
 - **disciplines:** any of `furnace`, `flameworking`, `coldworking`.
+- **type:** the glossary type (a `_glossary/` file name, e.g. `diamond-shears`). `make types` fills it in from each glossary entry's `match` pattern; set it by hand when the pattern misses. If no type fits, either add a glossary entry (below) or leave it out and mention the tool in the report.
 - **specs:** short factual key/values from the vendor page: Model, Body, Head, Length, Grip, Dimensions, and so on. Use inches the way the vendor does.
 - **added:** today, for new files only. Don't change it on existing ones.
 - **buy[].vendor:** must exactly match a `name` in `_data/vendors.yml`. The site adds "Direct from the maker" by itself when the vendor's `maker` matches.
@@ -89,6 +90,17 @@ One file per product page. Collapse variants (lengths, body material, grips) int
 When updating an existing tool, change only what the vendor's page contradicts, and keep other people's edits.
 
 After writing listings, run `make photos` (add `VENDOR=id` to limit it) to link photos for any new listing. It skips pages shared by several listings (catalog and category pages) and site logos, so a missing photo is normal. Pages that loaded with no usable photo are recorded in `scripts/photo-misses.json` and skipped for 30 days; `REFRESH=1` ignores that record and also re-checks listings that already have a photo, so only use it with care: with `VENDOR=` it can replace a maker's own photo with that vendor's.
+
+### Glossary entries (`_glossary/`)
+
+Each tool type has one entry: what it is, how and why it's used, and its history where a source supports it. When adding one:
+
+- **Research it.** Good sources: the Murano Museo del Vetro glossary, the Conciatore glass lexicon, Corning's *Techniques of Renaissance Venetian Glassworking* (renvenetian.cmog.org), Wikipedia's Glassblowing article, and makers' own pages that explain the tool (Blockhead's FAQ, Jakobsson, Cutting Edge, Jim Moore). Read each page you cite this run; never write history from memory.
+- **Cite inline.** Every factual sentence ends with `{% include cite.html n=N %}` (or `n="1,3"`) pointing at the numbered `sources:` list. Write in your own words and put direct quotes in quotation marks. If a site blocks automated reading, add a `note:` to that source saying how its text was obtained.
+- **Front matter:** `title`, `category` (a `_tool_categories` slug), `order` within the category, `aka` (other names, including Murano/Italian/Czech ones), a one-sentence `summary`, `match` (a regex on tool titles for `make types`; `match_categories` widens it beyond the entry's category), and `sources` (`title`, `url`, optional `note`).
+- **Sections:** `## What it is`, `## How it's used`, and optionally `## History` and `## What to look for`. Leave out History rather than write it unsourced.
+
+`make validate` checks that every citation points at a listed source, every source is cited, History sections cite something, and every tool's `type` exists.
 
 ### 5. Verify and report
 

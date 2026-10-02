@@ -16,4 +16,5 @@ reviews: []
 image: https://i.etsystatic.com/37544125/r/il/dd97c2/7820545304/il_794xN.7820545304_f2w0.jpg
 image_credit: Etsy
 image_source: https://www.etsy.com/listing/4474310290/pineapple-mold-45mm-x-105mm
+type: pineapple-molds
 ---

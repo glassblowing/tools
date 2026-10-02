@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/126/images/299/6_3_24B_side__00326.1349734673.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/6-3-24b-optic-mold-for-glassblowing-available-october-2026/
+type: optic-molds
 ---

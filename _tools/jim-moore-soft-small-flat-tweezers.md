@@ -13,4 +13,5 @@ buy:
 - vendor: Jim Moore Glass Tools
   url: https://www.toolsforglass.com/Tweezers.html
 reviews: []
+type: tweezers
 ---

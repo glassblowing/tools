@@ -20,4 +20,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/6606f45947c37a34dd159fd6/04e384bc-1acf-477c-bf4b-20915ca645cb/IMG_0302.jpg?format=1000w
 image_credit: Block Party
 image_source: https://www.blockpartymolds.com/shop/p/6-cm-block
+type: blocks
 ---

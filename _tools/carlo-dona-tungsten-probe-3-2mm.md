@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Carlo-Dona-7538-tungsten-pick-3.2.jpg?v=1737664750
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/carlo-dona-tungsten-probe-3-2mm
+type: tungsten-tools
 ---

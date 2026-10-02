@@ -18,5 +18,6 @@ reviews: []
 image: https://jakobssonsweden.com/wp-content/uploads/2023/09/Blocks-for-glassblowing-2.jpg
 image_credit: Jakobsson Sweden
 image_source: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/wooden-blocks/
+type: blocks
 ---
 Jakobsson also makes blocks to your own drawing or file, quoted like a custom mold.

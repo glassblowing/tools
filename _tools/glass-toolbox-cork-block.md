@@ -21,4 +21,5 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/1375922625.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Cork-Block-Standard-Rectangle-p161158471
+type: cork-tools
 ---

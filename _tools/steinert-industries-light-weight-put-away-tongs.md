@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/44/images/127/Tongs_both__06112.1349718807.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/light-weight-tongs-made-to-order/
+type: tongs
 ---

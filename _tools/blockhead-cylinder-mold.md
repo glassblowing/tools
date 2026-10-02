@@ -24,4 +24,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/h/bh-m-cyl-3.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/cylinder-mold-3-diameter
+type: blow-molds
 ---

@@ -34,4 +34,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/63dd35a57506e326fba4ae50/1675558205692-NXXS0849U8099G7SQVKV/2154686.jpg?format=1000w
 image_credit: Hobbyglass (Hegan Glassworks)
 image_source: https://www.hobbyglass.com/shop/p/4-inch-series-flat-bottom-optic-mold
+type: optic-molds
 ---

@@ -23,5 +23,6 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/1375111939.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/Extra-Small-Foot-Board-p187582771
+type: footing-tools
 ---
 Supplied dry: soak before use and store wet. Glass Toolbox sells these without naming a maker.

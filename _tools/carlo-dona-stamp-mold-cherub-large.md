@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7806_c-dona-cherub-stamp-lg.jpg?v=1739301168
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-stamp-mold-cherub-lrg
+type: blow-molds
 ---

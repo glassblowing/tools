@@ -16,4 +16,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-blowpipe-21x35mm-rubber-handle_85955
 reviews: []
+type: blowpipes
 ---

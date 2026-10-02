@@ -17,4 +17,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-small-leaf-tweezer
 reviews: []
+type: crimps
 ---

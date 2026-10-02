@@ -17,4 +17,5 @@ reviews: []
 image: https://static.wixstatic.com/media/bca1bb_899c9f73894342d88b687366b65bc01d~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg
 image_credit: Masters of Glass
 image_source: https://www.mastersofglass.com/product-page/pastorale-fork-1
+type: pastorale
 ---

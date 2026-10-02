@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/45/images/129/Tongs_Standard__40858.1349718947.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/standard-put-away-tongs-made-to-order-currently-not-available/
+type: tongs
 ---

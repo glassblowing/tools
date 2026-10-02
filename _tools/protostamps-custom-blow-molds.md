@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0605/0388/4003/files/IMG_3610_1.jpg?v=1755300015
 image_credit: Protostamps
 image_source: https://www.protostamps.com/products/custom-blow-molds
+type: blow-molds
 ---

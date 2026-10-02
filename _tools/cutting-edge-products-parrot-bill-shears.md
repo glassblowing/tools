@@ -22,4 +22,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1492542428028-LXXYJC93QXNA0JJSXOE8/large.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/trim-shears/parrot-bill
+type: parrot-bill-shears
 ---

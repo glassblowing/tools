@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/Grabbers.jpg?v=1684704078
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/grabbers
+type: grabbers
 ---

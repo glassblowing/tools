@@ -15,5 +15,6 @@ buy:
   url: https://marukotools.com/productsprice.html
   note: Listed on the maker's price list
 reviews: []
+type: tweezers
 ---
 High-carbon steel that will rust. Keep it clean and dry.

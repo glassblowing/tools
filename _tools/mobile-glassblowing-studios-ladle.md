@@ -14,4 +14,5 @@ buy:
 - vendor: Mobile Glassblowing Studios
   url: https://www.mobileglassblowingstudios.com/shoptools.html
 reviews: []
+type: ladles
 ---

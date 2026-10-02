@@ -17,4 +17,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/62b485d6-0187-40b9-ac42-721b6f8d97ec/IMG_2766.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/xvb4dpz8pfg5olut0ao57ghg72hils
+type: tweezers
 ---

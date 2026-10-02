@@ -20,4 +20,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1499463506162-LQMQWPRGJ02PC4Q5BXPG/1.JPG?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/handy-tools/mini-tagliol-paddle
+type: tagliol
 ---

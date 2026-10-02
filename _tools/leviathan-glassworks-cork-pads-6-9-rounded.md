@@ -23,4 +23,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/6967-leviathan-corkpads-6x9.jpg?v=1754420424
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/cork-muffs-9x6x2-round-800021b8-1520560726
+type: cork-tools
 ---

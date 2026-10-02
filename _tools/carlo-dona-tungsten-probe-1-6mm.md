@@ -16,4 +16,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-tungsten-probe-1-6mm_85944
 reviews: []
+type: tungsten-tools
 ---

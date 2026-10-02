@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/162/images/371/SL_dwg__96414.1349968130.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/0-5-small-light-blowpipe/
+type: blowpipes
 ---

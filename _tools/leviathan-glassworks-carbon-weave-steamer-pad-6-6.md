@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Steamer_Double_Front_f37bc9f3-6073-44bb-b27b-f191cd731120.png?v=1571543564
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/copy-of-shape-shifter-carbon-weave-pad-all-the-shaping-none-of-the-smoke
+type: shaping-pads
 ---

@@ -21,4 +21,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/TungstenwithHandle.jpg?v=1684715870
 image_credit: Jasen Johnsen Glass Tools
 image_source: https://jasenjohnsenglasstools.com/products/tungsten-with-handle
+type: tungsten-tools
 ---

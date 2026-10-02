@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/3_60227f8e-cdf1-4072-b00b-fdedde96a29a.png?v=1570772955
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/copy-of-marble-tool-4-diameter-and-handle
+type: marble-ring-tools
 ---

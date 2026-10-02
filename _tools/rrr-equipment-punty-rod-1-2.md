@@ -13,5 +13,6 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/punty-rod-12
 reviews: []
+type: punties
 ---
 Hot Glass Color can fit a rubber hose grip or knurled handle for an extra charge.

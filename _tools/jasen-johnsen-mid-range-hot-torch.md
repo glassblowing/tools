@@ -18,4 +18,5 @@ reviews: []
 image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/5179180994.jpg
 image_credit: Glass Toolbox
 image_source: https://glasstoolbox.company.site/JJ-Hot-Torch-Midrange-p783025466
+type: hand-torches
 ---

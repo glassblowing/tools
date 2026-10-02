@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/carlo-dona-optic-mold-7514-top.png?v=1696845193
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/mold-optic-16-point-55-x-100-carlo-dona
+type: optic-molds
 ---

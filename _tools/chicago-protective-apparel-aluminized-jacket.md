@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/2825-600-AKV-XL.jpg?v=1696840505
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/aluminumized-coat-30
+type: protective-clothing
 ---

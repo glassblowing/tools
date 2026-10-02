@@ -15,4 +15,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/mold_49452e9c-a5d0-4300-aa1b-fc066b3b9991.png?v=1612994485
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/custom-mold
+type: blow-molds
 ---

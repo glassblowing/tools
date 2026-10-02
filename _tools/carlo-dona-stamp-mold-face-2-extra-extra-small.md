@@ -14,4 +14,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-stamp-mold-face-2-xxsml
 reviews: []
+type: blow-molds
 ---

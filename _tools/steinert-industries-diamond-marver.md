@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/72/images/171/MarverDiamond__24239.1349726046.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/diamond-marver/
+type: marvers
 ---

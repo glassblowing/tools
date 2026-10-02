@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/JumboPipe.jpg?v=1471640803
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/jumbo-pipe
+type: blowpipes
 ---

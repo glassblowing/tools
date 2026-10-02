@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn2.bigcommerce.com/server5200/zjkj1e/products/174/images/393/HW_125_Head__96505.1349969137.220.220.gif?c=2
 image_credit: Steinert Industries
 image_source: https://products.steinertindustries.com/1-25-heavy-weight-series-blowpipe/
+type: blowpipes
 ---

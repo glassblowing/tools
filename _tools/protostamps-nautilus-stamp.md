@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7640-protostamp-nautilus-detail.jpg?v=1750884950
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/nautilus-stamp-8000245b-1681949471
+type: stamps
 ---

@@ -16,4 +16,5 @@ reviews: []
 image: https://spiralarts.com/cdn/shop/products/pocketinflator_2000x.jpg
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/pocket-inflator
+type: blow-hoses
 ---

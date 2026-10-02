@@ -19,4 +19,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1499463633540-HJ1HQGQZ83MJ6NFZZKQB/1.JPG?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/handy-tools/pi-divider
+type: pi-dividers
 ---

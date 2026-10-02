@@ -18,4 +18,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/3sstamps_fbeecd0b-cbcc-4c7d-9f1c-7ecea236cd91.png?v=1570693847
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/superior-stamp-or-brand-3
+type: stamps
 ---

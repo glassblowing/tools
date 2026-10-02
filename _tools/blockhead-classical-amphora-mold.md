@@ -24,4 +24,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/b/a/bam-phora-6-p.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/classical-amphora-mold-6-h
+type: blow-molds
 ---

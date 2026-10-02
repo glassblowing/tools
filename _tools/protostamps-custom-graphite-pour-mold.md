@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0605/0388/4003/files/IMG_9312.jpg?v=1755298637
 image_credit: Protostamps
 image_source: https://www.protostamps.com/products/swg-custom-graphite-mold
+type: blow-molds
 ---

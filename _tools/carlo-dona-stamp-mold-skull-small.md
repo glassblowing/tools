@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7803_c-dona-skull-stamps.jpg?v=1739299800
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-stamp-mold-skull-sml
+type: blow-molds
 ---

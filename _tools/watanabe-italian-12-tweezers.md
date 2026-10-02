@@ -17,4 +17,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/875b07fc-304c-41d0-9d01-d9dd33a99812/IMG_2418.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/medium-tweezers
+type: tweezers
 ---

@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0949/7986/products/PU-SW.jpg?v=1471639798
 image_credit: Spiral Arts
 image_source: https://spiralarts.com/products/standard-workhorse-punty
+type: punties
 ---

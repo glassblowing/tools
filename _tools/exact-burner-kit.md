@@ -43,5 +43,6 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/u/-/u-gs10.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/u-gs10-6
+type: hand-torches
 ---
 Olympic lists the 109,000 BTU kit with its 120K BTU tip. Extension tubes come in 4" and 8", and repair kits are available for the valve and trigger.

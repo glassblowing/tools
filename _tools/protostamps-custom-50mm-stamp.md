@@ -18,5 +18,6 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0605/0388/4003/products/SWG-brass-product50mm.png?v=1650947873
 image_credit: Protostamps
 image_source: https://www.protostamps.com/products/swg-custom-stamp-50mm
+type: stamps
 ---
 Every stamp comes on a hand-turned wooden handle with a 5/8"-16 threaded rod: 1.5" long for stamps under 30 mm, 3" for larger ones.
