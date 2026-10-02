@@ -15,5 +15,8 @@ buy:
   url: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/wooden-blocks/
   note: Made to order; request a quote by email
 reviews: []
+image: https://jakobssonsweden.com/wp-content/uploads/2023/09/Blocks-for-glassblowing-2.jpg
+image_credit: Jakobsson Sweden
+image_source: https://jakobssonsweden.com/molds-and-tools-for-hot-glassblowing/wooden-blocks/
 ---
-Blocks and handles can be ordered separately, and a handle can be moved to another block.
+Blocks and handles can be ordered separately, and a handle can be moved to another block. Jakobsson also makes blocks to your own drawing or file, quoted like a custom mold.
