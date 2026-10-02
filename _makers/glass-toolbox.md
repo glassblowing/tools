@@ -2,6 +2,7 @@
 title: Glass Toolbox (house brand)
 location: Hilperton, Wiltshire, UK
 website: https://www.glasstoolbox.co.uk/
+instagram: glasstoolbox
 coords:
 - 51.34
 - -2.18
