@@ -15,6 +15,9 @@ buy:
   url: https://www.cuttingedgeprdx.com/trim-shears/mini-duck-bill
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/mini-duckbill-shear
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Mini-Duck-Bill-Shears-p619770795
+  note: UK
 reviews: []
 published: false
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1492547880352-YRR8BVXBJSC032WS95UB/large.jpg?format=1000w

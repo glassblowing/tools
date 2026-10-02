@@ -16,6 +16,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-diamond-shears-80mm-sm
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Diamond-Shear-Small-80MM-p161131554
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Carlo-dona-diamond-80mm-7501.jpg?v=1736898018
 image_credit: Hot Glass Color & Supply

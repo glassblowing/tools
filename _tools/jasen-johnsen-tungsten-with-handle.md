@@ -14,6 +14,9 @@ specs:
 buy:
 - vendor: Jasen Johnsen Glass Tools
   url: https://jasenjohnsenglasstools.com/products/tungsten-with-handle
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Tungsten-spike-with-handle-p784001903
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/TungstenwithHandle.jpg?v=1684715870
 image_credit: Jasen Johnsen Glass Tools

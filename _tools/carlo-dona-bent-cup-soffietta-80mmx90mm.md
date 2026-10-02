@@ -15,6 +15,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-soffietta-lg-bent-puffer
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Bent-Soffietta-Puffer-p161149890
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Carlo-Dona-7396-bent-soffietta.jpg?v=1736896180
 image_credit: Hot Glass Color & Supply

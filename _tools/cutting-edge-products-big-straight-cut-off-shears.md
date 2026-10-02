@@ -15,6 +15,9 @@ buy:
   url: https://www.cuttingedgeprdx.com/straight-shears/medium-straight-cut-off-spy7a
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/straight-shears-large
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Straight-Cut-Off-Big-p552473266
+  note: UK
 reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1564425330185-8SRUZ3TCTBKUF4TOSP6J/large.jpg?format=1000w
 image_credit: Cutting Edge Products

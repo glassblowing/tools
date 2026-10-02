@@ -15,6 +15,9 @@ buy:
   url: https://jasenjohnsenglasstools.com/products/ridged-crimp
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/coarse-ridge-crimp-tweezer
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Crimps-Narrow-Ridged-Large-p783050769
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/RidgedCrimpCourse.jpg?v=1684703612
 image_credit: Jasen Johnsen Glass Tools

@@ -15,6 +15,9 @@ buy:
   url: https://jasenjohnsenglasstools.com/products/large-tweezers
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/tweezers-large-15
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Tweezers-Large-p783012700
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/LargeTweezer15inch.jpg?v=1684714314
 image_credit: Jasen Johnsen Glass Tools

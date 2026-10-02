@@ -15,6 +15,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-jacks-large-800024c0-1704391322
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Standard-Large-Jacks-300mm-p161069378
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7684-carlo-dona-jacks-lg.jpg?v=1751990816
 image_credit: Hot Glass Color & Supply

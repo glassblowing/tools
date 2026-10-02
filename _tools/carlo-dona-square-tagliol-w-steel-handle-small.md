@@ -16,6 +16,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-tagliol-sml-sqr-steel
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Standard-Tag-Small-Stainless-Steel-Handle-p161149567
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7433-carlodonasquaresteeltag.jpg?v=1737663047
 image_credit: Hot Glass Color & Supply

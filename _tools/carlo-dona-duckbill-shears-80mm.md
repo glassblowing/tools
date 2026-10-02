@@ -16,6 +16,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-duckbill-shear-80mm-st
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Duckbill-Shears-Large-p161131541
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/Carlo-Dona-Duck-7508.jpg?v=1737766399
 image_credit: Hot Glass Color & Supply

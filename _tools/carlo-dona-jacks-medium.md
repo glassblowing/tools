@@ -15,6 +15,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-jacks-md
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Standard-Medium-Jacks-240mm-p161071082
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Carlo-Dona-7524-med-jacks.jpg?v=1737659145
 image_credit: Hot Glass Color & Supply

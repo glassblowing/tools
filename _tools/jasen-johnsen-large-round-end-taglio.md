@@ -16,6 +16,9 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/tagliol-large-8-blade
   note: Round blade, large size option
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Taglio-Large-p783050783
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/LargeTaglioRoundend.jpg?v=1684707896
 image_credit: Jasen Johnsen Glass Tools

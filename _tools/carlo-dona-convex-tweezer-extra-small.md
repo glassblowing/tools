@@ -15,5 +15,11 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-convex-tweezer-xsml-8000245e-1682439484
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Convex-Tweezer-Extra-Small-p187574380
+  note: UK
 reviews: []
+image: https://d2j6dbq0eux0bg.cloudfront.net/images/17682472/1207794333.jpg
+image_credit: Glass Toolbox
+image_source: https://glasstoolbox.company.site/Convex-Tweezer-Extra-Small-p187574380
 ---

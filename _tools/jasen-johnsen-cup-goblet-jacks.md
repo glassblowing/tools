@@ -14,6 +14,9 @@ buy:
   url: https://jasenjohnsenglasstools.com/products/cup-goblet-jacks
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/jacks-goblet
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Jacks-Cup-p783025422
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/GobletJacks7.5inchblade.jpg?v=1684706952
 image_credit: Jasen Johnsen Glass Tools
