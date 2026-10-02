@@ -8,7 +8,7 @@ layout: default
   {%- if page.location %}{{ page.location }}|{% endif -%}
   {%- if page.founded %}since {{ page.founded }}|{% endif -%}
   {%- if page.website %}<a href="{{ page.website }}" rel="noopener" target="_blank">Website ↗</a>|{% endif -%}
-  {%- if page.instagram %}<a href="https://www.instagram.com/{{ page.instagram }}/" rel="noopener" target="_blank">Instagram ↗</a>|{% endif -%}
+  {%- if page.instagram %}{% include instagram-link.html handle=page.instagram %}|{% endif -%}
 {%- endcapture -%}
 <p class="muted">{{ meta | split: "|" | join: " · " }}</p>
 <div class="prose">{{ content }}</div>

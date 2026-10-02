@@ -53,6 +53,8 @@ p { margin: 0 0 0.75rem; }
 .brand { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 600; text-decoration: none; }
 .brand .logo-mark { width: 22px; height: 22px; flex: none; }
 .brand .word span { color: var(--accent); }
+.ig { display: inline-flex; align-items: center; gap: 0.25em; vertical-align: -0.15em; }
+.ig svg { width: 1em; height: 1em; flex: none; }
 .site-header nav { display: flex; gap: 1.25rem; }
 .site-header nav a { text-decoration: none; color: var(--muted); }
 .site-header nav a:hover { color: var(--text); }
