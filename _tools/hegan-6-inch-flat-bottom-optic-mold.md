@@ -16,8 +16,14 @@ buy:
 - vendor: Hobbyglass (Hegan Glassworks)
   url: https://www.hobbyglass.com/shop/p/6-inch-series-flat-bottom-mold
 - vendor: Olympic Color Rods
-  url: https://glasscolor.com/tools/hegan-glassworks
-  note: Sold as individual sizes and point counts
+  url: https://glasscolor.com/bronze-mold-6-12-point
+  note: 12 rib (page sells open and closed)
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/h-614
+  note: 14 rib (page sells open and closed)
+- vendor: Olympic Color Rods
+  url: https://glasscolor.com/h-616
+  note: 16 rib (page sells open and closed)
 reviews: []
 image: https://images.squarespace-cdn.com/content/v1/63dd35a57506e326fba4ae50/1677992857232-H9EZNHZ8NOVMFXVRWBI1/2374268.jpg?format=1000w
 image_credit: Hobbyglass (Hegan Glassworks)

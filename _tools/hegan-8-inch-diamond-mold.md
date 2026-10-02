@@ -15,9 +15,6 @@ specs:
 buy:
 - vendor: Hobbyglass (Hegan Glassworks)
   url: https://www.hobbyglass.com/shop/p/8-inch-series-16-point-diamond-mold
-- vendor: Olympic Color Rods
-  url: https://glasscolor.com/tools/hegan-glassworks
-  note: Sold as individual sizes and point counts
 reviews: []
 image: https://images.squarespace-cdn.com/content/v1/63dd35a57506e326fba4ae50/bbf19c23-a3e3-4205-8243-30d57ad3de9f/100_4741.jpg?format=1000w
 image_credit: Hobbyglass (Hegan Glassworks)

@@ -194,18 +194,19 @@
   crawl:
     - https://www.blockheadtools.com/blocks
   scope:
-    in: Blocks.
-    out: Other products (molds, tools) until asked.
+    in: Blocks, paddles, graphite marver blocks, and the Archetype wood and graphite molds (the user asked for all of these).
+    out: Nothing so far.
   notes: >-
     Doesn't sell direct. The whole line is sold by Olympic Color Rods (vendor "Olympic
     Color Rods", a Magento store, so read it directly) under
     https://glasscolor.com/tools/blocks/blockhead-blocks/, with one page per block style.
     Only custom and left-handed blocks are ordered from Blockhead itself. Blockhead's
     /blocks portfolio pages keep their text in page blocks, so the catalog reader shows
-    "no description"; read the pages' HTML for sizes. Glass Color also sells Blockhead
-    graphite marver blocks, which aren't on Blockhead's blocks page, so they're not
-    listed yet (ask). Blockhead molds (/archetype-molds, /custom-molds) and tools (/tools)
-    are also out of scope for now.
+    "no description"; read the pages' HTML for sizes. Olympic also sells Blockhead's
+    paddles (tools/paddles/wood-paddles), graphite marver blocks and mold corks, and the
+    Archetype molds (tools/molds-mold-mix/blockhead-wood-molds/* and
+    blockhead-graphite-molds). Molds are one listing per shape, with sizes and the wood
+    and graphite versions as separate buy links.
 
 - id: carlo-dona
   name: Carlo Donà
@@ -377,6 +378,7 @@
 - id: glass-toolbox
   name: Glass Toolbox
   url: https://www.glasstoolbox.co.uk/
+  instagram: glasstoolbox
   location: Hilperton, Wiltshire, UK
   coords: [51.34, -2.18]
   crawl:
