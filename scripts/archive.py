@@ -5,6 +5,7 @@
     python3 scripts/archive.py links [--vendor ID]   # check every buy link
     python3 scripts/archive.py catalog VENDOR_ID     # list a vendor's in-crawl products (Shopify, WooCommerce, Squarespace)
     python3 scripts/archive.py photos [--write]      # link each listing to the seller's own product image
+    python3 scripts/archive.py geocode [--write]     # town-level map coordinates for makers with a location
 
 Used by the update-archive skill (.claude/skills/update-archive/SKILL.md). Needs PyYAML.
 """
@@ -436,6 +437,42 @@ def cmd_photos(args):
     return 0
 
 
+def cmd_geocode(args):
+    """Add town-level `coords` to makers that have a `location` (OpenStreetMap Nominatim)."""
+    done = 0
+    for path in sorted((ROOT / "_makers").glob("*.md")):
+        fm = front_matter(path)
+        loc = fm.get("location")
+        if not loc or (fm.get("coords") and not args.refresh):
+            continue
+        parts = [x.strip() for x in loc.split(",")]
+        hits = []
+        # Try the full location, then just "town, country" (regions like "Småland" can confuse it).
+        for query in [loc] + ([f"{parts[0]}, {parts[-1]}"] if len(parts) > 2 else []):
+            # Nominatim's usage policy: an identifying User-Agent and at most one request a second.
+            q = urllib.parse.urlencode({"q": query, "format": "json", "limit": 1})
+            req = urllib.request.Request(f"https://nominatim.openstreetmap.org/search?{q}",
+                                         headers={"User-Agent": "glassblowing.tools archive script (https://github.com/glassblowing/tools)"})
+            try:
+                hits = json.load(urllib.request.urlopen(req, timeout=20))
+            except Exception as e:
+                print(f"{path.stem}: lookup failed ({type(e).__name__})")
+            time.sleep(1.1)
+            if hits:
+                break
+        if not hits:
+            print(f"{path.stem}: no match for {loc!r}")
+            continue
+        # Round to ~1 km: the town, never a street address.
+        fm["coords"] = [round(float(hits[0]["lat"]), 2), round(float(hits[0]["lon"]), 2)]
+        print(f"{path.stem:25} {loc} -> {fm['coords']}  ({hits[0].get('display_name', '')[:60]})")
+        if args.write:
+            write_front_matter(path, fm)
+            done += 1
+    print(f"\n{done} makers updated" + ("" if args.write else " (dry run; pass --write to save)"))
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -448,8 +485,12 @@ def main():
     p.add_argument("--vendor", help="only use this vendor's pages")
     p.add_argument("--refresh", action="store_true", help="also re-check listings that already have a photo")
     p.add_argument("--write", action="store_true", help="save changes (default is a dry run)")
+    p = sub.add_parser("geocode")
+    p.add_argument("--refresh", action="store_true", help="redo makers that already have coords")
+    p.add_argument("--write", action="store_true", help="save changes (default is a dry run)")
     args = ap.parse_args()
-    return {"validate": cmd_validate, "links": cmd_links, "catalog": cmd_catalog, "photos": cmd_photos}[args.cmd](args)
+    return {"validate": cmd_validate, "links": cmd_links, "catalog": cmd_catalog, "photos": cmd_photos,
+            "geocode": cmd_geocode}[args.cmd](args)
 
 
 if __name__ == "__main__":

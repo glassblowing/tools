@@ -3,11 +3,28 @@ title: Makers
 permalink: /makers/
 ---
 <h1>Makers</h1>
+
+{%- assign makers = site.makers | sort: "title" -%}
+<div id="maker-map" class="maker-map" aria-label="Map of makers by location"></div>
+<p class="muted small">Pins mark the maker's town, not an address. Makers without a published location aren't on the map.</p>
+
 <ul class="count-list wide">
-  {% assign makers = site.makers | sort: "title" %}
   {% for m in makers %}
   {% assign n = site.tools | where: "maker", m.slug | size %}
   {% if n == 0 %}{% continue %}{% endif %}
   <li><a href="{{ m.url | relative_url }}">{{ m.title }}</a><span class="muted desc">{{ m.location }}</span><span>{{ n }}</span></li>
   {% endfor %}
 </ul>
+
+<script>
+  window.MAKERS = [
+    {%- for m in makers -%}
+      {%- assign n = site.tools | where: "maker", m.slug | size -%}
+      {%- if n == 0 or m.coords == nil -%}{%- continue -%}{%- endif -%}
+      {"name": {{ m.title | jsonify }}, "url": {{ m.url | relative_url | jsonify }}, "location": {{ m.location | jsonify }}, "tools": {{ n }}, "lat": {{ m.coords[0] }}, "lng": {{ m.coords[1] }}},
+    {%- endfor -%}
+  ];
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="{{ '/assets/js/maker-map.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
