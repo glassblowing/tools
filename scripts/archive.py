@@ -2,18 +2,24 @@
 """Helpers for keeping the tool archive up to date.
 
     python3 scripts/archive.py validate              # check tools/makers/categories/vendors line up
-    python3 scripts/archive.py links [--vendor ID]   # check every buy link
+    python3 scripts/archive.py links [--vendor ID] [--max-age DAYS] [--write]
+                                                     # check buy links not checked in the last week
     python3 scripts/archive.py catalog VENDOR_ID     # list a vendor's in-crawl products (Shopify, WooCommerce, Squarespace)
     python3 scripts/archive.py photos [--write]      # link each listing to the seller's own product image
+                                                     # (pages with no photo are skipped for 30 days)
     python3 scripts/archive.py geocode [--write]     # town-level map coordinates for makers with a location
 
 Used by the update-archive skill (.claude/skills/update-archive/SKILL.md). Needs PyYAML.
 """
 import argparse
+import datetime
+import fcntl
 import html
 import json
 import re
 import sys
+import tempfile
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -28,6 +34,7 @@ except ImportError:
     sys.exit("PyYAML is required: pip install pyyaml")
 
 ROOT = Path(__file__).resolve().parent.parent
+TODAY = datetime.date.today()
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140 Safari/537.36"
 
 
@@ -47,13 +54,37 @@ def load():
     makers = {p.stem for p in (ROOT / "_makers").glob("*.md")}
     cats = {p.stem for p in (ROOT / "_tool_categories").glob("*.md")}
     vendors = yaml.safe_load((ROOT / "_data" / "vendors.yml").read_text())
+    SHOPIFY_HOSTS.update(urlparse(v["url"]).netloc for v in vendors if v.get("platform") == "shopify")
     return tools, makers, cats, vendors
+
+
+# Shopify rate-limits a client across all of its stores, so every Shopify store shares one
+# pacing slot; other sites get one each. Slots are lock files, so two runs of this script at
+# once (say, photos and links) still take turns instead of tripping the limit together.
+SHOPIFY_HOSTS = set()
+PACE = {"shopify": 1.5}
+
+
+def pace(url):
+    """Wait until it's this site's turn to get another request."""
+    host = urlparse(url).netloc
+    key = "shopify" if host in SHOPIFY_HOSTS else host
+    lock = Path(tempfile.gettempdir()) / f"gbt-archive-{key}.pace"
+    with open(lock, "a+") as f:
+        fcntl.flock(f, fcntl.LOCK_EX)
+        f.seek(0)
+        last = float(f.read() or 0)
+        time.sleep(max(0, last + PACE.get(key, 0.5) - time.time()))
+        f.seek(0)
+        f.truncate()
+        f.write(str(time.time()))
 
 
 def fetch(url, timeout=20, tries=5):
     """GET a URL, waiting and retrying when the site rate-limits us (429)."""
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
     for attempt in range(tries):
+        pace(url)
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.status, r.geturl(), r.read()
@@ -115,29 +146,36 @@ def cmd_validate(_):
 def cmd_links(args):
     tools, _, _, vendors = load()
     by_name = {v["name"]: v for v in vendors}
-    jobs = []
+    jobs, skipped, partial = [], 0, set()
     for slug, t in tools.items():
+        checked = t.get("last_checked")
+        if isinstance(checked, str):
+            checked = datetime.date.fromisoformat(checked)
+        if args.max_age and checked and (TODAY - checked).days < args.max_age:
+            skipped += 1
+            continue
         for b in t.get("buy") or []:
             v = by_name.get(b["vendor"], {})
             if args.vendor and v.get("id") != args.vendor:
+                partial.add(slug)  # some links unchecked, so don't mark the tool checked
                 continue
-            # Shopify rate-limits a client across all its stores, so every Shopify
-            # store shares one queue; other sites get a queue each.
             queue = "shopify" if v.get("platform") == "shopify" else urlparse(b["url"]).netloc
             jobs.append((queue, slug, b["vendor"], b["url"]))
 
-    # Queues run in parallel; each queue sends one request at a time with a pause.
+    # Queues run in parallel; fetch() spaces out the requests to each site.
     queues = {}
     for q, *job in jobs:
         queues.setdefault(q, []).append(job)
 
+    def check(url):
+        # A product the store lists in /products.json is live; only look up the rest.
+        if urlparse(url).netloc in SHOPIFY_HOSTS and (handle := shopify_handle(url)):
+            if handle in shopify_products("{0.scheme}://{0.netloc}".format(urlparse(url))):
+                return 200, url
+        return status(url)
+
     def run(item):
-        name, queue_jobs = item
-        out = []
-        for j in queue_jobs:
-            out.append((*j, *status(j[2])))
-            time.sleep(1.5 if name == "shopify" else 0.5)
-        return out
+        return [(*j, *check(j[2])) for j in item[1]]
 
     with ThreadPoolExecutor(8) as ex:
         results = [r for rs in ex.map(run, queues.items()) for r in rs]
@@ -153,8 +191,21 @@ def cmd_links(args):
         bad += flag in ("FAIL", "moved")
         limited += flag == "limit"
         extra = f" -> {final}" if moved else ""
-        print(f"{flag:5} {code!s:>4}  {slug:45} {vendor}: {url}{extra}")
-    print(f"\n{len(results) - bad - limited}/{len(results)} links ok, {bad} need attention, {limited} rate-limited (recheck later)")
+        if flag != "ok" or args.verbose:
+            print(f"{flag:5} {code!s:>4}  {slug:45} {vendor}: {url}{extra}")
+    print(f"\n{len(results) - bad - limited}/{len(results)} links ok, {bad} need attention, {limited} rate-limited (recheck later)"
+          + (f"; skipped {skipped} tools checked in the last {args.max_age} days" if skipped else ""))
+    if args.write:
+        all_ok = {}
+        for slug, _, _, code, final in results:
+            all_ok[slug] = all_ok.get(slug, True) and code == 200
+        done = sorted(s for s, ok in all_ok.items() if ok and s not in partial)
+        for slug in done:
+            path = ROOT / "_tools" / f"{slug}.md"
+            fm = front_matter(path)
+            fm["last_checked"] = TODAY
+            write_front_matter(path, fm)
+        print(f"set last_checked on {len(done)} tools whose links all returned ok")
     return 0
 
 
@@ -166,6 +217,36 @@ def text(markup):
 
 def get_json(url):
     return json.loads(fetch(url)[2])
+
+
+_shopify = {}
+_shopify_lock = threading.Lock()
+
+
+def shopify_products(origin):
+    """Every product a Shopify store lists, by handle, fetched once per run.
+
+    /products.json returns 250 products a request, so a whole store costs a few requests
+    instead of one per product page."""
+    with _shopify_lock:
+        if origin not in _shopify:
+            found, page = {}, 1
+            try:
+                while True:
+                    items = get_json(f"{origin}/products.json?limit=250&page={page}")["products"]
+                    found.update((p["handle"], p) for p in items)
+                    if len(items) < 250:
+                        break
+                    page += 1
+            except Exception:
+                pass  # fall back to fetching product pages one at a time
+            _shopify[origin] = found
+        return _shopify[origin]
+
+
+def shopify_handle(url):
+    m = re.search(r"/products/([^/?#]+)", urlparse(url).path)
+    return m and urllib.parse.unquote(m.group(1))
 
 
 # Each reader takes (vendor, crawl_url) and yields normalized products:
@@ -242,7 +323,6 @@ def read_bigcommerce(v, crawl_url):
     for url in re.findall(r"<loc>([^<]+)</loc>", sitemap):
         url = html.unescape(url)
         page = fetch(url)[2].decode("utf8", "ignore")
-        time.sleep(0.5)
         t = re.sub(r"<script.*?</script>|<style.*?</style>", "", page, flags=re.S)
         t = re.sub(r"(\s*\|\s*)+", " | ", re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " | ", t))))
         m = re.search(r"<title>([^<]*)</title>", page)
@@ -337,7 +417,9 @@ def find_image(v, url):
     origin = "{0.scheme}://{0.netloc}".format(urlparse(url))
     platform = v.get("platform")
     if platform == "shopify":
-        p = get_json(url.split("?")[0].rstrip("/") + ".json")["product"]
+        p = shopify_products(origin).get(shopify_handle(url))
+        if p is None:  # not in the store's listing (unlisted product); read its own page
+            p = get_json(url.split("?")[0].rstrip("/") + ".json")["product"]
         return p["images"][0]["src"] if p.get("images") else None
     if platform == "squarespace":
         item = get_json(url.split("?")[0] + "?format=json").get("item") or {}
@@ -374,9 +456,19 @@ def write_front_matter(path, fm):
     path.write_text(f"---\n{y}---\n{body}")
 
 
+# Product pages that loaded but had no usable photo, by URL, with the date we looked.
+# Kept so later runs don't ask again every time; --refresh ignores it.
+MISSES = ROOT / "scripts" / "photo-misses.json"
+MISS_DAYS = 30
+
+
 def cmd_photos(args):
     """Point listings at the seller's own product image (hotlinked, never copied), with credit."""
     tools, _, _, vendors = load()
+    misses = json.loads(MISSES.read_text()) if MISSES.exists() else {}
+    recent = {u for u, d in misses.items()
+              if (TODAY - datetime.date.fromisoformat(d)).days < MISS_DAYS and not args.refresh}
+    skipped = 0
     by_name = {v["name"]: v for v in vendors}
     url_uses = {}
     for t in tools.values():
@@ -394,6 +486,9 @@ def cmd_photos(args):
                 continue
             if url_uses[b["url"]] > 1:  # a catalog or category page, not this product's page
                 continue
+            if b["url"] in recent:
+                skipped += 1
+                continue
             direct = v.get("maker") == t.get("maker")
             candidates.append((not direct, b, v))
         if candidates:
@@ -406,6 +501,8 @@ def cmd_photos(args):
         q = "shopify" if v.get("platform") == "shopify" else urlparse(cands[0][0]["url"]).netloc
         queues.setdefault(q, []).append((slug, cands))
 
+    new_misses = {}
+
     def run(item):
         name, qjobs = item
         out = []
@@ -413,18 +510,20 @@ def cmd_photos(args):
             for b, v in cands:
                 try:
                     img = find_image(v, b["url"])
-                except Exception:  # blocked, gone, or not a product page
-                    img = None
+                    miss = True
+                except Exception:  # blocked, throttled, or gone: try again next run
+                    img, miss = None, False
                 if img and img.startswith("//"):
                     img = "https:" + img
                 elif img and img.startswith("http://"):
                     img = "https://" + img[len("http://"):]  # the site is HTTPS; don't mix content
                 if img and not image_ok(img):
                     img = None
-                time.sleep(1.5 if v.get("platform") == "shopify" else 0.5)
                 if img:
                     out.append((slug, img, b, v))
                     break
+                if miss:
+                    new_misses[b["url"]] = TODAY.isoformat()
             else:
                 out.append((slug, None, None, None))
         return out
@@ -440,7 +539,13 @@ def cmd_photos(args):
             fm.update({"image": img, "image_credit": v["name"], "image_source": b["url"]})
             write_front_matter(path, fm)
     print(f"\n{len(found)}/{len(results)} listings have a vendor photo"
+          + (f"; skipped {skipped} pages with no photo in the last {MISS_DAYS} days" if skipped else "")
           + ("" if args.write else " (dry run; pass --write to save)"))
+    if args.write:
+        misses.update(new_misses)
+        live = {b["url"] for t in tools.values() for b in t.get("buy") or []}
+        misses = {u: d for u, d in sorted(misses.items()) if u in live}  # drop links that are gone
+        MISSES.write_text(json.dumps(misses, indent=1) + "\n")
     return 0
 
 
@@ -523,6 +628,10 @@ def main():
     sub.add_parser("validate")
     p = sub.add_parser("links")
     p.add_argument("--vendor", help="only this vendor id")
+    p.add_argument("--max-age", type=int, default=7, metavar="DAYS",
+                   help="skip tools whose last_checked is newer than this (default 7; 0 checks everything)")
+    p.add_argument("--write", action="store_true", help="set last_checked on tools whose links all returned ok")
+    p.add_argument("-v", "--verbose", action="store_true", help="also print links that are ok")
     p = sub.add_parser("catalog")
     p.add_argument("vendor", help="vendor id from _data/vendors.yml")
     p = sub.add_parser("photos")
