@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7492-carlo-dona-80mm-straight.jpg?v=1742936028
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-straight-shears-80mm-st
+type: straight-shears
 ---

@@ -13,4 +13,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/red-hot-metal-parchoffi-hinge-square-back-wood_85996
 reviews: []
+type: parchoffi
 ---

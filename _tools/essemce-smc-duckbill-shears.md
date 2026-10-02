@@ -18,4 +18,5 @@ buy:
 - vendor: Artco
   url: https://www.artcoinc.com/essemce_duckbill_shears.php
 reviews: []
+type: duckbill-shears
 ---

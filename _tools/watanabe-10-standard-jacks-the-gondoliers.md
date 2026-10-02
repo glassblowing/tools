@@ -19,4 +19,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/b2658f5c-df6e-4717-8b03-43416ae65205/IMG_6264.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/large-standard-jacks
+type: jacks
 ---

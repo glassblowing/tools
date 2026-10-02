@@ -5,6 +5,12 @@ layout: default
 <p class="crumbs"><a href="{{ '/categories/' | relative_url }}">Categories</a></p>
 <h1>{{ page.title }} <span class="count">{{ tools.size }}</span></h1>
 <div class="prose muted">{{ content }}</div>
+{%- assign types = site.glossary | where: "category", page.slug | sort: "order" -%}
+{% if types.size > 0 %}
+<p class="type-links">Types:
+  {% for g in types %}{% assign n = tools | where: "type", g.slug | size %}<a href="{{ g.url | relative_url }}">{{ g.title }}</a>{% if n > 0 %} <span class="muted">{{ n }}</span>{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}
+</p>
+{% endif %}
 {% if tools.size > 0 %}
 {% include tool-table.html tools=tools hide="category" %}
 {% else %}

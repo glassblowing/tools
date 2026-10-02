@@ -17,5 +17,6 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/a2dde0d0-dbcc-4cf5-96da-dcf76577d874/IMG_6211.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/diamond-shears
+type: diamond-shears
 ---
 The pivot sits proud of the blades, so they stay off the bench and out of wax and debris.

@@ -16,5 +16,6 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0664/6228/6019/files/IMG-5446.heic?v=1733842596
 image_credit: Ennion Glass Tools
 image_source: https://ennionglasstools.com/products/pacioffi-handles-parchoffi
+type: parchoffi
 ---
 Keep them waxed and they'll last a long time.

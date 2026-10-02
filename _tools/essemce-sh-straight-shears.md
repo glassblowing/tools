@@ -18,5 +18,6 @@ buy:
 - vendor: Artco
   url: https://www.artcoinc.com/essemce_sh_shears.php
 reviews: []
+type: straight-shears
 ---
 The SH-2 replaces Essemce's older PS shears.

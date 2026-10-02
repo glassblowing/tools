@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0664/6228/6019/files/IMG-9259.heic?v=1768342727
 image_credit: Ennion Glass Tools
 image_source: https://ennionglasstools.com/products/bronze-round-jacks
+type: jacks
 ---

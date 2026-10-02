@@ -23,4 +23,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/Carlo-dona-diamond-80mm-7501.jpg?v=1736898018
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-diamond-shears-80mm-sm
+type: diamond-shears
 ---

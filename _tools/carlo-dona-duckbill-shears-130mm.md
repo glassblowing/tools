@@ -16,4 +16,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-duckbill-shears-130mm-st-handle_86788
 reviews: []
+type: duckbill-shears
 ---

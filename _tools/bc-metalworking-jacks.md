@@ -23,4 +23,5 @@ reviews: []
 image: https://bcmetalworking.com/wp-content/uploads/2022/03/4.png
 image_credit: BC Metalworking
 image_source: https://bcmetalworking.com/product/jacks/
+type: jacks
 ---

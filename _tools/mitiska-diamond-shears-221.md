@@ -19,5 +19,6 @@ reviews: []
 image: https://www.sklarskenuzky.cz/images/nuzky/221/vykres.jpg
 image_credit: SAN Mitiska
 image_source: https://www.sklarskenuzky.cz/
+type: diamond-shears
 ---
 Mitiska publishes a [dimensioned drawing](https://www.sklarskenuzky.cz/images/nuzky/221/vykres.jpg) of this model. The image is Mitiska's technical drawing; the site has no photo of this model. Mitiska adapts shears to the customer's wishes.

@@ -15,4 +15,5 @@ buy:
   url: https://fantlab.com/foot%20tools.html
   note: Order by email or phone
 reviews: []
+type: parchoffi
 ---

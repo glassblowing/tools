@@ -1,0 +1,22 @@
+---
+title: Glossary
+permalink: /glossary/
+description: What each kind of glassblowing tool is, how it's used, and where it comes from.
+---
+<h1>Glossary</h1>
+<p class="muted">What each kind of hot-shop tool is, how and why it's used, and where it comes from, with sources. Each entry lists the tools of that type in the archive.</p>
+
+{%- assign cats = site.tool_categories | sort: "order" -%}
+{% for c in cats %}
+  {%- assign types = site.glossary | where: "category", c.slug | sort: "order" -%}
+  {% if types.size == 0 %}{% continue %}{% endif %}
+  <section>
+    <h2><a href="{{ c.url | relative_url }}">{{ c.title }}</a></h2>
+    <ul class="count-list">
+      {% for g in types %}
+      {% assign n = site.tools | where: "type", g.slug | size %}
+      <li><a href="{{ g.url | relative_url }}">{{ g.title }}</a><span class="muted desc">{{ g.summary }}</span><span>{{ n }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

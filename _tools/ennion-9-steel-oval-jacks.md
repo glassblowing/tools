@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0664/6228/6019/files/FullSizeRender_0cb0e58d-cb26-424d-9f7c-32eb93f7cd14.heic?v=1748471166
 image_credit: Ennion Glass Tools
 image_source: https://ennionglasstools.com/products/9-oval-jacks
+type: jacks
 ---

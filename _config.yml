@@ -23,6 +23,9 @@ collections:
   makers:
     output: true
     permalink: /makers/:name/
+  glossary:
+    output: true
+    permalink: /glossary/:name/
 
 defaults:
   - scope: { path: "", type: tools }
@@ -31,6 +34,8 @@ defaults:
     values: { layout: category }
   - scope: { path: "", type: makers }
     values: { layout: maker }
+  - scope: { path: "", type: glossary }
+    values: { layout: glossary }
   - scope: { path: "" }
     values: { layout: default }
   # Link-preview image. Not applied to tools, where `image` is the product photo.
@@ -39,6 +44,8 @@ defaults:
   - scope: { path: "", type: tool_categories }
     values: { image: /assets/brand/og-image.png }
   - scope: { path: "", type: makers }
+    values: { image: /assets/brand/og-image.png }
+  - scope: { path: "", type: glossary }
     values: { image: /assets/brand/og-image.png }
 
 # Shown as filter chips on the tools page.

@@ -22,4 +22,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7496-c-dona-shears-140mm.jpg?v=1739236410
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-straight-shears-140mm-st
+type: straight-shears
 ---

@@ -8,6 +8,7 @@
     python3 scripts/archive.py photos [--write]      # link each listing to the seller's own product image
                                                      # (pages with no photo are skipped for 30 days)
     python3 scripts/archive.py geocode [--write]     # town-level map coordinates for makers with a location
+    python3 scripts/archive.py types [--write]       # give untyped tools a glossary type from title patterns
 
 Used by the update-archive skill (.claude/skills/update-archive/SKILL.md). Needs PyYAML.
 """
@@ -42,6 +43,11 @@ def front_matter(path):
     text = path.read_text()
     m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
     return yaml.safe_load(m.group(1)) if m else {}
+
+
+def glossary():
+    """Glossary entries (tool types) by slug."""
+    return {p.stem: front_matter(p) for p in sorted((ROOT / "_glossary").glob("*.md"))}
 
 
 def load():
@@ -115,6 +121,21 @@ def cmd_validate(_):
     names = {v["name"] for v in vendors}
     ids = [v["id"] for v in vendors]
     problems = []
+    types = glossary()
+    for slug, g in types.items():
+        for field in ("title", "category", "summary"):
+            if not g.get(field):
+                problems.append(f"_glossary/{slug}.md: missing {field}")
+        if g.get("category") not in cats:
+            problems.append(f"_glossary/{slug}.md: unknown category '{g.get('category')}'")
+        for s in g.get("sources") or []:
+            if not (s.get("title") and s.get("url")):
+                problems.append(f"_glossary/{slug}.md: each source needs a title and url")
+        if g.get("match"):
+            try:
+                re.compile(g["match"])
+            except re.error as e:
+                problems.append(f"_glossary/{slug}.md: bad match pattern ({e})")
     for d in ("_makers", "_tool_categories"):
         for p in sorted((ROOT / d).glob("*.md")):
             try:
@@ -142,14 +163,46 @@ def cmd_validate(_):
             problems.append(f"_tools/{slug}.md: unknown maker '{t.get('maker')}'")
         if t.get("category") not in cats:
             problems.append(f"_tools/{slug}.md: unknown category '{t.get('category')}'")
+        if t.get("type") and t["type"] not in types:
+            problems.append(f"_tools/{slug}.md: unknown type '{t['type']}' (no _glossary/{t['type']}.md)")
         for b in t.get("buy") or []:
             if b.get("vendor") not in names:
                 problems.append(f"_tools/{slug}.md: vendor '{b.get('vendor')}' not in _data/vendors.yml")
         for r in t.get("reviews") or []:
             if not 1 <= int(r.get("rating", 0)) <= 5:
                 problems.append(f"_tools/{slug}.md: review rating out of range")
-    print("\n".join(problems) or f"OK: {len(tools)} tools, {len(makers)} makers, {len(cats)} categories, {len(vendors)} vendors")
+    print("\n".join(problems) or f"OK: {len(tools)} tools, {len(makers)} makers, {len(cats)} categories, {len(vendors)} vendors, {len(types)} glossary types")
+    untyped = sum(1 for t in tools.values() if t.get("published", True) is not False and not t.get("type"))
+    if untyped and not problems:
+        print(f"note: {untyped} visible tools have no glossary type yet (make types)")
     return 1 if problems else 0
+
+
+def cmd_types(args):
+    """Give tools without a `type` one, using each glossary entry's `match` pattern on the title.
+
+    A pattern only applies within its entry's `categories` (default: the entry's own category),
+    and the first entry by (category, order) that matches wins."""
+    tools, *_ = load()
+    types = sorted(glossary().items(), key=lambda kv: (kv[1].get("category", ""), kv[1].get("order", 99), kv[0]))
+    rules = [(slug, re.compile(g["match"], re.I), set(g.get("match_categories") or [g["category"]]))
+             for slug, g in types if g.get("match")]
+    set_, unmatched = 0, []
+    for slug, t in sorted(tools.items()):
+        if t.get("type") or t.get("published", True) is False:
+            continue
+        hit = next((ts for ts, rx, cats in rules if t.get("category") in cats and rx.search(t["title"])), None)
+        if not hit:
+            unmatched.append((t.get("category"), t["title"], slug)); continue
+        set_ += 1
+        print(f"{hit:24} {slug}")
+        if args.write:
+            p = ROOT / "_tools" / f"{slug}.md"; fm = front_matter(p); fm["type"] = hit
+            write_front_matter(p, fm)
+    for cat, title, slug in sorted(unmatched):
+        print(f"{'(no match)':24} {cat:16} {title}  [{slug}]")
+    print(f"\n{set_} tools typed, {len(unmatched)} without a match" + ("" if args.write else " (dry run; pass --write to save)"))
+    return 0
 
 
 def cmd_links(args):
@@ -648,12 +701,14 @@ def main():
     p.add_argument("--vendor", help="only use this vendor's pages")
     p.add_argument("--refresh", action="store_true", help="also re-check listings that already have a photo")
     p.add_argument("--write", action="store_true", help="save changes (default is a dry run)")
+    p = sub.add_parser("types")
+    p.add_argument("--write", action="store_true", help="save changes (default is a dry run)")
     p = sub.add_parser("geocode")
     p.add_argument("--refresh", action="store_true", help="redo makers that already have coords")
     p.add_argument("--write", action="store_true", help="save changes (default is a dry run)")
     args = ap.parse_args()
     return {"validate": cmd_validate, "links": cmd_links, "catalog": cmd_catalog, "photos": cmd_photos,
-            "geocode": cmd_geocode}[args.cmd](args)
+            "geocode": cmd_geocode, "types": cmd_types}[args.cmd](args)
 
 
 if __name__ == "__main__":

@@ -17,4 +17,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0266/2953/7901/products/Parchoffi_c4735ab8-168a-4806-8c5f-736a255915ff.png?v=1570767145
 image_credit: Leviathan GlassWorks
 image_source: https://leviathanglassworks.com/products/copy-of-parchoffi-set-3-4-x10
+type: parchoffi
 ---

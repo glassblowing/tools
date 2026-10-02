@@ -14,4 +14,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/357773ef-3d76-4674-a43c-9a770914f292/IMG_6268.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/clementine-step-down-jacks
+type: jacks
 ---

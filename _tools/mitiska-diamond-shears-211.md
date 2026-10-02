@@ -16,5 +16,6 @@ buy:
   url: https://www.sklarskenuzky.cz/
   note: Order by email or phone
 reviews: []
+type: diamond-shears
 ---
 Mitiska adapts shears to the customer's wishes.

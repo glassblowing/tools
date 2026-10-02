@@ -19,4 +19,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/f69073d2-39c9-4dcc-a7b3-a7afbb8d894d/IMG_6254.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/cup-jacks
+type: jacks
 ---

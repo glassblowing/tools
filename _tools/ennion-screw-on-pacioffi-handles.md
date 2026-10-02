@@ -16,5 +16,6 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0664/6228/6019/files/FullSizeRender_c90178ef-03c6-4dc5-8e71-004911c55252.heic?v=1748467825
 image_credit: Ennion Glass Tools
 image_source: https://ennionglasstools.com/products/screw-on-pacioffi-parchoffi-handles
+type: parchoffi
 ---
 Soak the tubes for five minutes, burn them in a little, then dip between pieces. The handle style was popular in the '80s and '90s until the tubes became hard to find.

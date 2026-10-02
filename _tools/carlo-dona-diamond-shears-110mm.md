@@ -23,4 +23,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/products/carlo-dona-diamond-7500.jpg?v=1737659030
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-diamond-shears-110mm-st
+type: diamond-shears
 ---

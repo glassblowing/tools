@@ -19,5 +19,6 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/8faa3279-4baf-4ee4-a5d3-49461a440055/IMG_6260.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/noy9zqk46tb8rsum3q5p3bluudxp8l
+type: jacks
 ---
 Made to order in Pawtucket, Rhode Island. Stamped with a logo and the date.

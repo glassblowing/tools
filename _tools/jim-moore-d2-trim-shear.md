@@ -19,4 +19,5 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/-/m-shr-trim-d2.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/trim-shear-d-2
+type: straight-shears
 ---

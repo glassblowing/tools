@@ -17,4 +17,5 @@ buy:
   url: https://marukotools.com/productsprice.html
   note: Listed on the maker's price list
 reviews: []
+type: parchoffi
 ---

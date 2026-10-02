@@ -19,5 +19,6 @@ reviews: []
 image: https://www.sklarskenuzky.cz/images/nuzky/112/foto.jpg
 image_credit: SAN Mitiska
 image_source: https://www.sklarskenuzky.cz/
+type: straight-shears
 ---
 Mitiska publishes a [dimensioned drawing](https://www.sklarskenuzky.cz/images/nuzky/112/vykres.jpg) of this model. Mitiska adapts shears to the customer's wishes.

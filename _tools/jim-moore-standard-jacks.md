@@ -34,5 +34,6 @@ reviews: []
 image: https://glasscolor.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/m/-/m-jack-8.jpg
 image_credit: Olympic Color Rods
 image_source: https://glasscolor.com/jack-standard-8
+type: jacks
 ---
 Jim Moore's everyday jacks, designed to ride smoothly on the glass. Most hot shop students will pick up a pair of these first.
