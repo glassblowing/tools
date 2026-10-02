@@ -9,6 +9,11 @@
   var empty = document.getElementById("empty");
 
   var params = new URLSearchParams(location.search);
+  var seller = params.get("seller") || "";
+  if (seller) {
+    document.getElementById("seller-name").textContent = (window.SHOPS || {})[seller] || seller;
+    document.getElementById("seller-note").hidden = false;
+  }
   q.value = params.get("q") || "";
   category.value = params.get("category") || "";
   maker.value = params.get("maker") || "";
@@ -20,7 +25,8 @@
       var hay = row.dataset.search;
       var ok = terms.every(function (t) { return hay.indexOf(t) !== -1; }) &&
         (!category.value || row.dataset.category === category.value) &&
-        (!maker.value || row.dataset.maker === maker.value);
+        (!maker.value || row.dataset.maker === maker.value) &&
+        (!seller || (" " + row.dataset.sellers + " ").indexOf(" " + seller + " ") !== -1);
       row.hidden = !ok;
       if (ok) shown++;
     });
@@ -31,6 +37,7 @@
     if (q.value) p.set("q", q.value);
     if (category.value) p.set("category", category.value);
     if (maker.value) p.set("maker", maker.value);
+    if (seller) p.set("seller", seller);
     var qs = p.toString();
     history.replaceState(null, "", location.pathname + (qs ? "?" + qs : ""));
   }

@@ -476,8 +476,45 @@ def cmd_geocode(args):
         if args.write:
             write_front_matter(path, fm)
             done += 1
-    print(f"\n{done} makers updated" + ("" if args.write else " (dry run; pass --write to save)"))
+    # Shops: vendors without a maker but with a location. Edit vendors.yml line by line
+    # so its comments survive.
+    vpath = ROOT / "_data" / "vendors.yml"
+    text = vpath.read_text()
+    for v in yaml.safe_load(text):
+        if v.get("maker") or not v.get("location") or (v.get("coords") and not args.refresh):
+            continue
+        hit = _nominatim(v["location"])
+        if not hit:
+            print(f"shop {v['id']}: no match for {v['location']!r}")
+            continue
+        coords = [round(float(hit["lat"]), 2), round(float(hit["lon"]), 2)]
+        print(f"shop {v['id']:20} {v['location']} -> {coords}")
+        if args.write:
+            block = re.search(rf"^- id: {re.escape(v['id'])}\n(?:  .*\n|    .*\n)*", text, re.M)
+            seg = re.sub(r"^  coords: .*\n", "", block.group(0), flags=re.M)
+            seg = re.sub(r"^(  location: .*\n)", rf"\1  coords: [{coords[0]}, {coords[1]}]\n", seg, count=1, flags=re.M)
+            text = text[:block.start()] + seg + text[block.end():]
+            done += 1
+    if args.write:
+        vpath.write_text(text)
+    print(f"\n{done} makers and shops updated" + ("" if args.write else " (dry run; pass --write to save)"))
     return 0
+
+
+def _nominatim(loc):
+    parts = [x.strip() for x in loc.split(",")]
+    for query in [loc] + ([f"{parts[0]}, {parts[-1]}"] if len(parts) > 2 else []):
+        q = urllib.parse.urlencode({"q": query, "format": "json", "limit": 1})
+        req = urllib.request.Request(f"https://nominatim.openstreetmap.org/search?{q}",
+                                     headers={"User-Agent": "glassblowing.tools archive script (https://github.com/glassblowing/tools)"})
+        try:
+            hits = json.load(urllib.request.urlopen(req, timeout=20))
+        except Exception:
+            hits = []
+        time.sleep(1.1)
+        if hits:
+            return hits[0]
+    return None
 
 
 def main():

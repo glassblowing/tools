@@ -18,7 +18,9 @@
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  // Makers in the same town share one pin.
+  // Makers and shops in the same town share one pin. A pin is solid if any maker is
+  // there, and outlined if it's only shops.
+  var bg = getComputedStyle(document.body).backgroundColor || "#fff";
   var towns = {};
   window.MAKERS.forEach(function (m) {
     var key = m.lat + "," + m.lng;
@@ -35,11 +37,14 @@
     var latlng = [group[0].lat, group[0].lng];
     points.push(latlng);
     var html = group.map(function (m) {
+      var count = m.tools + " tool" + (m.tools === 1 ? "" : "s");
       return '<a href="' + esc(m.url) + '">' + esc(m.name) + "</a><br><span class=\"muted\">" +
-        esc(m.location) + " · " + m.tools + " tool" + (m.tools === 1 ? "" : "s") + "</span>";
+        (m.kind === "shop" ? "Shop · sells " + count : "Maker · " + count) + " · " + esc(m.location) + "</span>";
     }).join("<hr>");
+    var hasMaker = group.some(function (m) { return m.kind !== "shop"; });
     L.circleMarker(latlng, {
-      radius: group.length > 1 ? 8 : 6, color: accent, weight: 2, fillColor: accent, fillOpacity: 0.85
+      radius: group.length > 1 ? 8 : 6, color: accent, weight: 2,
+      fillColor: hasMaker ? accent : bg, fillOpacity: hasMaker ? 0.85 : 1
     }).bindPopup(html).addTo(map);
   });
 
