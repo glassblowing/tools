@@ -2,6 +2,7 @@
 title: SAN Mitiska
 location: Nový Bor, Czech Republic
 website: https://www.sklarskenuzky.cz/
+instagram: sklarskenuzky
 coords:
 - 50.76
 - 14.56
