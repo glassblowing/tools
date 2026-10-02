@@ -18,3 +18,4 @@ buy:
   note: Order by email or phone
 reviews: []
 ---
+In the US, Glasstrapes sells handles and inserts together as the [Swedish Overlay Tool Set](/tools/jk-overlay-tools-swedish-overlay-tool-set/).
