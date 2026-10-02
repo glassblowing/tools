@@ -11,6 +11,9 @@ last_checked: 2026-09-30
 specs:
   Size: 30 mm
 buy:
+- vendor: Protostamps
+  url: https://www.protostamps.com/products/copy-of-reticello-stamp-30mm
+  note: 30 mm
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/nautilus-stamp-8000245b-1681949471
 reviews: []

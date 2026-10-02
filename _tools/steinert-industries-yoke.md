@@ -5,8 +5,8 @@ category: bench-equipment
 disciplines:
 - furnace
 summary: A ball-bearing yoke head that rolls smoothly on a contoured seat, made to weld onto your own floor stand.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Bearings: 2 × 1" balls on smaller balls
   Shaft: 1" × 12"

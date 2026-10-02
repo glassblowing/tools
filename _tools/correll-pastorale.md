@@ -5,8 +5,8 @@ category: misc
 disciplines:
 - furnace
 summary: A 6' pastorale fork for carrying pieces.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Length: 6'
   Fork: 5" × 10"

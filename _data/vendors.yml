@@ -269,6 +269,21 @@
     link here too. Also carries cherry paddles, Killer Corks, Mighty Molds, ring tools,
     parchoffi, Shape Shifter pads, and custom stamps, not yet requested.
 
+- id: protostamps
+  name: Protostamps
+  url: https://www.protostamps.com/
+  maker: protostamps
+  platform: shopify
+  crawl:
+    - https://www.protostamps.com/collections/display-stamps-molds
+  scope:
+    in: The Stamps & Molds collection (stock and custom stamps, graphite molds, blow molds).
+    out: Apparel, stamped glassware, and the one-off client order pages elsewhere in the store.
+  notes: >-
+    Run by Samwich Glassworks in Taos, NM. Most of /products.json is private client
+    invoices ("Custom 2in Stamp, price includes shipping"); only index the crawl
+    collection. Hot Glass Color sells the 16 mm and 30 mm pattern stamps too.
+
 - id: jakobsson
   name: Jakobsson Sweden
   url: https://jakobssonsweden.com/

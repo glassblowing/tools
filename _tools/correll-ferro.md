@@ -5,8 +5,8 @@ category: misc
 disciplines:
 - furnace
 summary: Ferro plates in two sizes.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Sizes: 6" × 12" × 3/8", 8" × 18" × 3/8"
 buy:

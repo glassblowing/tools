@@ -5,7 +5,7 @@ category: bench-equipment
 disciplines:
 - furnace
 summary: A compact single-arm pneumatic mold boy for small two-part molds, worked with a foot switch. It's small enough to carry to rental studios.
-added: 2026-10-02
+added: 2026-10-01
 specs:
   Arm: Single, for small two-part molds
   Cylinder: 6" stroke pneumatic, foot switch
