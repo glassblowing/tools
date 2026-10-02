@@ -9,8 +9,14 @@ added: 2026-09-30
 last_checked: 2026-09-30
 specs:
   Size: 6" × 9" × 2"
-  Sold as: Pair
+  Sold as: Pair or single
 buy:
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/copy-of-cork-oval-9x12
+  note: Pair
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/cork-oval-6x9x2-single
+  note: Single
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/cork-muffs-9x6x2-round-800021b8-1520560726
 reviews: []

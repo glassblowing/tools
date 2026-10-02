@@ -11,6 +11,12 @@ specs:
   Diameter: 4"
   Wood: Madrona
 buy:
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/marble-tool-4-diameter-and-handle
+  note: With handle
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/marble-tool-4-diameter-replacement-ring
+  note: Replacement ring only
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/leviathan-glassworks-4-marble-tool-w-handle
 reviews: []

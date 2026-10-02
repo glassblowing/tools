@@ -9,8 +9,14 @@ added: 2026-09-30
 last_checked: 2026-09-30
 specs:
   Size: 3" × 5" × 2"
-  Sold as: Pair
+  Sold as: Pair or single
 buy:
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/copy-of-cork-oval-3x5x2
+  note: Pair
+- vendor: Leviathan GlassWorks
+  url: https://leviathanglassworks.com/products/sculpting-cork-square-3x5x2-single
+  note: Single
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/cork-pad-square-3x5
 reviews: []
