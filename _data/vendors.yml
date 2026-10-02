@@ -371,6 +371,19 @@
     (contact-and-ordering page). Pages list items with sizes and no descriptions.
     Olympic Color Rods sells small and round cork paddles (glasscolor.com/tools/hand-tools/correll-tools).
 
+- id: lancelot-fraser
+  name: Lancelot S. Fraser
+  url: https://www.instagram.com/lsfraserglass/
+  maker: lancelot-fraser
+  crawl: []
+  scope:
+    in: The Gaffer Sleeve.
+  notes: >-
+    Sold through a Google Form, with details from the Instagram post
+    (instagram.com/p/DZHUAi5G4s6). The photo is Google's cached thumbnail of the
+    maker's Instagram image (encrypted-tbn0.gstatic.com), since Instagram's own image
+    links expire. Swap in a stable photo URL if the maker provides one.
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/
