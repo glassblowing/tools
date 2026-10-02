@@ -287,6 +287,32 @@
     invoices ("Custom 2in Stamp, price includes shipping"); only index the crawl
     collection. Hot Glass Color sells the 16 mm and 30 mm pattern stamps too.
 
+- id: fantlab
+  name: Fantlab
+  url: https://fantlab.com/
+  maker: fantlab
+  crawl:
+    - https://fantlab.com/molds.html
+    - https://fantlab.com/standard%20blocks.html
+    - https://fantlab.com/graal%20%26%20ariel%20blocks.html
+    - https://fantlab.com/optic%20blocks.html
+    - https://fantlab.com/custom%20blocks.html
+    - https://fantlab.com/overlay%20tools.html
+    - https://fantlab.com/foot%20tools.html
+    - https://fantlab.com/paddles%20and%20mold%20board.html
+    - https://fantlab.com/pipe%20cooler.html
+    - https://fantlab.com/paciofi%20sticks.html
+  scope:
+    in: Everything they make (the user asked to index the site); blocks, molds, and hand tools.
+    out: Nothing so far.
+  notes: >-
+    Fantasilaboratoriet. A One.com site-builder site with no shop: price lists on each
+    page, orders by email or phone. Pages have no og:image, so `photos` finds nothing;
+    product photos are inline on the page (impro.usercontent.one). /lekskulpturer.html
+    and /paciofi-sticks.html are unfinished placeholder pages. Custom blocks are a note
+    on Standard Blocks rather than a listing of their own. The stainless jack handles on
+    the overlay page are made by JK Overlay Tools.
+
 - id: jakobsson
   name: Jakobsson Sweden
   url: https://jakobssonsweden.com/
