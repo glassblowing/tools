@@ -5,8 +5,8 @@ category: protective-gear
 disciplines:
 - furnace
 summary: 'A heat-protective sleeve made to order: you choose the size, colors, and pattern, including a silver Kevlar option.'
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Sizing: Custom, not one-size-fits-all
   Options: Multiple colors and patterns, including silver Kevlar

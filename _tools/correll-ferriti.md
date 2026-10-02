@@ -5,8 +5,8 @@ category: misc
 disciplines:
 - furnace
 summary: A set of four ferriti.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Set: '4'
 buy:

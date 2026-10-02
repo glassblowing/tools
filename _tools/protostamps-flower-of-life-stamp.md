@@ -11,6 +11,9 @@ last_checked: 2026-09-30
 specs:
   Size: 30 mm
 buy:
+- vendor: Protostamps
+  url: https://www.protostamps.com/products/copy-of-30mm-reticello-or-flower-of-life-stamps
+  note: 30 mm
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/flower-of-life-stamp-80002459-1681949470
 reviews: []

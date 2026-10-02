@@ -5,8 +5,8 @@ category: misc
 disciplines:
 - furnace
 summary: A ladle bowl for moving molten glass, made to order. You weld or fix your own handle.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Diameter: 180 or 220 mm
   Handle: Not included

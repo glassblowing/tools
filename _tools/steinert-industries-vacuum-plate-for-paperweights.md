@@ -5,8 +5,8 @@ category: bench-equipment
 disciplines:
 - furnace
 summary: A vacuum plate that helps draw glass over paperweight figures and pulls out bubbles. Made to order to your size.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Parts: Cylinder, cup, vacuum plate, stand
 buy:

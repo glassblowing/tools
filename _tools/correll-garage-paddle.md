@@ -5,8 +5,8 @@ category: misc
 disciplines:
 - furnace
 summary: A paddle for handling pieces in the garage, in two sizes.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Sizes: 5" × 7-1/2", 6" × 9"
 buy:

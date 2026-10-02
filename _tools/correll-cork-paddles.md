@@ -5,8 +5,8 @@ category: wood-tools
 disciplines:
 - furnace
 summary: Cork paddles for shaping glass without leaving marks.
-added: 2026-10-02
-last_checked: 2026-10-02
+added: 2026-10-01
+last_checked: 2026-10-01
 specs:
   Sizes: 9" × 6" × 2", 12" × 9" × 2" (direct); small 5" × 3" and round 4" (Olympic)
 buy:
