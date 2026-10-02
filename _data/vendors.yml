@@ -304,7 +304,8 @@
     3–4 weeks). Read pages through /wp-json/wp/v2/pages/<id> (ids 98 blocks, 776
     molds, 100 pipes, 102 other tools). The block page links size PDFs for JACOB, BOB,
     and KARL, but the links weren't reachable from the page HTML when first indexed, so
-    block sizes aren't listed yet.
+    block sizes aren't listed yet. JACOB, BOB, and KARL share the block photo the user
+    supplied; custom blocks are a note on each, not a listing of their own.
 
 - id: block-party
   name: Block Party
