@@ -49,9 +49,10 @@ p { margin: 0 0 0.75rem; }
 .crumbs a { color: var(--muted); }
 
 /* Header / footer */
-.site-header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; padding-top: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
-.brand { font-weight: 600; text-decoration: none; }
-.brand span { color: var(--accent); }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding-top: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
+.brand { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 600; text-decoration: none; }
+.brand .logo-mark { width: 22px; height: 22px; flex: none; }
+.brand .word span { color: var(--accent); }
 .site-header nav { display: flex; gap: 1.25rem; }
 .site-header nav a { text-decoration: none; color: var(--muted); }
 .site-header nav a:hover { color: var(--text); }
