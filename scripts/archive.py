@@ -131,6 +131,18 @@ def cmd_validate(_):
         for s in g.get("sources") or []:
             if not (s.get("title") and s.get("url")):
                 problems.append(f"_glossary/{slug}.md: each source needs a title and url")
+        # Inline citations: {% include cite.html n=2 %} or n="1,3" must point at a listed
+        # source, every listed source must be cited, and a History section needs citations.
+        body = (ROOT / "_glossary" / f"{slug}.md").read_text().split("\n---\n", 1)[-1]
+        cited = {int(n) for ns in re.findall(r'cite\.html n="?([\d, ]+)"?', body) for n in ns.split(",") if n.strip()}
+        nsrc = len(g.get("sources") or [])
+        for n in sorted(cited - set(range(1, nsrc + 1))):
+            problems.append(f"_glossary/{slug}.md: cites [{n}] but there are only {nsrc} sources")
+        for n in sorted(set(range(1, nsrc + 1)) - cited):
+            problems.append(f"_glossary/{slug}.md: source [{n}] is listed but never cited")
+        hist = re.search(r"^## History\n(.*?)(?=^## |\Z)", body, re.S | re.M)
+        if hist and "cite.html" not in hist.group(1):
+            problems.append(f"_glossary/{slug}.md: History section has no citations")
         if g.get("match"):
             try:
                 re.compile(g["match"])

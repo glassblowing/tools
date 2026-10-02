@@ -2,37 +2,32 @@
 title: Straight shears
 category: shears
 order: 1
-aka: ["tagianti dritte or taianti drite (Murano)", "rovné nůžky (Czech)", "cut-off, bubble, or trim shears (US makers' names for variations)"]
+aka:
+- tagianti dritte or taianti drite (Murano)
+- rovné nůžky (Czech)
+- cut-off, bubble, or trim shears (US makers' names for variations)
 summary: Scissor-like shears with straight blades, used to make straight cuts in hot glass.
-match: 'straight|rovné nůžky č|cut.?off|bubble shear|trim shear|slim trim|salt trim'
+match: straight|rovné nůžky č|cut.?off|bubble shear|trim shear|slim trim|salt trim
 sources:
-  - title: Museo del Vetro, Murano — Glossary ("Tagiante")
-    url: https://museovetro.visitmuve.it/en/il-museo/in-depth/glossary/
-  - title: Conciatore — The Glass Lexicon ("Taiante or Tagiante")
-    url: https://www.conciatore.org/p/glass-lexicon.html
-  - title: Wikipedia — Glassblowing, "Tools"
-    url: https://en.wikipedia.org/wiki/Glassblowing
-  - title: Cutting Edge Products — History
-    url: https://www.cuttingedgeprdx.com/history
+- title: Museo del Vetro, Murano — Glossary ("Tagiante", "Borsella")
+  url: https://museovetro.visitmuve.it/en/il-museo/in-depth/glossary/
+- title: Conciatore — The Glass Lexicon ("Taiante or Tagiante")
+  url: https://www.conciatore.org/p/glass-lexicon.html
+- title: Wikipedia — Glassblowing, "Tools"
+  url: https://en.wikipedia.org/wiki/Glassblowing
+- title: Cutting Edge Products — History
+  url: https://www.cuttingedgeprdx.com/history
 ---
 ## What it is
 
-Straight shears are the glassblower's scissors: two straight-edged blades on a pivot, with handles shaped for a gloved hand. Murano's glass museum describes them as one of the two basic kinds of shears a glassmaker uses while shaping a piece, the other being [diamond shears](/glossary/diamond-shears/).
+Straight shears are the glassblower's scissors: two straight-edged blades on a pivot, "essentially bulky scissors, used for making linear cuts".{% include cite.html n=3 %} Murano's glass museum describes them as one of the two main kinds of shears a glassmaker uses while shaping a piece, alongside [diamond shears](/glossary/diamond-shears/): straight shears have straight-edged blades like ordinary scissors and are used for linear cuts.{% include cite.html n=1 %}
 
 ## How it's used
 
-They make linear cuts: trimming the lip of a cup or bowl while the piece turns on the punty, cutting bits and trails to length, and snipping off excess glass. Because the blades cut cleanly in a line, they're the tool for evening a rim or cutting a straight edge, where diamond shears are for cutting round.
-
-Makers sell straight shears in several sizes and blade shapes, and their names vary: "bubble" or "cut-off" shears for heavier cuts, "trim" shears for finer rim work, and slim or thin blades for stemware and small detail.
+The museum's glossary describes shears as the tool used during shaping "to cut away excess glass",{% include cite.html n=1 %} and straight shears are the ones for straight cuts.{% include cite.html n="1,3" %} Makers in this archive sell them in several sizes and blade shapes under names like "cut-off", "bubble", and "trim" shears; their descriptions on each tool's page say what each is for.
 
 ## History
 
-In Murano the shears are *taiante* or *tagiante*, from the Venetian *taiar*, "to cut" (Italian *tagliare*); straight shears are *taianti drite*. They are among the traditional hand tools of the Venetian glasshouse.
+In Murano shears are *taiante* or *tagiante*, from the Venetian *taiar*, "to cut" (Italian *tagliare*), and straight shears are *taianti drite*.{% include cite.html n=2 %}
 
-Modern American shears owe a lot to blade steel. Jeff Lindsay of Cutting Edge Products settled on D2 tool steel for shear blades in the late 1970s because it doesn't wear out, then made it practical to work once CNC machines could cut the blades; many makers now offer D2 blades alongside traditional carbon steel.
-
-## What to look for
-
-- **Blade length** sets the job: short blades for rims and fine trims, long blades for big cuts.
-- **Blade steel:** D2 holds an edge for a long time; carbon steel is easier to resharpen.
-- **Handle size:** several makers offer small handles for smaller hands.
+In the United States, Jeff Lindsay began making shears in the late 1970s after settling on D2 tool steel for the blades, which he found don't wear out. Cutting D2 by hand saw was slow, and his company Cutting Edge Products began in 1998, when CNC machines could cut the blades consistently.{% include cite.html n=4 %}

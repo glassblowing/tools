@@ -188,3 +188,6 @@ p { margin: 0 0 0.75rem; }
 .sources li { margin: 0.25rem 0; }
 .type-note { font-size: 0.9rem; }
 .type-links { font-size: 0.9rem; line-height: 1.8; }
+.cite { font-size: 0.7em; line-height: 0; margin-left: 0.1em; }
+.cite a { text-decoration: none; color: var(--accent); }
+.sources li:target { background: var(--hover); }

@@ -13,7 +13,7 @@ layout: default
 <section class="sources">
   <h2>Sources</h2>
   <ol>
-    {% for s in page.sources %}<li><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a></li>{% endfor %}
+    {% for s in page.sources %}<li id="src-{{ forloop.index }}"><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a>{% if s.note %} <span class="muted">· {{ s.note }}</span>{% endif %}</li>{% endfor %}
   </ol>
 </section>
 {% endif %}
