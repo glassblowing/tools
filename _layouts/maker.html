@@ -2,17 +2,16 @@
 layout: default
 ---
 {%- assign tools = site.tools | where: "maker", page.slug | sort: "title" -%}
-<nav class="crumbs"><a href="{{ '/makers/' | relative_url }}">Makers</a></nav>
-<h1>{{ page.title }}</h1>
-<p class="lede">
-  {% if page.location %}{{ page.location }}{% endif %}
-  {% if page.founded %} · Since {{ page.founded }}{% endif %}
-  {% if page.website %} · <a href="{{ page.website }}" rel="noopener" target="_blank">Website ↗</a>{% endif %}
+<p class="crumbs"><a href="{{ '/makers/' | relative_url }}">Makers</a></p>
+<h1>{{ page.title }} <span class="count">{{ tools.size }}</span></h1>
+<p class="muted">
+  {%- if page.location %}{{ page.location }}{% endif -%}
+  {%- if page.founded %} · since {{ page.founded }}{% endif -%}
+  {%- if page.website %} · <a href="{{ page.website }}" rel="noopener" target="_blank">Website ↗</a>{% endif -%}
 </p>
 <div class="prose">{{ content }}</div>
-<h2>Tools by {{ page.title }}</h2>
 {% if tools.size > 0 %}
-<div class="grid">{% for t in tools %}{% include tool-card.html tool=t %}{% endfor %}</div>
+{% include tool-table.html tools=tools hide="maker" %}
 {% else %}
 <p class="muted">No tools listed yet.</p>
 {% endif %}

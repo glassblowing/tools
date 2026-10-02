@@ -4,41 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="apple-touch-icon" href="{{ '/assets/brand/apple-touch-icon.png' | relative_url }}">
-  <meta name="theme-color" content="#f5f1ea" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-        {% include logo-mark.svg %}
-        <span class="wordmark">glassblowing<span class="tld">.tools</span></span>
-      </a>
-      <nav class="nav">
-        <a href="{{ '/tools/' | relative_url }}">Tools</a>
-        <a href="{{ '/categories/' | relative_url }}">Categories</a>
-        <a href="{{ '/makers/' | relative_url }}">Makers</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a class="btn btn-small" href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Suggest a tool</a>
-      </nav>
-    </div>
+  <header class="site-header wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">glassblowing<span>.tools</span></a>
+    <nav>
+      <a href="{{ '/tools/' | relative_url }}">Tools</a>
+      <a href="{{ '/makers/' | relative_url }}">Makers</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
   </header>
 
   <main class="wrap">
     {{ content }}
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>{{ site.title }} doesn't sell anything and isn't affiliated with any maker or shop. Prices and stock change, so check with the seller.</p>
-      <p><a href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Suggest a tool</a> · <a href="https://github.com/{{ site.repository }}">Contribute on GitHub</a> · <a href="{{ '/about/' | relative_url }}">How reviews work</a></p>
-    </div>
+  <footer class="site-footer wrap">
+    <p>An independent index. We don't sell anything; prices and stock are up to the seller. Photos belong to the sellers credited on each tool page.</p>
+    <p><a href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Suggest a tool</a> · <a href="https://github.com/{{ site.repository }}">GitHub</a></p>
   </footer>
 </body>
 </html>

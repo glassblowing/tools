@@ -5,86 +5,75 @@ layout: default
 {%- assign cat = site.tool_categories | where: "slug", page.category | first -%}
 {%- capture review_url -%}https://github.com/{{ site.repository }}/issues/new?template=review.yml&title={{ 'Review: ' | append: page.title | url_encode }}&tool={{ page.title | url_encode }}{%- endcapture -%}
 
-<nav class="crumbs"><a href="{{ '/tools/' | relative_url }}">Tools</a> / <a href="{{ cat.url | relative_url }}">{{ cat.title }}</a></nav>
+<p class="crumbs"><a href="{{ '/tools/' | relative_url }}">Tools</a> / <a href="{{ cat.url | relative_url }}">{{ cat.title }}</a></p>
 
-<div class="tool-hero">
-  {% include tool-image.html tool=page %}
-  <div>
-    <p class="eyebrow">{{ cat.title }}</p>
+<article class="tool">
+  {% if page.image %}
+  <figure class="photo">
+    <img src="{{ page.image }}" alt="{{ page.title | escape }}" onerror="this.parentNode.remove()">
+    <figcaption>Photo: {% if page.image_source %}<a href="{{ page.image_source }}" rel="noopener" target="_blank">{{ page.image_credit }}</a>{% else %}{{ page.image_credit }}{% endif %}</figcaption>
+  </figure>
+  {% endif %}
+
+  <div class="info">
     <h1>{{ page.title }}</h1>
-    <p class="lede">by <a href="{{ maker.url | relative_url }}">{{ maker.title }}</a>{% if maker.location %} · {{ maker.location }}{% endif %}</p>
-    <p>{% include rating-summary.html tool=page %}</p>
+    <p class="by"><a href="{{ maker.url | relative_url }}">{{ maker.title }}</a>{% if maker.location %}, {{ maker.location }}{% endif %}</p>
     <p>{{ page.summary }}</p>
-    {% if page.disciplines %}
-    <p class="tags">{% for d in page.disciplines %}{% assign disc = site.disciplines | where: "id", d | first %}<span class="tag">{{ disc.name }}</span>{% endfor %}</p>
-    {% endif %}
+
     {% if page.specs %}
     <dl class="specs">
       {% for s in page.specs %}<dt>{{ s[0] }}</dt><dd>{{ s[1] }}</dd>{% endfor %}
     </dl>
     {% endif %}
-  </div>
-</div>
 
-<section class="section">
-  <h2>Where to buy</h2>
-  {% if page.buy.size > 0 %}
-  <ul class="buy-list">
-    {% for b in page.buy %}
-    {%- assign shop = site.data.vendors | where: "name", b.vendor | first -%}
-    <li>
-      <div>
-        <strong>{{ b.vendor }}</strong>
-        {% if shop.maker and shop.maker == page.maker %}<span class="tag">Direct from the maker</span>{% endif %}
-        {% if b.note %}<span class="muted small"> — {{ b.note }}</span>{% endif %}
-      </div>
-      <a class="btn" href="{{ b.url }}" rel="noopener" target="_blank">Visit seller ↗</a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p class="muted">We don't know of a seller yet. <a href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Know one?</a></p>
-  {% endif %}
-  {% if page.last_checked %}<p class="muted small">Links last checked {{ page.last_checked | date: "%B %-d, %Y" }}.</p>{% endif %}
-</section>
+    <h2>Where to buy</h2>
+    {% if page.buy.size > 0 %}
+    <ul class="buy">
+      {% for b in page.buy %}
+      {%- assign shop = site.data.vendors | where: "name", b.vendor | first -%}
+      <li>
+        <a href="{{ b.url }}" rel="noopener" target="_blank">{{ b.vendor }} ↗</a>
+        {% if shop.maker and shop.maker == page.maker %}<span class="muted">maker</span>{% endif %}
+        {% if b.note %}<span class="muted">· {{ b.note }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted">No known seller. <a href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Know one?</a></p>
+    {% endif %}
+    {% if page.last_checked %}<p class="muted small">Links checked {{ page.last_checked | date: "%b %-d, %Y" }}</p>{% endif %}
+  </div>
+</article>
 
 {% assign body = content | strip %}
 {% if body != "" %}
-<section class="section prose">
-  <h2>About this tool</h2>
+<section class="notes">
+  <h2>Notes</h2>
   {{ content }}
 </section>
 {% endif %}
 
-<section class="section">
-  <div class="section-head">
-    <h2>Reviews</h2>
-    <a class="btn" href="{{ review_url }}">Write a review</a>
-  </div>
+<section>
+  <h2>Reviews</h2>
   {% if page.reviews.size > 0 %}
     {% assign sorted = page.reviews | sort: "date" | reverse %}
     {% for r in sorted %}
-    <article class="review">
-      <header>
-        {% include stars.html rating=r.rating %}
-        <strong>{{ r.author }}</strong>
-        {% if r.experience %}<span class="muted small">· {{ r.experience }}</span>{% endif %}
-        <time class="muted small" datetime="{{ r.date | date_to_xmlschema }}">{{ r.date | date: "%b %Y" }}</time>
-      </header>
+    <div class="review">
+      <p class="muted small">{% include stars.html rating=r.rating %} {{ r.author }}{% if r.experience %}, {{ r.experience }}{% endif %} · {{ r.date | date: "%b %Y" }}</p>
       {{ r.body | markdownify }}
-    </article>
+    </div>
     {% endfor %}
+    <p><a href="{{ review_url }}">Write a review</a></p>
   {% else %}
-    <p class="muted">No reviews yet. If you've used this tool, <a href="{{ review_url }}">tell everyone what you think</a>.</p>
+    <p class="muted">None yet. <a href="{{ review_url }}">Write the first one</a>.</p>
   {% endif %}
 </section>
 
-{%- assign related = site.tools | where: "category", page.category | where_exp: "t", "t.url != page.url" -%}
+{%- assign related = site.tools | where: "maker", page.maker | where: "category", page.category | where_exp: "t", "t.url != page.url" -%}
 {% if related.size > 0 %}
-<section class="section">
-  <h2>More {{ cat.title | downcase }}</h2>
-  <div class="grid">
-    {% for t in related limit: 3 %}{% include tool-card.html tool=t %}{% endfor %}
-  </div>
+<section>
+  <h2>More {{ cat.title | downcase }} from {{ maker.title }}</h2>
+  {% assign related = related | slice: 0, 6 %}
+  {% include tool-table.html tools=related hide="maker" %}
 </section>
 {% endif %}
