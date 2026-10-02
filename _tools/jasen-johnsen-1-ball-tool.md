@@ -15,6 +15,9 @@ buy:
   url: https://jasenjohnsenglasstools.com/products/1-ball-tool
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/inside-sculpting-tool-1-ball-copy
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Sculpting-Tool-1-Ball-p783050775
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/1inchInsideSculptingtool.jpg?v=1685330074
 image_credit: Jasen Johnsen Glass Tools

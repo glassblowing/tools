@@ -15,6 +15,9 @@ buy:
   url: https://www.cuttingedgeprdx.com/straight-shears/small-straight-cut-off
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/ssco
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Straight-Cut-Off-Small-p204602689
+  note: UK
 reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1492461341453-P1TGKKXDRBMWGZE337J4/large.jpg?format=1000w
 image_credit: Cutting Edge Products

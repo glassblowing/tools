@@ -15,6 +15,9 @@ specs:
 buy:
 - vendor: Jasen Johnsen Glass Tools
   url: https://jasenjohnsenglasstools.com/products/small-narrow-flat-crimps
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Crimps-Narrow-Flat-Small-p783054509
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/SmallNarrowFlatCrimp.jpg?v=1684699921
 image_credit: Jasen Johnsen Glass Tools

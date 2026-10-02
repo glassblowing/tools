@@ -14,6 +14,9 @@ buy:
   url: https://jasenjohnsenglasstools.com/products/grabbers
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/grabber-clawedhg-with-handles
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/JJ-Grabbers-p783025461
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0626/0424/7272/files/Grabbers.jpg?v=1684704078
 image_credit: Jasen Johnsen Glass Tools

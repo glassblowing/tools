@@ -13,6 +13,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-jacks-sm_85951
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Standard-Small-Jacks-210mm-p144424142
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7525-carlo-dona-jacks-sm.jpg?v=1751990390
 image_credit: Hot Glass Color & Supply

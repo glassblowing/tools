@@ -16,6 +16,9 @@ buy:
   url: https://www.cuttingedgeprdx.com/diamond-shears/big-diamondbig-combo-btrsc
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/bcbo
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Big-Combos-p203782472
+  note: UK
 reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1510613549197-JU6ZF31EIA3AWWGTBRLX/large.jpg?format=1000w
 image_credit: Cutting Edge Products

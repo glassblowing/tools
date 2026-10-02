@@ -374,6 +374,28 @@
     Greg Lastrapes' Wix studio shop; the user marked it as a distributor of JK Overlay
     Tools. The product page has JSON-LD and an og:image. Ships in up to 6 weeks.
 
+- id: glass-toolbox
+  name: Glass Toolbox
+  url: https://www.glasstoolbox.co.uk/
+  location: Hilperton, Wiltshire, UK
+  coords: [51.34, -2.18]
+  crawl:
+    - https://store17682472.company.site/sitemap.xml
+  scope:
+    in: Everything in the store that's a hot-shop tool (the user asked for all of it), including the Bugeye kiln tray.
+    out: The gift card, the shear-sharpening service, and books.
+  notes: >-
+    UK stockist of Carlo Donà, Jasen Johnsen and Cutting Edge, plus its own cherry
+    paddles, cork blocks, foot boards and blow-hose kits (maker file glass-toolbox).
+    The shop is an Ecwid store embedded in a WordPress site; product pages live on
+    glasstoolbox.company.site, whose sitemap lists every product and whose pages
+    carry JSON-LD with the brand. Unbranded items (foot boards, mouthpieces) are
+    filed under the house brand. Some Carlo Donà items didn't match an existing
+    listing by size and weren't linked: straight soffietta, leaf / straight narrow /
+    straight wide / waffle crimps, standard tag medium and large, tapered tags,
+    70 mm straight shears, and the JJ small and medium taglio (round or square end
+    not stated).
+
 - id: hobbyglass
   name: Hobbyglass (Hegan Glassworks)
   url: https://www.hobbyglass.com/

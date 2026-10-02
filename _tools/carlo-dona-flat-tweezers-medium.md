@@ -15,6 +15,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-flat-tweezers-med
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Flat-Tweezer-Medium-p187574403
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7528-carlo-dona-md-flat-tweezer.jpg?v=1752001948
 image_credit: Hot Glass Color & Supply

@@ -15,6 +15,9 @@ buy:
   url: https://www.cuttingedgeprdx.com/straight-shears/salt-trim
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/salt-trim-shear-2-25-x-8-5
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Salt-Trim-Shear-p552473269
+  note: UK
 reviews: []
 published: false
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1492461838754-0EQ424YCI883LUQEOP3D/large.jpg?format=1000w

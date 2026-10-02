@@ -16,6 +16,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-crimp-tweezers-rose-petal-sm_86810
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Rose-Petal-Crimps-p161157031
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7587-c-dona-rose-petal-sm-detail.jpg?v=1738351521
 image_credit: Hot Glass Color & Supply

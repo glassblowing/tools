@@ -15,6 +15,9 @@ buy:
   note: Maker's catalog; order by email or phone
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/c-dona-jacks-fuin
+- vendor: Glass Toolbox
+  url: https://glasstoolbox.company.site/Davide-Fuin-Jacks-160mm-p161072457
+  note: UK
 reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7686-carlo-dona-jacks-fuin-side.jpg?v=1741054553
 image_credit: Hot Glass Color & Supply
