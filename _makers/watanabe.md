@@ -2,6 +2,7 @@
 title: Watanabe Glass Tools
 location: Pawtucket, Rhode Island, USA
 website: https://www.glassworkstoolbench.com/watanabeglasstools
+instagram: glassworks_toolbench
 coords:
 - 41.88
 - -71.38
