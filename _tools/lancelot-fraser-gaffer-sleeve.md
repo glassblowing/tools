@@ -10,7 +10,7 @@ last_checked: 2026-10-02
 specs:
   Sizing: Custom, not one-size-fits-all
   Options: Multiple colors and patterns, including silver Kevlar
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNnfrmRCeRoOs7nP8NMJAYCz8Ud187w7f6h3pSBCjmf08EBlRQXqmhi3M&s=10
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0abeEYc5dRhHBjQPPPBJjfnOYTJ0N9ba-x4i4dXnzBU8C1oQ0iD7xEY&s=10
 image_credit: Lancelot S. Fraser (Instagram)
 image_source: https://www.instagram.com/p/DZHUAi5G4s6/
 buy:
