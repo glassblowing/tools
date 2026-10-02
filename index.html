@@ -1,46 +1,41 @@
 ---
 title: Home
 ---
-<section class="hero">
-  <h1>Every glassblowing tool, <br>in one place.</h1>
-  <p class="lede">{{ site.tagline }}</p>
-  <form class="hero-search" action="{{ '/tools/' | relative_url }}" method="get" role="search">
-    <input type="search" name="q" placeholder="Search jacks, shears, torches, makers…" aria-label="Search tools">
-    <button class="btn" type="submit">Search</button>
-  </form>
-</section>
+<p class="intro">An index of glassblowing tools: who makes them and where to buy them.</p>
 
-<section class="section">
-  <div class="section-head">
-    <h2>Browse by category</h2>
-    <a href="{{ '/categories/' | relative_url }}">All categories →</a>
-  </div>
-  <div class="cat-grid">
-    {% assign cats = site.tool_categories | sort: "order" %}
-    {% for c in cats %}
-    {% assign n = site.tools | where: "category", c.slug | size %}
-  {% if n == 0 %}{% continue %}{% endif %}
-    <a class="card cat-card" href="{{ c.url | relative_url }}">
-      <span class="cat-icon" aria-hidden="true">{{ c.icon }}</span>
-      <strong>{{ c.title }}</strong>
-      <span class="muted small">{{ n }} tool{% if n != 1 %}s{% endif %}</span>
-    </a>
-    {% endfor %}
-  </div>
-</section>
+<form class="search" action="{{ '/tools/' | relative_url }}" method="get" role="search">
+  <input type="search" name="q" placeholder="Search {{ site.tools.size }} tools" aria-label="Search tools" autofocus>
+</form>
 
-<section class="section">
-  <div class="section-head">
-    <h2>Recently added</h2>
-    <a href="{{ '/tools/' | relative_url }}">All tools →</a>
-  </div>
-  <div class="grid">
-    {% assign recent = site.tools | sort: "added" | reverse %}
-    {% for t in recent limit: 6 %}{% include tool-card.html tool=t %}{% endfor %}
-  </div>
-</section>
+<div class="cols">
+  <section>
+    <h2>Categories</h2>
+    <ul class="count-list">
+      {% assign cats = site.tool_categories | sort: "order" %}
+      {% for c in cats %}
+      {% assign n = site.tools | where: "category", c.slug | size %}
+      {% if n == 0 %}{% continue %}{% endif %}
+      <li><a href="{{ c.url | relative_url }}">{{ c.title }}</a><span>{{ n }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section>
+    <h2>Makers</h2>
+    <ul class="count-list">
+      {% assign makers = site.makers | sort: "title" %}
+      {% for m in makers %}
+      {% assign n = site.tools | where: "maker", m.slug | size %}
+      {% if n == 0 %}{% continue %}{% endif %}
+      <li><a href="{{ m.url | relative_url }}">{{ m.title }}</a><span>{{ n }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
 
-<section class="section callout">
-  <h2>Built by glassblowers</h2>
-  <p>This archive has no store and no sponsors. Every listing, link, and review comes from people who work glass. Found a tool we're missing, a broken link, or have opinions about your jacks? <a href="{{ '/about/' | relative_url }}">Here's how to contribute.</a></p>
+<section>
+  <h2>Recently added</h2>
+  {% assign recent = site.tools | sort: "added" | reverse %}
+  {% assign recent = recent | slice: 0, 8 %}
+  {% include tool-table.html tools=recent %}
+  <p><a href="{{ '/tools/' | relative_url }}">All tools →</a></p>
 </section>

@@ -3,17 +3,11 @@ title: Makers
 permalink: /makers/
 ---
 <h1>Makers</h1>
-<p class="lede">The people and shops who make the tools.</p>
-<div class="cat-list">
+<ul class="count-list wide">
   {% assign makers = site.makers | sort: "title" %}
   {% for m in makers %}
   {% assign n = site.tools | where: "maker", m.slug | size %}
   {% if n == 0 %}{% continue %}{% endif %}
-  <a class="card cat-row" href="{{ m.url | relative_url }}">
-    <div>
-      <strong>{{ m.title }}</strong> <span class="muted small">· {{ n }} tool{% if n != 1 %}s{% endif %}</span>
-      <p class="muted small">{{ m.location }}</p>
-    </div>
-  </a>
+  <li><a href="{{ m.url | relative_url }}">{{ m.title }}</a><span class="muted desc">{{ m.location }}</span><span>{{ n }}</span></li>
   {% endfor %}
-</div>
+</ul>

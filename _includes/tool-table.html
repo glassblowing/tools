@@ -1,0 +1,32 @@
+{%- comment -%}
+  Usage: include tool-table.html tools=list [id="tool-table"] [hide="maker|category"]
+{%- endcomment -%}
+<table class="tool-table"{% if include.id %} id="{{ include.id }}"{% endif %}>
+  <thead>
+    <tr>
+      <th class="col-img"><span class="sr-only">Photo</span></th>
+      <th>Tool</th>
+      {% unless include.hide == "maker" %}<th class="col-maker">Maker</th>{% endunless %}
+      {% unless include.hide == "category" %}<th class="col-cat">Category</th>{% endunless %}
+      <th class="col-num">Sellers</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for t in include.tools -%}
+    {%- assign maker = site.makers | where: "slug", t.maker | first -%}
+    {%- assign cat = site.tool_categories | where: "slug", t.category | first -%}
+    <tr class="tool-row" data-category="{{ t.category }}" data-maker="{{ t.maker }}"
+        data-search="{{ t.title | downcase | escape }} {{ maker.title | downcase | escape }} {{ cat.title | downcase | escape }} {{ t.summary | downcase | escape }}">
+      <td class="col-img">
+        <a href="{{ t.url | relative_url }}" tabindex="-1" aria-hidden="true">
+          {%- if t.image -%}<img src="{{ t.image }}" alt="" loading="lazy" title="Photo: {{ t.image_credit | escape }}" onerror="this.remove()">{%- endif -%}
+        </a>
+      </td>
+      <td><a href="{{ t.url | relative_url }}">{{ t.title }}</a><span class="sub">{{ t.summary | truncate: 90 }}</span></td>
+      {% unless include.hide == "maker" %}<td class="col-maker">{{ maker.title }}</td>{% endunless %}
+      {% unless include.hide == "category" %}<td class="col-cat">{{ cat.title }}</td>{% endunless %}
+      <td class="col-num">{{ t.buy | size }}</td>
+    </tr>
+    {%- endfor -%}
+  </tbody>
+</table>

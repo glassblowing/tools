@@ -1,48 +1,42 @@
 // Client-side filtering for the /tools/ page. State lives in the URL
-// (?q=&category=&d=furnace,flameworking) so filtered views can be shared.
+// (?q=&category=&maker=) so filtered views can be shared.
 (function () {
   var q = document.getElementById("q");
   var category = document.getElementById("category");
-  var chips = Array.prototype.slice.call(document.querySelectorAll(".chips input"));
-  var cards = Array.prototype.slice.call(document.querySelectorAll("#tool-grid .tool-card"));
+  var maker = document.getElementById("maker");
+  var rows = Array.prototype.slice.call(document.querySelectorAll("#tool-table .tool-row"));
   var count = document.getElementById("count");
   var empty = document.getElementById("empty");
 
   var params = new URLSearchParams(location.search);
   q.value = params.get("q") || "";
   category.value = params.get("category") || "";
-  var ds = (params.get("d") || "").split(",").filter(Boolean);
-  chips.forEach(function (c) { c.checked = ds.indexOf(c.value) !== -1; });
+  maker.value = params.get("maker") || "";
 
   function apply() {
     var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
-    var cat = category.value;
-    var disc = chips.filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
     var shown = 0;
-
-    cards.forEach(function (card) {
-      var hay = card.dataset.search;
-      var cardDisc = card.dataset.disciplines.split(" ");
+    rows.forEach(function (row) {
+      var hay = row.dataset.search;
       var ok = terms.every(function (t) { return hay.indexOf(t) !== -1; }) &&
-        (!cat || card.dataset.category === cat) &&
-        (disc.length === 0 || disc.some(function (d) { return cardDisc.indexOf(d) !== -1; }));
-      card.hidden = !ok;
+        (!category.value || row.dataset.category === category.value) &&
+        (!maker.value || row.dataset.maker === maker.value);
+      row.hidden = !ok;
       if (ok) shown++;
     });
-
-    count.textContent = shown + " of " + cards.length + " tools";
+    count.textContent = shown === rows.length ? rows.length : shown + " of " + rows.length;
     empty.hidden = shown !== 0;
 
     var p = new URLSearchParams();
     if (q.value) p.set("q", q.value);
-    if (cat) p.set("category", cat);
-    if (disc.length) p.set("d", disc.join(","));
+    if (category.value) p.set("category", category.value);
+    if (maker.value) p.set("maker", maker.value);
     var qs = p.toString();
     history.replaceState(null, "", location.pathname + (qs ? "?" + qs : ""));
   }
 
   q.addEventListener("input", apply);
   category.addEventListener("change", apply);
-  chips.forEach(function (c) { c.addEventListener("change", apply); });
+  maker.addEventListener("change", apply);
   apply();
 })();
