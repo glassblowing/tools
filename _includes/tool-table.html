@@ -1,6 +1,10 @@
 {%- comment -%}
   Usage: include tool-table.html tools=list [id="tool-table"] [hide="maker|category"]
 {%- endcomment -%}
+<div class="view-toggle" role="group" aria-label="Show tools as">
+  <button type="button" data-view="list" aria-pressed="true">List</button>
+  <button type="button" data-view="grid" aria-pressed="false">Grid</button>
+</div>
 <table class="tool-table"{% if include.id %} id="{{ include.id }}"{% endif %}>
   <thead>
     <tr>
@@ -22,7 +26,7 @@
           {%- if t.image -%}<img src="{{ t.image }}" alt="" loading="lazy" title="Photo: {{ t.image_credit | escape }}" onerror="this.remove()">{%- endif -%}
         </a>
       </td>
-      <td><a href="{{ t.url | relative_url }}">{{ t.title }}</a><span class="sub">{{ t.summary | truncate: 90 }}</span></td>
+      <td><a href="{{ t.url | relative_url }}">{{ t.title }}</a><span class="sub">{{ t.summary | truncate: 140 }}</span></td>
       {% unless include.hide == "maker" %}<td class="col-maker">{{ maker.title }}</td>{% endunless %}
       {% unless include.hide == "category" %}<td class="col-cat">{{ cat.title }}</td>{% endunless %}
       <td class="col-num">{{ t.buy | size }}</td>

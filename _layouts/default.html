@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  <script>try { if (localStorage.getItem("view") === "grid") document.documentElement.dataset.view = "grid"; } catch (e) {}</script>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="apple-touch-icon" href="{{ '/assets/brand/apple-touch-icon.png' | relative_url }}">
@@ -28,5 +29,6 @@
     <p>An independent index. We don't sell anything; prices and stock are up to the seller. Photos belong to the sellers credited on each tool page.</p>
     <p><a href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Suggest a tool</a> · <a href="https://github.com/{{ site.repository }}">GitHub</a></p>
   </footer>
+  <script src="{{ '/assets/js/view-toggle.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>
