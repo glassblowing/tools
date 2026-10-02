@@ -29,7 +29,7 @@ permalink: /makers/
       {% assign n = 0 %}
       {% for t in site.tools %}{% for b in t.buy %}{% if b.vendor == s.name %}{% assign n = n | plus: 1 %}{% break %}{% endif %}{% endfor %}{% endfor %}
       {% if n == 0 %}{% continue %}{% endif %}
-      <li><a href="{{ '/tools/' | relative_url }}?seller={{ s.name | slugify }}">{{ s.name }}</a><span class="muted desc">{{ s.location }}{% if s.url %} · <a href="{{ s.url }}" rel="noopener" target="_blank">site ↗</a>{% endif %}{% if s.instagram %} · <a href="https://www.instagram.com/{{ s.instagram }}/" rel="noopener" target="_blank">Instagram ↗</a>{% endif %}</span><span>{{ n }}</span></li>
+      <li><a href="{{ '/tools/' | relative_url }}?seller={{ s.name | slugify }}">{{ s.name }}</a><span class="muted desc">{{ s.location }}{% if s.url %} · <a href="{{ s.url }}" rel="noopener" target="_blank">site ↗</a>{% endif %}{% if s.instagram %} · {% include instagram-link.html handle=s.instagram compact=true %}{% endif %}</span><span>{{ n }}</span></li>
       {% endfor %}
     </ul>
   </section>
