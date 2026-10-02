@@ -16,4 +16,4 @@ buy:
   note: Order by email or phone
 reviews: []
 ---
-Fits the small-radius stainless jack handles: #A for finishing tool #A, #C for #B.
+Fits the small-radius stainless jack handles: #A for finishing tool #A, #C for #B. In the US, Glasstrapes sells handles and inserts together as the [Swedish Overlay Tool Set](/tools/jk-overlay-tools-swedish-overlay-tool-set/).

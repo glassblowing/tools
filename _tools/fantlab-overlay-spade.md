@@ -17,4 +17,4 @@ buy:
   note: Order by email or phone
 reviews: []
 ---
-Fits the large-radius stainless jack handles: #B for spades #1 and #2, #D for #3.
+Fits the large-radius stainless jack handles: #B for spades #1 and #2, #D for #3. In the US, Glasstrapes sells handles and inserts together as the [Swedish Overlay Tool Set](/tools/jk-overlay-tools-swedish-overlay-tool-set/).
