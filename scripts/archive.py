@@ -247,8 +247,8 @@ def shopify_products(origin):
                     if len(items) < 250:
                         break
                     page += 1
-            except Exception:
-                pass  # fall back to fetching product pages one at a time
+            except Exception as e:  # fall back to fetching product pages one at a time
+                print(f"# couldn't list {origin}/products.json ({e}); reading pages one by one", file=sys.stderr)
             _shopify[origin] = found
         return _shopify[origin]
 
