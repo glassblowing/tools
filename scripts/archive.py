@@ -398,7 +398,8 @@ def og_image(page_html):
             if isinstance(d, dict) and d.get("@type") == "Product" and d.get("image"):
                 img = d["image"]
                 img = img[0] if isinstance(img, list) else img
-                return (img.get("url") or img.get("contentUrl")) if isinstance(img, dict) else img
+                # ImageObject: contentUrl is the image; url can be the product page (Ecwid).
+                return (img.get("contentUrl") or img.get("url")) if isinstance(img, dict) else img
     m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', page_html) or \
         re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', page_html)
     return html.unescape(m.group(1)) if m else None
