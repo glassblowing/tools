@@ -10,7 +10,7 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 
 - **Only list what a vendor actually shows.** Every tool, spec, and link must come from a page you fetched this run. If you can't load a page, say so. Don't fill gaps from memory.
 - **Write summaries in your own words.** One or two plain sentences on what the tool is for. Don't paste vendor marketing copy.
-- **No prices or reviews. Photos are linked, never copied.** Prices go stale, and reviews only come from people through the GitHub issue form. For photos, run `python3 scripts/archive.py photos --write`. It points each listing's `image` at the seller's own product image URL (hotlinked, never downloaded), with `image_credit` and `image_source`. Never add a vendor photo by hand, and never for a vendor marked `photos: no` (they asked us not to).
+- **No prices or reviews. Photos are linked, never copied.** Prices go stale, and reviews only come from people through the GitHub issue form. For photos, run `make photos`. It points each listing's `image` at the seller's own product image URL (hotlinked, never downloaded), with `image_credit` and `image_source`. Never add a vendor photo by hand, and never for a vendor marked `photos: no` (they asked us not to).
 - **The site covers furnace (hot shop) glassblowing: hand tools, molds, and bench-sized equipment** (mold boys, yokes, benches, threading machines, ladles). Very large machinery is out: furnaces, glory holes, annealers, pipe warmers, color boxes, grinders, lathes, crushers. Flameworking and coldworking tools are out of scope for now. Existing ones are kept with `published: false` so they can come back later; don't add new ones.
 - **Respect scope.** Each vendor's `scope` in `_data/vendors.yml` says what to index. Skip anything out of scope, and don't add it "for later".
 - **Don't push or merge.** Work on a branch and leave pushing and PRs to the user.
@@ -22,7 +22,8 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 | `_data/vendors.yml` | Every shop, with its crawl pages, scope, and notes. The source of truth for vendors. |
 | `_tools/*.md` | One file per tool. The format is in `CONTRIBUTING.md`. |
 | `_makers/*.md`, `_tool_categories/*.md` | Makers and categories that tools reference by filename. |
-| `scripts/archive.py` | Helper: `validate`, `links [--vendor ID] [--max-age DAYS] [--write]`, `catalog VENDOR_ID` (Shopify, WooCommerce, Squarespace), `photos [--vendor ID] [--refresh] [--write]`. |
+| `Makefile` | How to run everything below: `make validate`, `make links`, `make photos`, `make catalog VENDOR=id`, `make geocode`, `make check` (validate + build), `make serve` (local preview). `make` alone lists the tasks and options. |
+| `scripts/archive.py` | What the make targets call: `validate`, `links [--vendor ID] [--max-age DAYS] [--write]`, `catalog VENDOR_ID` (Shopify, WooCommerce, Squarespace), `photos [--vendor ID] [--refresh] [--write]`. |
 
 ## What to run
 
@@ -37,7 +38,7 @@ Parse the arguments:
 
 ```sh
 git switch -c archive-update-$(date +%F)   # or reuse the current non-main branch
-python3 scripts/archive.py validate
+make validate
 ```
 
 Fix any validation errors first.
@@ -45,7 +46,7 @@ Fix any validation errors first.
 ### 2. Re-check existing buy links
 
 ```sh
-python3 scripts/archive.py links --write    # add --vendor ID to limit
+make links                  # VENDOR=id to limit, MAX_AGE=0 to check everything, DRY=1 to not write
 ```
 
 For each result that isn't `ok`:
@@ -55,15 +56,15 @@ For each result that isn't `ok`:
 - **limit (429).** The site throttled the checker; the page isn't necessarily gone. Recheck those URLs later, slowly. Never remove a link just for a 429. Shopify stores share one queue in the checker because Shopify rate-limits across all of its stores.
 - **403 / timeouts.** Check the vendor's `notes` first; some block scripts (e.g. the Corning Museum shops). Try WebFetch once. If it's still blocked, leave the link, don't set `last_checked` for that tool, and list it under "needs a human to check".
 
-`links` skips tools checked in the last 7 days (`--max-age 0` checks everything) and prints only the links that aren't `ok`. Shopify links are answered from each store's `/products.json` listing (250 products a request), so only unlisted products cost a page load. With `--write` it sets `last_checked` to today on tools whose links all returned `ok`; don't set it by hand.
+`make links` skips tools checked in the last 7 days (`MAX_AGE=0` checks everything) and prints only the links that aren't `ok`. Shopify links are answered from each store's `/products.json` listing (250 products a request), so only unlisted products cost a page load. It sets `last_checked` to today on tools whose links all returned `ok`; don't set it by hand.
 
-Run one `archive.py` network command at a time. Requests to the same site are spaced through a shared lock, so parallel runs don't speed anything up.
+Run one network task (`links`, `photos`, `catalog`, `geocode`) at a time. Requests to the same site are spaced through a shared lock, so parallel runs don't speed anything up.
 
 ### 3. Find new tools
 
 For each vendor with `crawl` pages:
 
-- `platform: shopify | woocommerce | squarespace`: run `python3 scripts/archive.py catalog <id>`. It prints every product in the crawl pages with its description and options, and whether it's already indexed. "(no description on the vendor page)" is a real result, not a failure. Write a minimal summary from the name and options, and don't invent details.
+- `platform: shopify | woocommerce | squarespace`: run `make catalog VENDOR=<id>`. It prints every product in the crawl pages with its description and options, and whether it's already indexed. "(no description on the vendor page)" is a real result, not a failure. Write a minimal summary from the name and options, and don't invent details.
 - Anything else: read each crawl page with WebFetch (or curl), then the product pages it links to.
 - Before trusting `crawl`, check the vendor's sitemap (`/sitemap.xml`) for store collections that were added since the last run, and add any in-scope ones to `crawl`.
 
@@ -87,18 +88,15 @@ One file per product page. Collapse variants (lengths, body material, grips) int
 
 When updating an existing tool, change only what the vendor's page contradicts, and keep other people's edits.
 
-After writing listings, run `python3 scripts/archive.py photos --write` to link photos for any new listing. It skips pages shared by several listings (catalog and category pages) and site logos, so a missing photo is normal. Pages that loaded with no usable photo are recorded in `scripts/photo-misses.json` and skipped for 30 days; `--refresh` ignores that record (and re-checks listings that already have a photo).
+After writing listings, run `make photos` (add `VENDOR=id` to limit it) to link photos for any new listing. It skips pages shared by several listings (catalog and category pages) and site logos, so a missing photo is normal. Pages that loaded with no usable photo are recorded in `scripts/photo-misses.json` and skipped for 30 days; `REFRESH=1` ignores that record and also re-checks listings that already have a photo, so only use it with care: with `VENDOR=` it can replace a maker's own photo with that vendor's.
 
 ### 5. Verify and report
 
 ```sh
-python3 scripts/archive.py validate
-podman run --rm -v "$PWD":/src:Z,ro -v /tmp/gbt-site:/out:Z -e PAGES_REPO_NWO=glassblowing/tools -e JEKYLL_NO_GITHUB=1 \
-  --entrypoint sh ghcr.io/actions/jekyll-build-pages:v1.0.13 \
-  -c 'cd / && bundle exec github-pages build --source /src --destination /out'
+make check      # validate, then build into /tmp/gbt-site with the image the deploy uses
 ```
 
-(`mkdir -p /tmp/gbt-site` first. `docker` works in place of `podman`. This is the same image the deploy uses. If neither is available, say the build wasn't verified.)
+(It uses podman or docker, whichever is installed. If neither is, it says so; report that the build wasn't verified. `make serve` builds and previews at http://localhost:4000.)
 
 Commit on the branch with a message like `archive: Update from vendors (YYYY-MM-DD)`, then report:
 
@@ -118,4 +116,4 @@ Commit on the branch with a message like `archive: Update from vendors (YYYY-MM-
 2. Ask the user what's in scope unless they already said. Default to hand tools, molds, and bench-sized equipment, not furnaces or other large machinery.
 3. Add an entry to `_data/vendors.yml`: `id`, `name`, `url`, `maker` (if they make what they sell), `platform`, and `crawl` (the collection or category pages that hold in-scope items). Write `scope.in` / `scope.out` in the user's words, and add `notes` for quirks.
 4. Check the vendor's distributor or stockist page. If a registered retailer carries the line, add those buy links too (step 3), and note any unregistered distributors in `notes`.
-5. If they're a maker, create `_makers/<slug>.md` with location, website, and a two-sentence description, using only sourced facts. Leave out `founded` unless the vendor's own site gives it. If the vendor's own site links an Instagram account, add its bare handle as `instagram:` (on the maker file, or in `vendors.yml` for a shop). Skip handles that belong to the site platform (e.g. `squarespace`) or to a different business. If it has a `location`, run `python3 scripts/archive.py geocode --write` so the maker gets a town-level pin on the Makers map.
+5. If they're a maker, create `_makers/<slug>.md` with location, website, and a two-sentence description, using only sourced facts. Leave out `founded` unless the vendor's own site gives it. If the vendor's own site links an Instagram account, add its bare handle as `instagram:` (on the maker file, or in `vendors.yml` for a shop). Skip handles that belong to the site platform (e.g. `squarespace`) or to a different business. If it has a `location`, run `make geocode` so the maker gets a town-level pin on the Makers map.
