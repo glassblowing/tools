@@ -16,4 +16,7 @@ buy:
   url: https://fantlab.com/paddles%20and%20mold%20board.html
   note: Order by email or phone
 reviews: []
+image: https://impro.usercontent.one/appid/oneComWsb/domain/fantlab.com/media/fantlab.com/onewebmedia/Verktyg%2008.jpg
+image_credit: Fantlab
+image_source: https://fantlab.com/paddles%20and%20mold%20board.html
 ---
