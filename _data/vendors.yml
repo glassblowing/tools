@@ -363,6 +363,7 @@
 - id: glasstrapes
   name: Glasstrapes
   url: https://www.glasstrapes.com/
+  instagram: glasstrapes
   location: Seattle, Washington, USA
   coords: [47.6, -122.33]
   crawl: []
