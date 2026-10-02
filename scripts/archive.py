@@ -106,6 +106,10 @@ def status(url):
         return type(e).__name__, url
 
 
+# Instagram handles are stored bare (no @, no URL); the templates build the link.
+INSTAGRAM = re.compile(r"[A-Za-z0-9_.]{1,30}")
+
+
 def cmd_validate(_):
     tools, makers, cats, vendors = load()
     names = {v["name"] for v in vendors}
@@ -114,8 +118,11 @@ def cmd_validate(_):
     for d in ("_makers", "_tool_categories"):
         for p in sorted((ROOT / d).glob("*.md")):
             try:
-                if not front_matter(p).get("title"):
+                fm = front_matter(p)
+                if not fm.get("title"):
                     problems.append(f"{d}/{p.name}: missing title")
+                if fm.get("instagram") and not INSTAGRAM.fullmatch(str(fm["instagram"])):
+                    problems.append(f"{d}/{p.name}: instagram should be a bare handle, not '{fm['instagram']}'")
             except yaml.YAMLError as e:
                 problems.append(f"{d}/{p.name}: bad front matter: {e.problem}")
     if len(ids) != len(set(ids)):
@@ -123,6 +130,8 @@ def cmd_validate(_):
     for v in vendors:
         if v.get("maker") and v["maker"] not in makers:
             problems.append(f"vendor {v['id']}: maker '{v['maker']}' has no _makers file")
+        if v.get("instagram") and not INSTAGRAM.fullmatch(str(v["instagram"])):
+            problems.append(f"vendor {v['id']}: instagram should be a bare handle, not '{v['instagram']}'")
     for slug, t in tools.items():
         for field in ("title", "maker", "category", "summary", "added"):
             if not t.get(field):

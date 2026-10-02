@@ -475,6 +475,7 @@
   location: Corning, New York, USA
   coords: [42.14, -77.05]
   url: https://shops.cmog.org/
+  instagram: corningmuseumshops
   crawl: []
   scope:
     in: Buy links for tools already in the archive (Jim Moore Glass Tools in particular).
@@ -523,6 +524,7 @@
   location: Seattle, Washington, USA
   coords: [47.6, -122.33]
   url: https://hotglasscolor.com/
+  instagram: hotglasscolorandsupply
   platform: shopify
   crawl:
     - https://hotglasscolor.com/collections/hotshop-tools
