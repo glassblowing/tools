@@ -427,7 +427,7 @@
 
 - id: mitiska
   name: SAN Mitiska
-  url: http://www.sklarskenuzky.cz/
+  url: https://www.sklarskenuzky.cz/
   maker: mitiska
   crawl: []
   scope:
