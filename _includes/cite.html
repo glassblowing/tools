@@ -1,0 +1,6 @@
+{%- comment -%}
+  Inline citation for glossary entries: {% include cite.html n=2 %} (or n="1,3").
+  Links to the numbered source at the bottom of the page; hover shows its title.
+{%- endcomment -%}
+{%- assign cite_ns = include.n | append: "" | split: "," -%}
+&#8288;<sup class="cite">{% for cite_n in cite_ns %}{% assign cite_i = cite_n | strip | plus: 0 | minus: 1 %}{% assign cite_s = page.sources[cite_i] %}<a href="#src-{{ cite_n | strip }}" title="{{ cite_s.title | escape }}">&#8288;[{{ cite_n | strip }}]</a>{% endfor %}</sup>

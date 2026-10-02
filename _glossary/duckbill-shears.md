@@ -2,30 +2,31 @@
 title: Duckbill shears
 category: shears
 order: 3
-aka: ["tagiante a beco de anara (Murano)", "rovné nůžky kachny (Czech, \"ducks\")"]
+aka:
+- tagiante a beco de anara (Murano)
+- rovné nůžky kachny (Czech, "ducks")
 summary: Straight-cutting shears with rounded, slightly splayed tips that don't catch the glass at the end of a cut.
-match: 'duck ?bill|kachny'
+match: duck ?bill|kachny
 sources:
-  - title: Conciatore — The Glass Lexicon ("Tagiante a beco de anara")
-    url: https://www.conciatore.org/p/glass-lexicon.html
-  - title: Cutting Edge Products — Mini Duck Bill
-    url: https://www.cuttingedgeprdx.com/trim-shears/mini-duck-bill
+- title: Conciatore — The Glass Lexicon ("Tagiante a beco de anara")
+  url: https://www.conciatore.org/p/glass-lexicon.html
+- title: Cutting Edge Products — Duck Bill
+  url: https://www.cuttingedgeprdx.com/trim-shears/duck-bill
+- title: Cutting Edge Products — Mini Duck Bill
+  url: https://www.cuttingedgeprdx.com/trim-shears/mini-duck-bill
+- title: SAN Mitiska — Sklářské nůžky (glassblowing shears; Czech)
+  url: https://www.sklarskenuzky.cz/
 ---
 ## What it is
 
-Duckbill shears look like ordinary shears, but the tips are rounded and angled slightly away from each other, like a duck's bill. Many don't close all the way, so the cutting edges meet along the blade but the tips never cross.
+Duckbill shears look like ordinary shears, but the tips are rounded and angled slightly away from each other so they don't catch the glass while cutting.{% include cite.html n=1 %} Cutting Edge's version doesn't close all the way, "so the blade stays in the cut", and its round nose stops it snagging on the far side of the cut.{% include cite.html n=2 %}
 
 ## How it's used
 
-They're trim shears for rims and lips. Because the tips can't snag, catch, or dig in at the end of a cut, they can follow the edge of a turning piece in one smooth pass, which makes them popular for trimming the lips of cups and bowls.
+They're trim shears{% include cite.html n=2 %}: the rounded tips let them cut along the glass without the point catching at the end of the cut.{% include cite.html n="1,2" %}
 
 ## History
 
-The Conciatore lexicon, written by a Murano-trained glassblower, says duckbill shears weren't used on Murano until about thirty years before he wrote: they came to Venice from the United States, which had them from Sweden and the UK, and they still weren't fully adopted there. Czech makers call them *kachny*, "ducks".
+The Conciatore lexicon says duckbill shears weren't used on Murano until about thirty years before it was written, when they arrived from the United States, which in turn had them from Sweden and the UK; the lexicon adds that they still weren't fully adopted there.{% include cite.html n=1 %} Its Muranese name, *tagiante a beco de anara*, means "duck-bill shears".{% include cite.html n=1 %} The Czech maker Mitiska calls its version *kachny*, "ducks".{% include cite.html n=4 %}
 
-In 2014 Cutting Edge Products added a mini duckbill after flameworkers who liked the standard size asked for a smaller one.
-
-## What to look for
-
-- **Size:** standard for furnace rims, mini versions for small work and flameworking.
-- **Closing:** check whether the tips close fully or stop short.
+In 2014, after flameworkers at the Degenerate Flame Off asked for a smaller version of the standard duckbill, Cutting Edge Products introduced the Duckbill Mini.{% include cite.html n=3 %}
