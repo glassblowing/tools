@@ -20,5 +20,6 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1656111612513-9V5OOUEFKJ7IPXLKBEHI/parchioffi+jack+side+view.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/shop-pacioffis/pacioffi-handle
+type: parchoffi
 ---
 Cutting Edge and Hot Glass Color both sell replacement cherrywood rods in pairs. Hot Glass Color lists the steel part as a "Parcioffi Hinge".

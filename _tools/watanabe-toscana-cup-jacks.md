@@ -19,5 +19,6 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/cdfb7212-8110-4887-8b86-9564212e676b/IMG_6262.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/goblet-jacks
+type: jacks
 ---
 Each pair is stamped with a logo, a serial number, and the date.

@@ -19,5 +19,6 @@ reviews: []
 image: https://marukotools.com/uploads/1/4/2/1/142113258/s273266471383986398_p1_i1_w640.jpeg
 image_credit: Maruko Tools
 image_source: https://marukotools.com/cup-jacks.html
+type: jacks
 ---
 High-carbon steel that will rust. Keep it clean and dry.

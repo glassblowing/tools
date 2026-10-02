@@ -16,5 +16,6 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0664/6228/6019/files/FullSizeRender_34432880-4365-4227-a349-2d3c41bfbf43.heic?v=1748471215
 image_credit: Ennion Glass Tools
 image_source: https://ennionglasstools.com/products/8-bronze-standard-jacks
+type: jacks
 ---
 Bronze is softer than steel and chills the glass less, so you get smoother tooling, more working time, and fewer chill marks. It won't rust, but it's for hot glass only: don't force it on cold or very thick glass. Works best with carnauba wax.

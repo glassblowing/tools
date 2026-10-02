@@ -19,7 +19,7 @@ WRITE   := $(if $(DRY),,--write)
 VFLAG   := $(if $(VENDOR),--vendor $(VENDOR))
 
 .DEFAULT_GOAL := help
-.PHONY: help validate build serve check links photos catalog geocode update
+.PHONY: help validate build serve check links photos catalog geocode types update
 
 help: ## List the tasks
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -52,5 +52,8 @@ catalog: ## List a vendor's products and whether they're indexed (VENDOR=id)
 
 geocode: ## Add map coordinates for makers and shops with a location
 	$(ARCHIVE) geocode $(WRITE)
+
+types: ## Give untyped tools a glossary type from title patterns
+	$(ARCHIVE) types $(WRITE)
 
 update: links photos check ## Routine refresh: links, photos, validate, build

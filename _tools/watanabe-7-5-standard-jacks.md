@@ -19,5 +19,6 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/fa42c483-4d3c-46c2-a55c-5dd51fb5790e/IMG_6259.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/small-standard-jacks
+type: jacks
 ---
 The smooth blades need very little wax and don't chatter. Each pair is stamped with a logo and the date. Black patina sealed with a wax and coconut oil mix, which works as a pre-seasoning so new wax sticks. Some sizes can be ordered in brushed natural. Made to order in Pawtucket, Rhode Island.

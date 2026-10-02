@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7495-c-dona-shears-120mm.jpg?v=1739235695
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-straight-shears-120mm-st
+type: straight-shears
 ---

@@ -14,4 +14,5 @@ buy:
   url: https://www.carlodona.com/en/jacks/
   note: Maker's catalog; order by email or phone
 reviews: []
+type: jacks
 ---

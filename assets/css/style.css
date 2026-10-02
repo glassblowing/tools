@@ -179,3 +179,12 @@ p { margin: 0 0 0.75rem; }
   .tool-table .col-img { width: 72px; }
   .tool-table .col-img a { width: 64px; height: 64px; }
 }
+
+/* Glossary */
+.aka { margin-top: -0.4rem; font-style: italic; }
+.lede { font-size: 1.1rem; max-width: 680px; }
+.glossary-body h2 { margin-top: 1.75rem; }
+.sources ol { padding-left: 1.25rem; font-size: 0.9rem; color: var(--muted); max-width: 680px; }
+.sources li { margin: 0.25rem 0; }
+.type-note { font-size: 0.9rem; }
+.type-links { font-size: 0.9rem; line-height: 1.8; }

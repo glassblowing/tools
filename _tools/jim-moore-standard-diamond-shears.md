@@ -15,5 +15,6 @@ buy:
 - vendor: Olympic Color Rods
   url: https://glasscolor.com/tools/hand-tools/jim-moore-tools/shears
 reviews: []
+type: diamond-shears
 ---
 Diamond shears close from four sides, pulling the glass to the center so it cuts cleanly with a small scar. Jim Moore also makes [compact](../jim-moore-compact-diamond-shears/), large, and Czech-style versions.

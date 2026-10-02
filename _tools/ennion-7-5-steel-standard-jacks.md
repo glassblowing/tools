@@ -16,4 +16,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0664/6228/6019/files/FullSizeRender_c34e696f-6e17-4348-91dd-d789e2e6778b.heic?v=1748471140
 image_credit: Ennion Glass Tools
 image_source: https://ennionglasstools.com/products/8-standard-jacks
+type: jacks
 ---

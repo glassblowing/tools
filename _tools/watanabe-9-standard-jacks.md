@@ -19,4 +19,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/679f868069bf2a576ba4d6b3/cc9aba55-68e8-403a-bd20-e51d1eea0fcb/IMG_2527.jpg?format=1000w
 image_credit: Watanabe Glass Tools
 image_source: https://www.glassworkstoolbench.com/watanabeglasstools/p/medium-standard-jacks
+type: jacks
 ---

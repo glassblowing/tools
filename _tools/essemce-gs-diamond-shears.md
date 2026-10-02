@@ -18,4 +18,5 @@ buy:
 - vendor: Artco
   url: https://www.artcoinc.com/essemce_diamond_shears.php
 reviews: []
+type: diamond-shears
 ---

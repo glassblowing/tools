@@ -20,4 +20,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/carlo-dona-shear-130mm-7409.jpg?v=1736896603
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-diamond-shears-130mm
+type: diamond-shears
 ---

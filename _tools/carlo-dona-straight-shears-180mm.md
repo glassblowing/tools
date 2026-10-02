@@ -19,4 +19,5 @@ reviews: []
 image: https://cdn.shopify.com/s/files/1/0833/3895/2997/files/7498-carlo-dona-180-shears-open.jpg?v=1751918580
 image_credit: Hot Glass Color & Supply
 image_source: https://hotglasscolor.com/products/c-dona-straight-shears-180mm-st
+type: straight-shears
 ---

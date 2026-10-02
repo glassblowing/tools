@@ -22,4 +22,5 @@ reviews: []
 image: https://images.squarespace-cdn.com/content/v1/580a65c2f5e231ecf35a9582/1510613475504-PBFHAH4LDGLA27VD6YIH/large.jpg?format=1000w
 image_credit: Cutting Edge Products
 image_source: https://www.cuttingedgeprdx.com/diamond-shears/dante-diamond-shears-n2824
+type: diamond-shears
 ---

@@ -16,4 +16,5 @@ buy:
 - vendor: Hot Glass Color & Supply
   url: https://hotglasscolor.com/products/carlo-dona-parchoffi-lg-round-handle_85981
 reviews: []
+type: parchoffi
 ---

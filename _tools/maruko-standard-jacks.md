@@ -20,5 +20,6 @@ buy:
 - vendor: Artco
   url: https://www.artcoinc.com/maruko_jacks.php
 reviews: []
+type: jacks
 ---
 High-carbon steel that will rust. Keep it clean and dry.

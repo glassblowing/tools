@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- assign cat = site.tool_categories | where: "slug", page.category | first -%}
+{%- assign tools = site.tools | where: "type", page.slug | sort: "title" -%}
+<p class="crumbs"><a href="{{ '/glossary/' | relative_url }}">Glossary</a>{% if cat %} / <a href="{{ cat.url | relative_url }}">{{ cat.title }}</a>{% endif %}</p>
+<h1>{{ page.title }}</h1>
+{% if page.aka.size > 0 %}<p class="aka muted">Also called {{ page.aka | join: ", " }}</p>{% endif %}
+<p class="lede">{{ page.summary }}</p>
+<div class="prose glossary-body">{{ content }}</div>
+
+{% if page.sources.size > 0 %}
+<section class="sources">
+  <h2>Sources</h2>
+  <ol>
+    {% for s in page.sources %}<li><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a></li>{% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+<section>
+  <h2>{{ page.title }} in the archive <span class="count">{{ tools.size }}</span></h2>
+  {% if tools.size > 0 %}
+  {% include tool-table.html tools=tools hide="category" %}
+  {% else %}
+  <p class="muted">None listed yet.</p>
+  {% endif %}
+</section>
