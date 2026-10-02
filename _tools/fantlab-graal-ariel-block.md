@@ -14,4 +14,7 @@ buy:
   url: https://fantlab.com/graal%20%26%20ariel%20blocks.html
   note: Order by email or phone
 reviews: []
+image: https://impro.usercontent.one/appid/oneComWsb/domain/fantlab.com/media/fantlab.com/onewebmedia/Tr%C3%A4skopa%2004%20copy.jpg
+image_credit: Fantlab
+image_source: https://fantlab.com/graal%20%26%20ariel%20blocks.html
 ---
