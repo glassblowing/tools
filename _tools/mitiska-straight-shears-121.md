@@ -1,5 +1,5 @@
 ---
-title: Straight Shears No. 121
+title: Rovné nůžky č. 121 (Straight Shears No. 121)
 maker: mitiska
 category: shears
 disciplines:

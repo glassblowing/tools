@@ -1,5 +1,5 @@
 ---
-title: Diamond Shears No. 312
+title: Kulaté nůžky č. 312 (Diamond Shears No. 312)
 maker: mitiska
 category: shears
 disciplines:

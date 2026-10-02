@@ -1,5 +1,5 @@
 ---
-title: Duckbill Shears No. 161
+title: Rovné nůžky Kachny č. 161 (Duckbill Shears No. 161)
 maker: mitiska
 category: shears
 disciplines:

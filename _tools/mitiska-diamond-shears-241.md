@@ -1,5 +1,5 @@
 ---
-title: Diamond Shears No. 241
+title: Kulaté nůžky č. 241 (Diamond Shears No. 241)
 maker: mitiska
 category: shears
 disciplines:
