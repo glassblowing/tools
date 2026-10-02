@@ -2,6 +2,6 @@
 title: Torches
 order: 6
 icon: "🔥"
-summary: Bench burners for flameworking and lampworking.
+summary: Hand torches for spot-heating in the hot shop.
 ---
-Surface-mix and premix torches for soft glass and borosilicate, from beginner single-fire torches to large multi-fire bench burners.
+Hand torches for spot-heating at the bench: warming bits, edges, and details without going back to the glory hole. Flameworking bench burners aren't listed.

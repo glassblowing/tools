@@ -11,7 +11,7 @@ The archive is a catalog, not a store. Its value is that it's accurate and trust
 - **Only list what a vendor actually shows.** Every tool, spec, and link must come from a page you fetched this run. If you can't load a page, say so. Don't fill gaps from memory.
 - **Write summaries in your own words.** One or two plain sentences on what the tool is for. Don't paste vendor marketing copy.
 - **No prices or reviews. Photos are linked, never copied.** Prices go stale, and reviews only come from people through the GitHub issue form. For photos, run `python3 scripts/archive.py photos --write`. It points each listing's `image` at the seller's own product image URL (hotlinked, never downloaded), with `image_credit` and `image_source`. Never add a vendor photo by hand, and never for a vendor marked `photos: no` (they asked us not to).
-- **The site covers furnace (hot shop) glassblowing.** Flameworking and coldworking tools are out of scope for now. Existing ones are kept with `published: false` so they can come back later; don't add new ones.
+- **The site covers furnace (hot shop) glassblowing: hand tools, molds, and bench-sized equipment** (mold boys, yokes, benches, threading machines, ladles). Very large machinery is out: furnaces, glory holes, annealers, pipe warmers, color boxes, grinders, lathes, crushers. Flameworking and coldworking tools are out of scope for now. Existing ones are kept with `published: false` so they can come back later; don't add new ones.
 - **Respect scope.** Each vendor's `scope` in `_data/vendors.yml` says what to index. Skip anything out of scope, and don't add it "for later".
 - **Don't push or merge.** Work on a branch and leave pushing and PRs to the user.
 
@@ -113,7 +113,7 @@ Commit on the branch with a message like `archive: Update from vendors (YYYY-MM-
    - WooCommerce: `<url>/wp-json/wc/store/v1/products` returns JSON. `crawl` = the site's shop page (the API lists the whole store).
    - Squarespace: any page plus `?format=json` returns JSON. Shop menus are often plain pages, so find the real store collections in `/sitemap.xml` and use those as `crawl`.
    - Anything else: no `platform`; `crawl` = category pages to read directly.
-2. Ask the user what's in scope unless they already said. Default to hand tools and small bench tools, not furnaces or large studio equipment.
+2. Ask the user what's in scope unless they already said. Default to hand tools, molds, and bench-sized equipment, not furnaces or other large machinery.
 3. Add an entry to `_data/vendors.yml`: `id`, `name`, `url`, `maker` (if they make what they sell), `platform`, and `crawl` (the collection or category pages that hold in-scope items). Write `scope.in` / `scope.out` in the user's words, and add `notes` for quirks.
 4. Check the vendor's distributor or stockist page. If a registered retailer carries the line, add those buy links too (step 3), and note any unregistered distributors in `notes`.
 5. If they're a maker, create `_makers/<slug>.md` with location, website, and a two-sentence description, using only sourced facts. Leave out `founded` unless the vendor's own site gives it. If it has a `location`, run `python3 scripts/archive.py geocode --write` so the maker gets a town-level pin on the Makers map.

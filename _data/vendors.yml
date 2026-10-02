@@ -23,15 +23,13 @@
     - https://spiralarts.com/collections/pipes-and-punties
     - https://spiralarts.com/collections/pipes
     - https://spiralarts.com/collections/the-color-bundle
+    - https://spiralarts.com/collections/tools-for-the-hot-shop
+    - https://spiralarts.com/collections/often-overlooked-items
   scope:
-    in: Blowpipes, punties, and color tools (e.g. color bar chopper, threading machine).
+    in: Blowpipes, punties, color tools, hot-shop hand tools, and bench-sized equipment (yokes, benches, heat shields).
     out: >-
-      Furnaces, glory holes, annealers, pipe warmers, color boxes, powder booths, benches,
-      yokes, heat shields, refractory, and other studio equipment. Revisit later.
-  notes: >-
-    Its /collections/tools-for-the-hot-shop collection (casting ladle, charging shovel,
-    pastorale fork, loading tong, tong covers, pocket inflator) hasn't been requested yet.
-    Ask before adding it to crawl.
+      Large machinery: furnaces, glory holes, annealers, pipe warmers, color boxes, powder
+      booths, refractory.
 
 - id: bc-metalworking
   name: BC Metalworking
@@ -248,9 +246,20 @@
   crawl:
     - https://leviathanglassworks.com/collections/better-blocks
     - https://leviathanglassworks.com/collections/better-blocks-oval-next-generation-last-longer-balanced-removable-heads
+    - https://leviathanglassworks.com/collections/replacement-heads-only
+    - https://leviathanglassworks.com/collections/better-blocks-round-replacement-heads-only
+    - https://leviathanglassworks.com/collections/cherry-wood-paddles-fine-grade
+    - https://leviathanglassworks.com/collections/gnarly-knockoff-pads
+    - https://leviathanglassworks.com/collections/killer-corks
+    - https://leviathanglassworks.com/collections/mighty-molds
+    - https://leviathanglassworks.com/collections/paddle-protection-sleaves-for-knockoff-and-annealer-serving
+    - https://leviathanglassworks.com/collections/parchoffi-set
+    - https://leviathanglassworks.com/collections/miraculous-marble-tool-one-tool-does-it-all
+    - https://leviathanglassworks.com/collections/shape-shifter-steamer-pads-dual-sided
+    - https://leviathanglassworks.com/collections/superior-stamps-custom-stamps-and-brands-brass-or-graphite
   scope:
-    in: Better Blocks, round and oval.
-    out: Replacement heads, and the rest of the store (paddles, corks, molds, stamps, pads) until asked.
+    in: Everything in the store (the user asked for all of it), including replacement block heads.
+    out: Nothing so far.
   notes: >-
     Hot Glass Color sells the oval blocks as "Swedish Oval Block - LV"; those listings
     link here too. Also carries cherry paddles, Killer Corks, Mighty Molds, ring tools,
@@ -292,11 +301,10 @@
   crawl:
     - https://www.mastersofglass.com/category/hot-shop-accesories
   scope:
-    in: Hot-shop hand tools (blocks, pastorale forks).
+    in: Hot-shop hand tools (blocks, pastorale forks, ladles).
     out: >-
       Glass and color, cold-shop machinery and abrasives (lathes, wheels, flat laps,
-      belts, polishing), lubricants, and casting material. Ladle bowls are borderline,
-      like Hot Glass Color's casting ladles, so ask before adding.
+      belts, polishing), lubricants, and casting material.
   notes: >-
     Wix store: /store-products-sitemap.xml lists every product and each product page
     has JSON-LD with the name and description. The pastorale fork has two product
@@ -341,6 +349,24 @@
     Etsy blocks scripts and WebFetch (403). Listings use only the title Etsy shows in
     search results; check the shop by hand for other molds and details.
 
+- id: correll
+  name: Correll Glass Studio
+  url: https://www.correllglassstudio.com/
+  maker: correll
+  crawl:
+    - https://www.correllglassstudio.com/cork-paddles
+    - https://www.correllglassstudio.com/casting-ladles
+    - https://www.correllglassstudio.com/garage-tools
+    - https://www.correllglassstudio.com/pastorale
+    - https://www.correllglassstudio.com/ferros-and-ferriti
+  scope:
+    in: Hot-shop tools (cork paddles, ladles, garage forks and paddles, pastorale, ferros).
+    out: Furnaces, glory holes, annealers, burners, and blowers (large machinery).
+  notes: >-
+    Wix site with no shop; order by phone or email and pay by PayPal invoice
+    (contact-and-ordering page). Pages list items with sizes and no descriptions.
+    Olympic Color Rods sells small and round cork paddles (glasscolor.com/tools/hand-tools/correll-tools).
+
 - id: steinert-industries
   name: Steinert Industries
   url: https://steinertindustries.com/
@@ -350,7 +376,7 @@
     - https://products.steinertindustries.com/
   scope:
     in: Blowpipes, punty rods, gathering rods, optic and blow molds, impression plates, and hand tools.
-    out: Machines, lawn art, and non-glass machining work.
+    out: Large machinery (grinders, glass crusher), lawn art, and non-glass machining work.
   notes: >-
     BigCommerce store: `catalog` reads every product from /xmlsitemap.php and each page's
     breadcrumb and "Product Description". From /miscellaneous/: hose extensions and the pipe brush are
@@ -453,7 +479,7 @@
     Attributions inferred from HGC's own catalog (not stated on the product page): the
     Blast Shield pushes, Facet 4-in-1 mold, TPT ellipse tool, and 4" Vin Pin to Weaver
     Industries (sibling products carry Weaver's name); the Bump Marble Molds to Mike Close.
-    Deliberately skipped: torches, casting ladles ("small equipment"; ask before adding),
+    Deliberately skipped: torches,
     tool racks, knock-off pads, newspaper koozie, tong covers and Kevlar sleeves, loading
     sleeves, punty handle add-ons, replacement sticks, heads, wheels, and covers, and
     consumables (wax, etching, bead separator, fume, mold paste, Dip n Go).

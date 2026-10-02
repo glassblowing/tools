@@ -50,25 +50,29 @@ def load():
     return tools, makers, cats, vendors
 
 
-def fetch(url, timeout=20):
+def fetch(url, timeout=20, tries=5):
+    """GET a URL, waiting and retrying when the site rate-limits us (429)."""
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.status, r.geturl(), r.read()
-
-
-def status(url, tries=5):
     for attempt in range(tries):
         try:
-            code, final, _ = fetch(url)
-            return code, final
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.status, r.geturl(), r.read()
         except urllib.error.HTTPError as e:
             if e.code != 429 or attempt == tries - 1:
-                return e.code, url
-            # Rate limited: honor Retry-After when it's a number, else back off.
+                raise
+            # Honor Retry-After when it's a number, else back off.
             wait = e.headers.get("Retry-After", "")
             time.sleep(float(wait) if wait.isdigit() else 5 * (attempt + 1))
-        except Exception as e:  # DNS, timeout, TLS
-            return type(e).__name__, url
+
+
+def status(url):
+    try:
+        code, final, _ = fetch(url)
+        return code, final
+    except urllib.error.HTTPError as e:
+        return e.code, url
+    except Exception as e:  # DNS, timeout, TLS
+        return type(e).__name__, url
 
 
 def cmd_validate(_):
@@ -274,8 +278,11 @@ def cmd_catalog(args):
             indexed[b["url"].rstrip("/")] = slug
     seen = {}
     for c in v.get("crawl") or []:
-        for p in reader(v, c):
-            seen.setdefault(p["url"].rstrip("/"), p)
+        try:
+            for p in reader(v, c):
+                seen.setdefault(p["url"].rstrip("/"), p)
+        except Exception as e:  # one broken collection shouldn't stop the rest
+            print(f"# couldn't read {c}: {e}")
     print(f"# {v['name']}: {len(seen)} products in crawl pages")
     print(f"# scope in:  {v['scope'].get('in', '')}\n# scope out: {v['scope'].get('out', '')}\n")
     for url, p in seen.items():
