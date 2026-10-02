@@ -13,4 +13,8 @@ buy:
 - vendor: Shops at the Corning Museum of Glass
   url: https://shops.cmog.org/jim-moore-glass-tools/jim-moore-glass-tools-compact-diamond-shears
 reviews: []
+image: https://www.toolsforglass.com/shears/compact-Diamond.jpg
+image_credit: Jim Moore Glass Tools
+image_source: https://www.toolsforglass.com/Shears.html
 ---
+
