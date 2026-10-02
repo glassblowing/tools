@@ -24,6 +24,8 @@ permalink: /tools/
   {%- assign in_cat = site.tools | where: "category", c.slug | sort: "title" -%}
   {%- assign tools = tools | concat: in_cat -%}
 {%- endfor -%}
+<p class="muted" id="seller-note" hidden>Sold by <strong id="seller-name"></strong> · <a href="{{ '/tools/' | relative_url }}" id="seller-clear">show all</a></p>
+<script>window.SHOPS = { {%- for v in site.data.vendors -%}{{ v.name | slugify | jsonify }}: {{ v.name | jsonify }}{% unless forloop.last %},{% endunless %}{%- endfor -%} };</script>
 {% include tool-table.html tools=tools id="tool-table" %}
 <p class="muted" id="empty" hidden>No tools match. <a href="https://github.com/{{ site.repository }}/issues/new?template=add-tool.yml">Suggest one?</a></p>
 

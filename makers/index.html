@@ -1,27 +1,54 @@
 ---
-title: Makers
+title: Makers & Shops
 permalink: /makers/
 ---
-<h1>Makers</h1>
+<h1>Makers &amp; Shops</h1>
 
 {%- assign makers = site.makers | sort: "title" -%}
-<div id="maker-map" class="maker-map" aria-label="Map of makers by location"></div>
-<p class="muted small">Pins mark the maker's town, not an address. Makers without a published location aren't on the map.</p>
+{%- assign shops = site.data.vendors | where_exp: "v", "v.maker == nil" | sort: "name" -%}
 
-<ul class="count-list wide">
-  {% for m in makers %}
-  {% assign n = site.tools | where: "maker", m.slug | size %}
-  {% if n == 0 %}{% continue %}{% endif %}
-  <li><a href="{{ m.url | relative_url }}">{{ m.title }}</a><span class="muted desc">{{ m.location }}</span><span>{{ n }}</span></li>
-  {% endfor %}
-</ul>
+<div id="maker-map" class="maker-map" aria-label="Map of makers and shops by location"></div>
+<p class="muted small map-legend"><span class="dot maker"></span> Maker <span class="dot shop"></span> Shop · Pins mark the town, not an address.</p>
+
+<div class="cols">
+  <section>
+    <h2>Makers</h2>
+    <ul class="count-list">
+      {% for m in makers %}
+      {% assign n = site.tools | where: "maker", m.slug | size %}
+      {% if n == 0 %}{% continue %}{% endif %}
+      <li><a href="{{ m.url | relative_url }}">{{ m.title }}</a><span class="muted desc">{{ m.location }}</span><span>{{ n }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section>
+    <h2>Shops</h2>
+    <p class="muted small">Retailers that carry other makers' tools.</p>
+    <ul class="count-list">
+      {% for s in shops %}
+      {% assign n = 0 %}
+      {% for t in site.tools %}{% for b in t.buy %}{% if b.vendor == s.name %}{% assign n = n | plus: 1 %}{% break %}{% endif %}{% endfor %}{% endfor %}
+      {% if n == 0 %}{% continue %}{% endif %}
+      <li><a href="{{ '/tools/' | relative_url }}?seller={{ s.name | slugify }}">{{ s.name }}</a><span class="muted desc">{{ s.location }}{% if s.url %} · <a href="{{ s.url }}" rel="noopener" target="_blank">site ↗</a>{% endif %}</span><span>{{ n }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
 
 <script>
   window.MAKERS = [
     {%- for m in makers -%}
       {%- assign n = site.tools | where: "maker", m.slug | size -%}
       {%- if n == 0 or m.coords == nil -%}{%- continue -%}{%- endif -%}
-      {"name": {{ m.title | jsonify }}, "url": {{ m.url | relative_url | jsonify }}, "location": {{ m.location | jsonify }}, "tools": {{ n }}, "lat": {{ m.coords[0] }}, "lng": {{ m.coords[1] }}},
+      {"kind": "maker", "name": {{ m.title | jsonify }}, "url": {{ m.url | relative_url | jsonify }}, "location": {{ m.location | jsonify }}, "tools": {{ n }}, "lat": {{ m.coords[0] }}, "lng": {{ m.coords[1] }}},
+    {%- endfor -%}
+    {%- for s in shops -%}
+      {%- if s.coords == nil -%}{%- continue -%}{%- endif -%}
+      {%- assign n = 0 -%}
+      {%- for t in site.tools -%}{%- for b in t.buy -%}{%- if b.vendor == s.name -%}{%- assign n = n | plus: 1 -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+      {%- if n == 0 -%}{%- continue -%}{%- endif -%}
+      {%- capture shop_url -%}{{ '/tools/' | relative_url }}?seller={{ s.name | slugify }}{%- endcapture -%}
+      {"kind": "shop", "name": {{ s.name | jsonify }}, "url": {{ shop_url | jsonify }}, "location": {{ s.location | jsonify }}, "tools": {{ n }}, "lat": {{ s.coords[0] }}, "lng": {{ s.coords[1] }}},
     {%- endfor -%}
   ];
 </script>

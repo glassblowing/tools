@@ -12,6 +12,8 @@
 #             `archive.py photos` links listings to the vendor's own image URLs (hotlinked,
 #             never copied) with a credit line. After setting "no", clear that vendor's
 #             images: remove image/image_credit/image_source where image_credit is its name.
+#   location  for shops (vendors without a maker): "Town, Region, Country" from the shop's own site.
+#             `archive.py geocode --write` adds town-level coords for the Makers & Shops map.
 #   notes     anything the next update needs to know
 
 - id: spiral-arts
@@ -151,6 +153,8 @@
 
 - id: artco
   name: Artco
+  location: San Jose, California, USA
+  coords: [37.34, -121.89]
   url: https://www.artcoinc.com/
   crawl:
     - https://www.artcoinc.com/maruko_jacks.php
@@ -397,6 +401,8 @@
 
 - id: cmog-shops
   name: Shops at the Corning Museum of Glass
+  location: Corning, New York, USA
+  coords: [42.14, -77.05]
   url: https://shops.cmog.org/
   crawl: []
   scope:
@@ -408,6 +414,8 @@
 
 - id: glass-color
   name: Olympic Color Rods
+  location: Seattle, Washington, USA
+  coords: [47.6, -122.33]
   url: https://glasscolor.com/
   crawl:
     - https://glasscolor.com/tools/hand-tools/jim-moore-tools
@@ -441,6 +449,8 @@
 
 - id: hot-glass-color
   name: Hot Glass Color & Supply
+  location: Seattle, Washington, USA
+  coords: [47.6, -122.33]
   url: https://hotglasscolor.com/
   platform: shopify
   crawl:

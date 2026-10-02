@@ -142,3 +142,7 @@ p { margin: 0 0 0.75rem; }
 .leaflet-container { font: inherit; }
 .maker-map .tiles { filter: grayscale(1) contrast(0.9) brightness(1.05); }
 .maker-map .tiles-dark { filter: grayscale(1) invert(1) contrast(0.85) brightness(0.9); }
+
+.map-legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--accent); vertical-align: -1px; margin: 0 0.15rem 0 0.4rem; }
+.map-legend .dot:first-child { margin-left: 0; }
+.map-legend .dot.maker { background: var(--accent); }
