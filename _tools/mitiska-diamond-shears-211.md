@@ -1,5 +1,5 @@
 ---
-title: Diamond Shears No. 211
+title: Kulaté nůžky č. 211 (Diamond Shears No. 211)
 maker: mitiska
 category: shears
 disciplines:

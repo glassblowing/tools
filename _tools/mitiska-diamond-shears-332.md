@@ -1,5 +1,5 @@
 ---
-title: Diamond Shears No. 332
+title: Kulaté nůžky č. 332 (Diamond Shears No. 332)
 maker: mitiska
 category: shears
 disciplines:
