@@ -1,6 +1,6 @@
 # glassblowing.tools
 
-A community-maintained index of glassblowing and flameworking tools: who makes them, where to buy them, and reviews from people who use them. We don't sell anything.
+A community-maintained index of glassblowing tools: who makes them, where to buy them, and reviews from people who use them. We don't sell anything.
 
 Live site: https://glassblowing.tools/
 
